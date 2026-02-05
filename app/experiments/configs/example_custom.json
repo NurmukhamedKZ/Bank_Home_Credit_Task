@@ -1,0 +1,11 @@
+{
+  "name": "custom_experiment",
+  "description": "Custom configuration for testing specific parameters",
+  "dense_model": "voyage-4-large",
+  "dense_output_dim": 1024,
+  "tfidf_max_features": 15000,
+  "tfidf_ngram_range": [1, 3],
+  "tfidf_min_df": 2,
+  "system_prompt": "You are an expert CV parser focused on technical skills extraction.",
+  "collection_name": "CVs_custom"
+}

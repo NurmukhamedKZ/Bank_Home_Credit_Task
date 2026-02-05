@@ -79,7 +79,7 @@ VOYAGE_API=your_voyage_api_key
 ### Базовое использование (один файл)
 
 ```python
-from Parse_pdf import CVParser
+from parse_pdf import CVParser
 
 # Инициализация
 parser = CVParser(collection_name="CVs")

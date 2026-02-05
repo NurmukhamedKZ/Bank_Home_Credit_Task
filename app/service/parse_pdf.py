@@ -353,7 +353,7 @@ CRITICAL RULES:
         else:
             print("⚠️  Корпус пуст, нечего обучать")
     
-    def cv_to_payload(self, cv: CVOutput, full_text: str) -> dict:
+    def cv_to_payload(self, cv: CVOutput, full_text: str, source_file: str = None) -> dict:
         """
         Преобразует CVOutput в payload для Qdrant
         
@@ -398,9 +398,8 @@ CRITICAL RULES:
             "work_history": work_history_dicts,
             "education": education_dicts,
             "skills": cv.skills,
-            "languages": cv.languages
-        }
-        
+            "languages": cv.languages,
+            "source_file": source_file}
         return payload
     
     def save_to_qdrant(
@@ -410,7 +409,8 @@ CRITICAL RULES:
         dense_vector: List[float],
         sparse_indices: List[int],
         sparse_values: List[float],
-        point_id: Optional[str] = None
+        point_id: Optional[str] = None,
+        source_file: str = None
     ) -> str:
         """
         Сохраняет CV в Qdrant
@@ -422,6 +422,7 @@ CRITICAL RULES:
             sparse_indices: Индексы sparse эмбеддинга
             sparse_values: Значения sparse эмбеддинга
             point_id: ID точки (если None, генерируется автоматически)
+            source_file: Имя исходного файла (для идентификации в метриках)
             
         Returns:
             ID сохраненной точки
@@ -429,7 +430,7 @@ CRITICAL RULES:
         if point_id is None:
             point_id = str(uuid.uuid4())
         
-        payload = self.cv_to_payload(cv_data, full_text)
+        payload = self.cv_to_payload(cv_data, full_text, source_file)
         
         point = models.PointStruct(
             id=point_id,
@@ -530,13 +531,16 @@ CRITICAL RULES:
         # 5. Создаем эмбеддинги
         dense_vector, sparse_indices, sparse_values = self.create_embeddings(searchable_text)
         
-        # 6. Сохраняем в Qdrant
+        # 6. Сохраняем в Qdrant с именем исходного файла
+        # Используем stem (без расширения) для сопоставления
+        source_file_stem = file_path.stem
         point_id = self.save_to_qdrant(
             cv_data=cv_data,
             full_text=full_text,
             dense_vector=dense_vector,
             sparse_indices=sparse_indices,
-            sparse_values=sparse_values
+            sparse_values=sparse_values,
+            source_file=source_file_stem
         )
         
         print(f"\n{'='*60}")

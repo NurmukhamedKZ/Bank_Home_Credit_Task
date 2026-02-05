@@ -1,0 +1,11 @@
+{
+  "name": "baseline",
+  "description": "Baseline configuration with default parameters",
+  "dense_model": "voyage-4-large",
+  "dense_output_dim": 1024,
+  "tfidf_max_features": 10000,
+  "tfidf_ngram_range": [1, 2],
+  "tfidf_min_df": 1,
+  "system_prompt": null,
+  "collection_name": "CVs_baseline"
+}
