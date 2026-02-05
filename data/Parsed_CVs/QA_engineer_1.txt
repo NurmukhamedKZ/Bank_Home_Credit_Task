@@ -1,0 +1,128 @@
+Candidate
+
+Female, 25 years, born on 30 July 2000
+Actively searching for a job
+
+Almaty, willing to relocate (Tbilisi), not prepared for business trips
+
+QA Engineer
+Specializations:
+
+    Tester
+
+Employment type: full time, part time, work placement
+Work experience 3 years 4 months
+January 2025 — currently
+1 year 2 months
+Kaspi Bank, АО
+
+www.kaspibank.kz
+
+Financial Sector... Show more
+QA Engineer
+Project: Kaspi Travel (webview)
+
+- Functional testing
+- Postive testing
+- Negative tesing
+- Using techniques of test design: Boundary values, Equivalence classes
+- Writing checklists, test cases bug reports on Jira
+- Using Devtools, Charles Proxy, Postman-
+June 2023 — December 2024
+1 year 7 months
+1FIT
+
+1fit.app
+
+IT, System Integration, Internet... Show more
+QA engineer
+Testing frontend, backend, mobile
+
+- Functional testing
+- Regression testing
+- Localization testing
+- Smoke testing
+- Postive testing
+- Negative tesing
+
+- Writing checklists, test cases, bug reports on Test Rails + Jira, using devtools
+
+learning Pytest Selenium
+September 2022 — March 2023
+7 months
+OKauto
+
+Almaty, okauto.kz/
+
+IT, System Integration, Internet... Show more
+QA Engineer
+- Manual functional testing of the application
+- Manual functional testing of web applications
+- Manual functional testing of WhatsApp bot
+- Manual regression testing of WhatsApp bot
+- Using Ionic Framework, React, POSTMAN, GitLab;
+- Page layout for React, Gatsby project on Tailwind.
+- Participation in the development of WhatsApp bot
+- Using PWA, push notifications
+- Interaction with the development and design team
+Skills
+Skill proficiency levels
+HTML5
+CSS
+Adaptability
+MS SQL
+Git
+Postman
+API
+Pytest
+Selenium
+TestRail
+Check-list
+Manual testing
+Teamplayer
+About me
+I’m a QA Engineer with over 2 years of experience in manual web testing. I focus on making sure websites work well and meet user needs by testing their functionality and performance. I have a good understanding of HTML, CSS, SQL, and tools like Git, DevTools, and Postman. Right now, I’m learning automation testing with Selenium, Pytest.
+
+I’m a quick learner who works well both independently and as part of a team. I’m responsible, hardworking, and always committed to delivering quality results.
+
+Skills:
+- Manual Testing of Websites & Web Apps
+- Basic HTML, CSS & Site Layout Testing
+- SQL (SELECT, DISTINCT, JOIN, etc.)
+- Git (Version Control)
+- API Testing with Postman
+- Using DevTools & Sniffers (Fiddler, Charles)
+- Basic Knowledge of JavaScript/Python (Learning Automation)
+
+Personal Traits:
+- Quick to Learn & Adapt
+- Responsible & Hardworking
+- Good Communicator & Team Player
+- Able to Work Under Pressure & Stay Focused
+
+In my free time, I enjoy reading and practicing archery to improve my focus and concentration.
+Higher education (master)
+2024
+Higher education (master)
+Suleyman Demirel University, Almaty
+Engineering, Computer Science
+2022
+Higher education (master)
+Suleyman Demirel University, Almaty
+Engineering, Computer Technology and Software
+Languages
+Kazakh — Native
+
+English — B1 — Intermediate
+
+Russian — C2 — Proficiency
+
+Turkish — B1 — Intermediate
+
+Citizenship, travel time to work
+
+Citizenship: Kazakhstan
+
+Permission to work: Kazakhstan
+
+Desired travel time to work: Doesn't matter

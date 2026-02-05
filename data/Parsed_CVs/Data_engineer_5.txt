@@ -1,0 +1,154 @@
+Кандидат
+
+Мужчина
+Рассматривает предложения
+
+Алматы, не готов к переезду, готов к редким командировкам
+
+Data engineer, Big data engineer
+Специализации:
+
+    Программист, разработчик
+
+Тип занятости: полная занятость
+Опыт работы 14 лет 8 месяцев
+Февраль 2022 — по настоящее время
+4 года 1 месяц
+Dataart
+
+Информационные технологии, системная интеграция, интернет... Показать еще
+Senior Big data engineer
+• Developed data pipelines using NIFI.
+• Orchestrated task execution with Airflow.
+• Performed troubleshooting, profiling, and performance tuning.
+• Negotiated with Business Stakeholders to clarify task scope.
+• Created Spark applications using Scala and Python
+• Utilized SQL for querying and managing data within the data warehouse
+Август 2021 — Февраль 2022
+7 месяцев
+Aitu Dala
+
+Алматы, aitudala.kz/
+
+Информационные технологии, системная интеграция, интернет... Показать еще
+Big Data Engineer
+- Разработка Kafka клиентов с использованием Scala и Java
+- Создание таблиц и оптимизация запросов в Greenplum
+- Создание витрин на Apache Spark (Scala, Pyspark)
+- Создание data pipelines с использованием Apache Airflow, DBT
+- Сохрание parquet файлов в GlusterFS с использованием S3 API
+- Работа с gitlab ci cd
+Ноябрь 2019 — Август 2021
+1 год 10 месяцев
+Beeline, ТМ
+
+Алматы, www.beeline.kz
+
+Информационные технологии, системная интеграция, интернет... Показать еще
+Старший эксперт по разработке Big data
+Разработка и сопровождение программ для дальнейшего внедрения в Big Data проекты
+
+Spark: написание программ для обработки данных (pyspark, scala)
+
+Hive: автоматизация процессов в базе данных Hive (создание таблица, партиций)
+
+Data Visualisation: Grafana, Superset
+
+Hadoop: загрузка и чтение данных из hdfs
+
+ETL: использование spark для обработки и загрузки данных в БД (PostgeSQL, Oracle, MariaDB) из HDFS
+
+Streaming: создание Spark Structured Streaming приложение для анализа онлайн потоков
+
+Kafka: разработка kafka consumer
+
+Open source: разворачивание open source продуктов на Linux (CentOS)
+
+Airflow: создание data pipeline
+Июнь 2012 — Ноябрь 2019
+7 лет 6 месяцев
+Народный банк Казахстана, АО
+
+Алматы, www.halykbank.kz
+
+Финансовый сектор... Показать еще
+Главный менеджер управления систем анализа данных
+Python:
+занимался парсингом сайтов для сбора данных (использовал библиотеки: Beautiful Soup, requests, Selenium); разрабатывал backend (Flask), вызов процедур из Oracle и обработка данных (cx_Oracle)
+
+Java:
+разрабатывал Kafka Consumers
+
+Linux:
+поддержка приложений развернутых на Red Hat Enterprise.
+
+Excel VBA:
+Создание отчетов с помощью SAP Bex analyzer и Excel VBA
+
+Data Visualisation: SAP BO Dashboards
+Июль 2011 — Май 2012
+11 месяцев
+Банк ЦентрКредит, АО
+
+Казахстан, centercredit.kz
+
+Финансовый сектор... Показать еще
+Ведущий специалист управления методологии и отчетности
+Создание отчетов и их сопровождение в с помощью Excel и VBA
+Навыки
+Уровни владения навыками
+MS Excel 2010 VBA
+MS Office
+SQL
+MS Visual Basic
+Java
+Python
+ORACLE
+Git
+Linux
+Scala
+Hadoop
+Docker
+Базы данных
+Аналитическое мышление
+Mariadb
+Hive
+Airflow
+Superset
+Hdfs
+PostgreSQL
+Spark
+gitlab ci cd
+PySpark
+Big Data
+Apache NiFi
+Обо мне
+Футбол, настольный теннис
+Высшее образование (Магистр)
+2016
+Высшее образование (Магистр)
+Kimep
+department of Economics, master of arts in economics
+2008
+Высшее образование (Магистр)
+Казахский национальный университет имени аль-Фараби, Алматы
+механика-математика/информатика, бакалавр
+Знание языков
+Казахский — Родной
+
+Английский — C1 — Продвинутый
+
+Повышение квалификации, курсы
+2019
+teamtreehouse
+teamtreehouse, https://teamtreehouse.com/bauyrzhanrakhmanov2
+2019
+udemy
+udemy, https://www.udemy.com/user/bauyrzhanrakhmanov/
+Гражданство, время в пути до работы
+
+Гражданство: Казахстан
+
+Разрешение на работу: Казахстан
+
+Желательное время в пути до работы: Не имеет значения

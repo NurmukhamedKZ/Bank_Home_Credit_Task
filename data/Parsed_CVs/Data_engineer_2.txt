@@ -1,0 +1,151 @@
+Кандидат
+
+Мужчина, 31 год, родился 29 октября 1994
+Рассматривает предложения
+
+Алматы, не готов к переезду, готов к редким командировкам
+
+Указан примерный район поиска работы
+Data Engineer
+Специализации:
+
+    Дата-сайентист
+
+Тип занятости: полная занятость, проектная работа/разовое задание
+Опыт работы 5 лет 2 месяца
+Июль 2025 — по настоящее время
+8 месяцев
+Halyk Market
+Team Lead Data Engineer
+.
+Октябрь 2022 — Июль 2025
+2 года 10 месяцев
+DATUM Stat Agency
+Senior Data engineer
+• Team Lead: Led a team of 2 developers for 6-8 months, overseeing both backend and frontend development for the company website.
+
+• Airflow Project: Designed, built, and deployed an ETL pipeline using Apache Airflow on Docker, fully deployed to Google Cloud Platform (GCP). Entirely self-managed, including research, learning, and implementation.
+
+• ClickHouse: Designed and created a complete database architecture using ClickHouse to enhance data processing and analytical capabilities. Successfully deployed the architecture to Google Cloud Platform (GCP).
+
+• NLP with BERT: Applied natural language processing (NLP) using the BERT neural network model to standardize and generate general names for barcode datasets.
+
+• PostgreSQL: Designed and created a complete database architecture. Successfully deployed the architecture to Google Cloud Platform (GCP)
+Июль 2021 — Июль 2022
+1 год 1 месяц
+McKenZee STAT Agency
+Data analyst/Data Scientist
+• Generating analytical reports for FMCG companies.
+• Maintaining ETL processes using Airflow.
+Июнь 2019 — Ноябрь 2019
+6 месяцев
+Tele2 Kazakhstan
+
+Казахстан, www.tele2.kz
+
+Телекоммуникации, связь... Показать еще
+IT manager
+• Identification of errors in trunk groups for the correct routing of traffic;
+• Preparation of a monthly report to reduce the costs of companies;
+• Preparing a list of roaming partners based on work on CN / DN;
+• Optimization of daily reports;
+• Finalizing the file to automatically add providers to test the quality of calls to SIGOS;
+• Optimization and analysis of the daily report on income and expenses in the context of CP
+• Development of Macros;
+• Making reliable requests on Oracle PL/SQL
+Ноябрь 2018 — Декабрь 2018
+2 месяца
+НАК Казатомпром
+
+Добывающая отрасль... Показать еще
+Data Engineer
+• Mastering the software offered by the department of information
+• Implementation of the systematic training of employees of the organization techniques and skills at PostgreSQL
+• Implementation of accounting and storage of documents related to automated information processing
+• Monitoring the integrity, reliability and integrity of data circulation in the automated information system
+Навыки
+Уровни владения навыками
+Продвинутый уровень
+SQL
+PostgreSQL
+Oracle Pl/SQL
+Python
+Airflow
+Clickhouse
+MySQL
+Средний уровень
+VBA
+OpenCV
+Google Cloud Development
+Docker
+Django Framework
+Natural Language Processing
+Computer Vision
+Neural Networks
+Опыт вождения
+
+Имеется собственный автомобиль
+Права категории B
+Обо мне
+• «Age detection» Kaggle, Neural Network, CNN.
+• «Digit Recognizer» Kaggle top 13%, Neural Network, CNN.
+• «Salary prediction» Kaggle, scikit-learn, Python.
+• «Sentiment analysis with Machine Learning» NLP, classifier, scikit-learn, Python.
+• «Embedded Microcontrollers Project: Face Detection-Tracking System and Mouse Control of a
+Webcamera by Using Arduino » Arduino, Processing, OpenCV.
+• «Thermal vision camera equipped Drone for predictive maintenance in power substation» Neural
+Network, OpenCV
+Высшее образование (Кандидат наук)
+2025
+Высшее образование (Кандидат наук)
+Международный университет информационных технологий, Алматы
+Data science, PhD Data science
+2022
+Высшее образование (Кандидат наук)
+Международный университет информационных технологий, Алматы
+Информационная технология, Магистр Data science
+2019
+Высшее образование (Кандидат наук)
+Назарбаев Университет, Астана
+Школа Инженерии, Electrical and Computer Engineering
+2015
+Высшее образование (Кандидат наук)
+University of London (UCL)
+Foundation, Математика и физика
+Знание языков
+Казахский — Родной
+
+Английский — C2 — В совершенстве
+
+Русский — C2 — В совершенстве
+
+Повышение квалификации, курсы
+2022
+KaspiLab
+Kaspi Bank, Data science
+2021
+Johns Hopkins University
+Coursera, Advanced Statistics for Data Science
+2020
+University of Colorado
+Coursera, Excel/VBA for Creative Problem Solving, Part 1
+2020
+University of Michigan
+Coursera, Applied Machine Learning in Python
+2019
+University of California
+Coursera, SQL for Data Science
+Тесты, экзамены
+2022
+IELTS
+InterPress, IELTS
+2020
+Тест на государственную службу
+Государственный орган, Законодательство Республики Казахстан 1 категория
+Гражданство, время в пути до работы
+
+Гражданство: Казахстан
+
+Разрешение на работу: Казахстан
+
+Желательное время в пути до работы: Не имеет значения

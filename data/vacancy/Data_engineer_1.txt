@@ -1,0 +1,75 @@
+Data Engineer
+от 3 000 до 3 500 $ за месяц, до вычета налогов
+
+Выплаты: раз в месяц
+
+Опыт работы: 3–6 лет
+Полная занятость
+Оформление: Договор ГПХ с ИП, с физлицом
+
+График: 5/2
+Рабочие часы: 8
+
+Формат работы: удалённо
+
+Сейчас эту вакансию смотрят 3 человека
+About the company
+
+We are Qatar Insurance Company (QIC), the leading insurance provider in GCC. With a history dating back to 1964, we have established ourselves as a pioneer in the insurance industry, offering innovative solutions to meet the diverse needs of individuals and businesses.
+
+Our vision is to make QIC group become the first Digital Ecosystem in the region by combining insurance and non-insurance services in one platform. Through our digital platforms, such as qic.online and the QIC app, we empower customers to manage their needs anytime and anywhere.
+
+Our employees have been featured in Forbes 30 under 30, teach at online universities, serve on program committees of major IT conferences, and have previously worked at Yandex, Tinkoff, Avito, Ozon, and other leading tech companies.
+About the position
+
+We’re looking for a Middle Data Engineer to join our Data & AI Department and work closely with cross-functional Marketing & product teams. In this role, you’ll design, build, and maintain scalable data pipelines that support analytics, reporting, and AI/ML use cases. You’ll work in a cloud-native environment on GCP, collaborate with analysts and data scientists, and help ensure data reliability, quality, and accessibility across the organization.
+Responsibilities
+
+    Build and maintain scalable data pipelines using Apache Airflow and GCP (BigQuery, Cloud Storage, Dataform)
+    Develop and optimize ETL/ELT workflows for batch, streaming, and diverse data sources
+    Improve pipeline and query performance through tuning, partitioning, and clustering
+    Ensure data quality, reliability, and freshness through monitoring and validation
+    Apply data governance standards, including access control and schema management
+    Monitor pipelines, resolve failures, and meet defined SLAs
+    Write clean, well-documented code and maintain technical documentation
+    Work closely with analysts, data scientists, and product teams to deliver usable data
+
+Requirements
+
+    3+ years of experience as a Data Engineer working with cloud-native data architectures
+    Strong Python skills with a focus on maintainable, testable, and modular code (OOP, error handling, logging)
+    Advanced SQL skills, including complex queries and performance optimization
+    Deep hands-on experience with Apache Airflow (DAG design, retries, sensors, custom operators)
+    Strong experience with Google Cloud Platform, especially BigQuery, Cloud Storage, and Dataform
+    Solid understanding of data warehousing, data modeling, and ETL/ELT best practices
+    Experience working with MySQL and Oracle as source systems
+    Familiarity with Git and CI/CD workflows
+    Understanding of data security, privacy, and monitoring best practices
+    Working knowledge of Docker and containerization
+
+Nice to Have
+
+    Experience supporting analytics and AI/ML workloads
+    Exposure to streaming data pipelines
+    Experience working in cross-functional, product-driven teams
+
+We offer
+
+    Long-term service agreement contract with QIC with 3 months probation period
+    We are diverse — our digital nomads work remotely from 25+ different countries
+    Payment in US dollars monthly to your bank account using SWIFT
+    Full-time remote, work schedule: 5 days per week, Sunday to Thursday, GMT +3 timezone
+    Vacation policy: Qatar Holiday Calendar, 20 vacation days, 10 sick offs
+    Performance reviews are conducted twice a year, with the possibility of a raise
+    Potential opportunity to apply for a Qatar ID and relocation to Doha, Qatar
+
+Ключевые навыки
+
+    SQL
+    Atlassian Confluence
+    REST API
+    Python
+    PostgreSQL
+    Apache Airflow
+    Agile
+    Английский — B2 — Средне-продвинутый

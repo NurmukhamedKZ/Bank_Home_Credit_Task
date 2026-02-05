@@ -1,0 +1,182 @@
+Candidate
+
+Male, 26 years, born on 13 April 1999
+
+Almaty, willing to relocate, prepared for business trips
+
+Machine Learning engineer, AI engineer
+Specializations:
+
+    Data scientist
+
+Employment type: full time
+Work experience 6 years
+June 2025 — currently
+9 months
+Guardin AI
+
+Almaty, guardin.ai
+AI Engineer
+AI Start-up with features in Trust&Safety
+- Led development of a RAG-based “About Us” and HR knowledge agent for UNC Health, using
+Milvus, Gemini, and PostgreSQL to deliver structured answers from unstructured clinical content.
+- Led the design of an Insurance Eligibility Agent integrating clearinghouse APIs (Ideon, Optum),
+automating coverage verification, copay extraction, and structured EB benefit mapping.
+- Contributed to the voice-based AI agent (Gemini Live + Telnyx) with real-time call control, voicemail
+detection, and multilingual support.
+- Helped build FastAPI microservices for eligibility workflows, LLM inference orchestration, logging,
+and agent conversation tracking.
+- Fine-tuned 10+ LLMs (e.g., Qwen 14B/7B, LLaMA 2-8B, Mixtral 8x7B) for content moderation on
+multi-class datasets using AWS S3 and Nebius; led junior contributors and optimized cost/performance.
+- Built and deployed LLM inference APIs with FastAPI and Triton Inference Server.
+June 2025 — September 2025
+4 months
+Halyk Global Markets
+
+Kazakhstan
+
+Financial Sector... Show more
+ML Engineer (Tech Lead) - RecSys
+- Led design of a hybrid recommendation engine combining ALS, ANN search, and Transformer-based ranking for a marketplace with 3.5M+ SKUs and 800K+ daily user events.
+- Oversaw migration of core ML pipelines to scalable GPU/ClickHouse infrastructure
+Trans-n to Switzerland
+February 2024 — May 2025
+1 year 4 months
+Kaspi Bank, АО
+
+Kazakhstan, www.kaspibank.kz
+
+Financial Sector... Show more
+Middle Machine learning engineer
+Machine learning
+State of the art NLP, BERT algorithms for prioritisation of reviews to business.
+BoW, TF-IDF, Word2Vec, Recurrent neural network (RNN), Attention, Transformer, LSTM
+- Delivered production-ready NLP models (BERT) for large-scale product matching (text & photo), leveraging multiprocessing to scale training and inference across millions products.
+- Optimized memory and runtime in matching pipelines by implementing custom Polars data processing, reducing overhead and improving throughput.
+- Automated product attribute extraction & filling using LangChain-based pipelines, integrating LLMs to enrich catalog data and improve search/recommendation quality.
+December 2020 — March 2024
+3 years 4 months
+PwC Luxembourg
+
+Luxembourg, www.pwc.lu
+Senior Associate
+- Quantitatively valued Private equity funds comparing with peer groups, achieved tight deadlines
+- Assisted in validation of regression models, predicting risk metric outcomes with high precision.
+- Analyzed financial data, identifying patterns, and drawing insights from complex datasets and visualized with Tableau
+- Experience in data warehouse solutions, and ETL, and using databases in a business environment with large-scale, complex datasets through Alteryx
+June 2020 — November 2020
+6 months
+London Almaty Insurance Company
+
+Almaty
+
+Financial Sector... Show more
+Data Scientist
+- Completed ad-hoc requests by using PostgreSQL that closed the needs of business users.
+- Improved monitoring system of the company by creating automated dashboards using Qlik Sense. Investigated product metrics (LTV, CAC, CR, RR) and made improvements to the marketing analytics.
+- Helped in finding more insights by Web scraping and organising the data using Python.
+- Experience with data querying or modelling with SQL
+
+
+June 2019 — August 2019
+3 months
+Корпоративный фонд Международный технопарк IT-стартапов «Astana Hub»
+
+Astana
+
+IT, System Integration, Internet... Show more
+Data Scientist | Machine learning engineer
+- Used machine learning algorithms to implement project oriented on identification of criminal areas in Kazakhstan with an assistance of General Prosecutor's Office of the Republic of Kazakhstan.
+- Analysed the sentiment of comments on social media using ML algorithms. Used Python libraries: NumPy, MATPLOTLIB, Pandas, Scikit-learn
+PET projects: Github: https://github.com/asainov1
+Skills
+Skill proficiency levels
+MS Excel
+Quantitative skills
+Corporate Finance
+Финансовый анализ
+Управление рисками
+Финансовый менеджмент
+IFRS
+Работа с базами данных
+Team management
+Python
+SQL
+R studio
+Машинное обучение
+Big Data
+База данных: Oracle
+Deep Learning
+Data Analysis
+Tableau
+Business Analysis
+Project management
+A/B тесты
+Regression Analysis
+Mathematical Statistics
+Credit risks
+Hypothesis testing
+Linear Regression
+Classification
+Risk metrics
+Driving experience
+Driver's license category B
+About me
+Versatile individual with experience collecting, transforming and organizing data for analysis to help make informed decisions. Excellent understanding and proficiency of platforms for effective data analyses, including SQL, spreadsheets, Tableau and R, Python. Strong communication, organizational, and analytical skills. Recently completed the Google Data Analytics Certificate – a rigorous, hands-on program that covers the entire scope of the data analysis process.
+
+Skills:
+Collect data by using a scripting language such as SQL:
+- Perform SQL queries
+- Sort and filter data using SQL queries
+- Convert data types using SQL functions
+Visualize data insights and communicate your findings to teams in other organizations:
+- Create data visualizations using Tableau
+- Create visuals in spreadsheets
+- Create presentations from data analysis results
+Build and train users of new dashboards:
+- Identify the data needs of users
+- Create dashboards using Tableau
+- Use design thinking to improve dashboards
+Create comprehensive reports:
+- Create data cleaning reports
+- Create and maintain change logs
+- Create reports in R Markdown
+Explore and analyze datasets with spreadsheets:
+- Clean data in spreadsheets
+- Sort and filter data in spreadsheets
+- Create pivot tables in spreadsheets
+Knowledge of some programming languages and an organized and methodical approach to work:
+- Install and use the tidyverse package in R
+- Run scripts in RStudio
+- Create data visualizations in RStudio
+Certificates
+Google Data Analytics Professional Certificate - Coursera 2024
+Neural Network and Deep Learning - Coursera 2024
+Python Data Structures & Algorithms - Udemy 2024
+Higher education (master)
+2026
+Higher education
+HSLU - ETH Zurich
+Data Science (RecSys, Graph Neural Networks, LLMOps, Multi Agents systems)
+2022
+Higher education (master)
+Budapest University of Technology and Economics
+MSc in Finance, Data analytics concentration
+2020
+Higher education (master)
+National Louis University, USA
+Business analytics
+Languages
+Russian — Native
+
+English — C1 — Advanced
+
+Polish — A2 — Elementary
+
+Citizenship, travel time to work
+
+Citizenship: Kazakhstan
+
+Permission to work: Kazakhstan
+
+Desired travel time to work: Doesn't matter

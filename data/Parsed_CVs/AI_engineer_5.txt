@@ -1,0 +1,126 @@
+Кандидат
+
+Мужчина, 28 лет, родился 30 июля 1997
+Не ищет работу
+
+Алматы, готов к переезду, готов к командировкам
+
+Machine learning engineer
+7 000 $ на руки
+Специализации:
+
+    Аналитик
+    Дата-сайентист
+    Программист, разработчик
+
+Тип занятости: полная занятость, частичная занятость, проектная работа/разовое задание
+Опыт работы 4 года 9 месяцев
+Апрель 2024 — по настоящее время
+1 год 11 месяцев
+Kaspi Bank, АО
+
+www.kaspibank.kz
+
+Финансовый сектор... Показать еще
+Machine learning engineer
+Senior ML engineer. Developed AI technology for speech recognition and interpretation of meaning and its components:
+-Artificial speech recognition ASR,
+-text-to-speech conversion,
+-NLP for processing natural language.
+• Trained models for conversational AI applications for telemarketing, collection and HR departments.
+Январь 2022 — Апрель 2024
+2 года 4 месяца
+Adoriasoft Watermaked.io
+Machine learning engineer
+Trained deep audio model (cnn).
+Audio, Image, Video watermarking
+Preprocessing, postprocessing audio.
+Research in deep audio processing.
+Developed CNNs, preprocessing and postprocessing algorithms for complex number.
+Навыки: python, PyTorch, deep learning, audio processing, cnn, complex analysis
+Link to demo watermarked.io
+Сентябрь 2021 — Февраль 2022
+6 месяцев
+Евразийский банк, АО
+
+eubank.kz/ru/index.php
+
+Финансовый сектор... Показать еще
+Ведущий эксперт департамента разработки и развития роботизаций
+• Studied AI technology for speech recognition and interpretation of meaning and its components:
+-Artificial speech recognition ASR,
+-text-to-speech conversion,
+-NLU for natural language understanding and
+-NLP for processing natural language.
+• Built conversational AI applications for telemarketing, collection and HR departments.
+• Analysis of the texts of the "client-operator" and "client-bot" dialogs: highlighting the structure and building the logic.
+• Development, design, testing of bots on a specialized platform.
+• Support and refinement of existing bots.
+• Interaction with IT-specialists on the technical capabilities of the bot and work automation.
+• Interaction with the customer of the project on the development of the bot.
+• Reporting on the results of customer calls in MS Excel.
+• Working with data in MSSQL.
+
+Навыки: MySQL · PostgreSQL · NLP · NLU · ASR · IVR · Анализ данных · SQL · Microsoft Excel · Visio
+Ноябрь 2020 — Январь 2021
+3 месяца
+Банк ЦентрКредит, АО
+
+centercredit.kz
+
+Финансовый сектор... Показать еще
+Сотрудник по договору для построения математического модели для определения мошенничества
+построения математической модели для определения мошенничества , работа с PL SQL , SAS miner, power bi
+Навыки
+Уровни владения навыками
+Продвинутый уровень
+Python
+Machine learning
+PyTorch
+Средний уровень
+Git
+computer vision
+natural language processing
+Mathematical Analysis
+Mathematical Modeling
+Mathematical Statistics
+Data Analysis
+Pandas
+Data Science
+Базовый уровень
+Asyncio
+Aiogram
+Redis
+MS SQL
+Уровень не указан
+Asr
+Tts
+Обо мне
+ML engineer LLC Adoriasoft
+Высшее образование (Бакалавр)
+2021
+Высшее образование (Бакалавр)
+Satbayev University
+Macihne learning and Data science
+2019
+Высшее образование (Бакалавр)
+International Information Technology University
+IT, Mathematical and computer modelling
+Знание языков
+Казахский — Родной
+
+Английский — C1 — Продвинутый
+
+Русский — C2 — В совершенстве
+
+Повышение квалификации, курсы
+2022
+Deep learning specialization
+DeepLearning.ai
+Гражданство, время в пути до работы
+
+Гражданство: Казахстан
+
+Разрешение на работу: Казахстан
+
+Желательное время в пути до работы: Не имеет значения

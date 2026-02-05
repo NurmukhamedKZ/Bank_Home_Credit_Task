@@ -1,0 +1,118 @@
+Кандидат
+
+Мужчина, 24 года, родился 14 февраля 2001
+Рассматривает предложения
+
+Алматы, готов к переезду, готов к командировкам
+
+AI engineer/ Data Scientist
+2 200 $ на руки
+Специализации:
+
+    Дата-сайентист
+
+Тип занятости: полная занятость
+Опыт работы 4 года 11 месяцев
+Ноябрь 2023 — по настоящее время
+2 года 4 месяца
+Freedom Finance
+Data Scientist
+• Machine learning systems and recommendations: Development of classification models and recommendation systems using
+both classical and advanced machine learning methods, increasing prediction accuracy and user engagement.
+• Extended large language models: Using large language models to improve project results, paying special attention to
+customization and efficiency in natural language processing tasks.
+• Research and development: Exploring new trends in NLP and the application of large-scale models, making sure that the latest
+innovations and methodologies are used in projects.
+Май 2022 — Ноябрь 2023
+1 год 7 месяцев
+Kaspi Bank, АО
+
+www.kaspibank.kz
+
+Финансовый сектор... Показать еще
+Data science/ML Engineer
+•Model development and implementation: Creation and implementation of advanced machine learning models for text classification and clustering, including using large models
+•Optimization and updating of the chatbot: Regular updates, bug fixes and adding new features to the chatbot model, increasing its efficiency and functionality.
+•Data analysis and processing: Collecting and processing incoming calls, uploading/uploading data from a database, analyzing large amounts of data in SAS to identify cost savings opportunities for the bank.
+•Hypotheses and Analytics: Hypothesis testing and data analysis, including analysis of the results of A/B testing on calls, to improve business processes.
+•Visualization of business metrics: Development and planning of visualization of various business metrics for better understanding and decision-making.
+•NLP Technologies: The application of advanced natural language processing techniques to improve internal processes and customer experience.
+Июнь 2021 — Май 2022
+1 год
+NeoLife
+Analyst
+• Analysis of KPI, salary and motivation indicators
+• Development of a sales evaluation system for the pharmaceutical market with "Viostis"
+• Presentation of quarterly reports with visualization of dashboards
+• Compilation of a monthly sales monitoring file with a Customer Relationship Management System "CRM"
+• Control and Analysis of financial risks
+• Optimization of processes and structures
+Апрель 2021 — Июнь 2021
+3 месяца
+Spey Kazakhstan
+Intern
+• Data collection for analysis
+• Reporting on the employee attendance control system
+• Data reconciliation and cleaning
+Навыки
+Уровни владения навыками
+Docker
+Python
+SAS
+Аналитическое мышление
+MS SQL
+Работа с большим объемом информации
+pandas
+MS PowerPoint
+Математическая статистика
+MS Excel
+Работа с базами данных
+Финансовая отчетность
+Power BI
+Анализ данных
+A/B тесты
+Git
+Google Analytics
+Machine Learning
+NLP
+Обо мне
+As a dedicated Data Science specialist with good experience in Natural Language Processing (NLP), I bring a strong foundation in
+data analysis, Python, and SQL. My deep engagement with complex datasets and machine learning has enabled me to deliver
+actionable insights and significantly contribute to the success of my projects. I am passionate about exploring the nuances of
+language data and continuously enhance my technical skills through targeted learning and practical application.
+- My enthusiasm for machine learning, especially NLP, drives my career progression. My strategic thinking and robust analytical
+capabilities have been instrumental in navigating the challenges of this dynamic field. Committed to professional growth, I actively
+pursue advanced courses and certifications in data science and NLP to stay ahead of industry trends and refine my expertise in
+deriving meaningful information from textual data.
+Высшее образование
+2022
+Высшее образование
+International Information Technology University
+Information Technology , Mathematical and Computer Modelling
+Знание языков
+Казахский — Родной
+
+Английский — B2 — Средне-продвинутый
+
+Русский — C2 — В совершенстве
+
+Повышение квалификации, курсы
+2022
+Data analytics
+Academica courses
+2021
+Structuring Machine Learning Projects Neural Networks and Deep Learning
+Coursera
+2020
+Введение в Data Science и машинное обучение
+Stepik
+2020
+Нейронные сети, Основы статистики
+Stepik
+Гражданство, время в пути до работы
+
+Гражданство: Казахстан
+
+Разрешение на работу: Казахстан
+
+Желательное время в пути до работы: Не имеет значения

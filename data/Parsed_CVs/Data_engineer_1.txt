@@ -1,0 +1,143 @@
+Кандидат
+
+Мужчина, 27 лет, родился 1 января 1999
+Не ищет работу
+
+Алматы, не готов к переезду, готов к редким командировкам
+
+Data Engineer
+Специализации:
+
+    Программист, разработчик
+
+Тип занятости: полная занятость, частичная занятость
+Опыт работы 7 лет 7 месяцев
+Июнь 2024 — по настоящее время
+1 год 9 месяцев
+Freedom Broker
+
+Алматы
+Senior Data Engineer
+Development of a data warehouse for analytics and management reporting purposes;
+Development, implementation and support of automated data storefronts in the data warehouse for the purposes of analytics and management reporting;
+Data quality control in the data warehouse;
+Ensuring data integration into the data warehouse;
+Interaction with other structural divisions of the Company on the development of the data warehouse;
+Advising users and customers of management reporting and analytics
+on data warehouse issues;
+Processing of ad-hoc requests within the framework of the Management functionality;
+Other functions, the performance of which is established by applicable law and/or internal documents;
+Identifying operational risks in the Company's activities and informing its immediate supervisor and risk management unit about them in accordance with the procedure established by internal documents;
+Декабрь 2021 — Июнь 2024
+2 года 7 месяцев
+Kaspi Bank, АО
+
+Алматы, www.kaspibank.kz
+
+Финансовый сектор... Показать еще
+Senior Data Engineer
+Management of Online Events
+
+Development and Administration of Online Processes: Develop and implement processes for sending push notifications aimed at product evaluation, as well as marketing communications.
+
+Push Notification Strategy: Establish and manage strategies for effective push notifications to enhance user engagement and gather valuable feedback on products.
+Май 2021 — Декабрь 2021
+8 месяцев
+Банк ЦентрКредит, АО
+
+Алматы, centercredit.kz
+
+Финансовый сектор... Показать еще
+Риск-аналитик
+Implementation, development and improvement of an automatic decision-making system.
+Automation and optimization of the lending process.
+Adding new products to the system within the product group of loans.
+Monitoring the functioning of the lending strategy within the product group of loans.
+Development and development of new lending strategies within the product group of loans
+Monitoring the system of interaction of various IT applications involved in the loan application review process.
+Work at the Connectivity and Enrichment Design Studio (SDS), Strategy Management Studio v.2.10 (SDS)
+Январь 2020 — Май 2021
+1 год 5 месяцев
+Хоум Кредит Банк, АО
+
+Казахстан, www.homecredit.kz
+
+Финансовый сектор... Показать еще
+Риск-аналитик
+Administration, Development, and Enhancement of Automated Decision-Making Systems
+
+Automation and Optimization of the Lending Process: Streamlined procedures to improve efficiency and effectiveness in credit approval.
+
+Integration of New Products and Scenarios: Successfully incorporated new offerings within the credit product group to expand service capabilities.
+
+Monitoring of Credit Strategy Performance: Conducted ongoing assessments of the credit strategy to ensure optimal functioning and alignment with business objectives.
+
+Development of New Lending Strategies: Innovated and refined strategies to enhance lending operations and improve customer outcomes.
+
+Oversight of IT Application Integration: Monitored the interaction between various IT applications involved in the credit application review process to ensure seamless functionality.
+Декабрь 2018 — Январь 2020
+1 год 2 месяца
+Tesla Education
+Тренер-преподаватель
+подготовка детей в специализированные школы;
+заполнение данные клиентов в базу, обработка и рассылка результатов
+Август 2018 — Декабрь 2018
+5 месяцев
+Asia InterCommunications, ТОО
+
+Алматы, www.aic.kz
+
+Информационные технологии, системная интеграция, интернет... Показать еще
+Личный помощник главного бухгалтера
+Обязанности: поиск тендеров, создание сайтов на платформе tilda, а также их продвижение(google adwords, yandex direct)
+Достижения: 3 рабочих сайта(на платформе tilda)
+Навыки
+Уровни владения навыками
+Продвинутый уровень
+Groovy
+Blaze
+ETL
+Data Analysis
+SQL
+DWH
+PostgreSQL
+Kafka
+Git
+Airflow
+Работа с базами данных
+Python
+Базы данных
+Greenplum
+Высшее образование (Магистр)
+2022
+Высшее образование (Магистр)
+Международный университет информационных технологий, Алматы
+МКМ, Финансовая математика
+2020
+Высшее образование (Магистр)
+Международный университет информационных технологий, Алматы
+Информационные технологии, Математическое и компьютерное моделирование
+Знание языков
+Казахский — Родной
+
+Английский — C1 — Продвинутый
+
+Русский — C2 — В совершенстве
+
+Тесты, экзамены
+2020
+KASPI LAB
+Kaspi Bank, Data Science
+2019
+Tesla Education
+Tesla Education, Высшая математика
+2016
+KnewIT
+KnewIT, HTML, CSS, JS
+Гражданство, время в пути до работы
+
+Гражданство: Казахстан
+
+Разрешение на работу: Казахстан
+
+Желательное время в пути до работы: Не имеет значения

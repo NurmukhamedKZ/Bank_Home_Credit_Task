@@ -1,0 +1,61 @@
+Candidate
+
+Male, 25 years, born on 30 June 2000
+Considers offers
+
+Almaty, willing to relocate (Astana), not prepared for business trips
+
+Тестировщик
+Specializations:
+
+    Tester
+
+Employment type: full time, part time, project work
+Work experience 1 year 4 months
+November 2024 — currently
+1 year 4 months
+Гедеон Рихтер, ОАО (Венгрия) г. Москва
+
+www.g-richter.ru
+
+Medicine, Pharmaceuticals, Pharmacies... Show more
+Qa engineer
+-Ручное тестирование (functional, regression, UI/UX, exploratory)
+-Составление чек-листов, тест-кейсов, баг-репортов
+-Работа с баг-трекингами: Jira
+-Работа с документацией: TestRail, Confluence
+-Postman, Swagger (тестирование API)
+JSON, REST, HTTP
+-SQL (базовые SELECT-запросы)
+-Основы Git
+Driving experience
+Driver's license category B
+About me
+Стремлюсь развиваться в тестировании мобильных и web-приложений. Интересуюсь качеством продукта, умею работать с баг-трекингом, писать тест-кейсы и разбираться в бизнес-логике.
+Higher education (master)
+2023
+Higher education (master)
+Алматинский университет энергетики и связи, Алматы
+Информационные технологии , Информатика и вычислительная техника (магистр техники и технологии)
+Languages
+Kazakh — Native
+
+English — B1 — Intermediate
+
+Russian — C2 — Proficiency
+
+Professional development, courses
+2023
+АУЭС
+АУЭС, Магистратура
+Tests, examinations
+2018
+Demvy Academy
+Demvy Academy, Web paзработчик
+Citizenship, travel time to work
+
+Citizenship: Kazakhstan
+
+Permission to work: Kazakhstan
+
+Desired travel time to work: Up to one hour
