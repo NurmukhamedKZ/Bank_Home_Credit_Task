@@ -1,0 +1,312 @@
+[
+  {
+    "vacancy": "QA_engineer_1",
+    "retrieved": [
+      [
+        "Backend_1",
+        365.0,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_3",
+        37.0,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_2",
+        33.0,
+        "Әшекей Нұрмұхамед"
+      ],
+      [
+        "Frontend_4",
+        30.0,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_1",
+        30.0,
+        "Candidate"
+      ]
+    ],
+    "relevant": [
+      "QA_engineer_4",
+      "QA_engineer_1",
+      "QA_engineer_2",
+      "QA_engineer_3",
+      "QA_engineer_5"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.0,
+      "precision@5": 0.0,
+      "precision@8": 0.125,
+      "precision@10": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@8": 0.2,
+      "recall@10": 0.4,
+      "f1@1": 0.0,
+      "f1@3": 0.0,
+      "f1@5": 0.0,
+      "f1@8": 0.15384615384615385,
+      "f1@10": 0.26666666666666666,
+      "map": 0.07777777777777777,
+      "mrr": 0.16666666666666666,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@8": 0.1208113026994942,
+      "ndcg@10": 0.22290869782240583
+    }
+  },
+  {
+    "vacancy": "Frontend_1",
+    "retrieved": [
+      [
+        "Backend_1",
+        167.0,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_5",
+        32.0,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_1",
+        25.0,
+        "Candidate"
+      ],
+      [
+        "QA_engineer_4",
+        25.0,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_3",
+        22.0,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Frontend_4",
+      "Frontend_1",
+      "Frontend_3",
+      "Frontend_5",
+      "Frontend_2"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.0,
+      "precision@5": 0.0,
+      "precision@8": 0.25,
+      "precision@10": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@8": 0.4,
+      "recall@10": 0.4,
+      "f1@1": 0.0,
+      "f1@3": 0.0,
+      "f1@5": 0.0,
+      "f1@8": 0.3076923076923077,
+      "f1@10": 0.26666666666666666,
+      "map": 0.09047619047619046,
+      "mrr": 0.16666666666666666,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@8": 0.23386470445736623,
+      "ndcg@10": 0.23386470445736623
+    }
+  },
+  {
+    "vacancy": "AI_engineer_1",
+    "retrieved": [
+      [
+        "Backend_1",
+        357.0,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_5",
+        86.0,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_1",
+        60.0,
+        "Candidate"
+      ],
+      [
+        "Data_engineer_5",
+        53.0,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_3",
+        48.0,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "AI_engineer_4",
+      "AI_engineer_2",
+      "AI_engineer_5",
+      "AI_engineer_3",
+      "AI_engineer_1"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.2,
+      "precision@8": 0.25,
+      "precision@10": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.2,
+      "recall@5": 0.2,
+      "recall@8": 0.4,
+      "recall@10": 0.4,
+      "f1@1": 0.0,
+      "f1@3": 0.25,
+      "f1@5": 0.20000000000000004,
+      "f1@8": 0.3076923076923077,
+      "f1@10": 0.26666666666666666,
+      "map": 0.12380952380952381,
+      "mrr": 0.3333333333333333,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.23463936301137822,
+      "ndcg@5": 0.16958010263680806,
+      "ndcg@8": 0.2826335043946801,
+      "ndcg@10": 0.2826335043946801
+    }
+  },
+  {
+    "vacancy": "Data_engineer_1",
+    "retrieved": [
+      [
+        "Data_engineer_5",
+        1005.0,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_1",
+        243.0,
+        "Candidate"
+      ],
+      [
+        "QA_engineer_5",
+        236.0,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_1",
+        135.0,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_4",
+        135.0,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Data_engineer_2",
+      "Data_engineer_5",
+      "Data_engineer_4",
+      "Data_engineer_3",
+      "Data_engineer_1"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.4,
+      "precision@8": 0.25,
+      "precision@10": 0.3,
+      "recall@1": 0.2,
+      "recall@3": 0.2,
+      "recall@5": 0.4,
+      "recall@8": 0.4,
+      "recall@10": 0.6,
+      "f1@1": 0.33333333333333337,
+      "f1@3": 0.25,
+      "f1@5": 0.4000000000000001,
+      "f1@8": 0.3076923076923077,
+      "f1@10": 0.4,
+      "map": 0.36666666666666664,
+      "mrr": 1.0,
+      "ndcg@1": 1.0,
+      "ndcg@3": 0.46927872602275644,
+      "ndcg@5": 0.48522855511632257,
+      "ndcg@8": 0.48522855511632257,
+      "ndcg@10": 0.5873259502392343
+    }
+  },
+  {
+    "vacancy": "Backend_1",
+    "retrieved": [
+      [
+        "Backend_1",
+        483.0,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_3",
+        50.0,
+        "Кандидат"
+      ],
+      [
+        "Frontend_2",
+        37.0,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_4",
+        32.0,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_1",
+        26.0,
+        "Candidate"
+      ]
+    ],
+    "relevant": [
+      "Backend_2",
+      "Backend_4",
+      "Backend_1",
+      "Backend_5",
+      "Backend_3"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.2,
+      "precision@8": 0.125,
+      "precision@10": 0.1,
+      "recall@1": 0.2,
+      "recall@3": 0.2,
+      "recall@5": 0.2,
+      "recall@8": 0.2,
+      "recall@10": 0.2,
+      "f1@1": 0.33333333333333337,
+      "f1@3": 0.25,
+      "f1@5": 0.20000000000000004,
+      "f1@8": 0.15384615384615385,
+      "f1@10": 0.13333333333333333,
+      "map": 0.2,
+      "mrr": 1.0,
+      "ndcg@1": 1.0,
+      "ndcg@3": 0.46927872602275644,
+      "ndcg@5": 0.3391602052736161,
+      "ndcg@8": 0.3391602052736161,
+      "ndcg@10": 0.3391602052736161
+    }
+  }
+]

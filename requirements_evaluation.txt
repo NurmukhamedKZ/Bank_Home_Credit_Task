@@ -7,11 +7,15 @@ numpy>=1.24.0
 # Статистический анализ
 scipy>=1.10.0
 
+# Sparse embeddings
+scikit-learn>=1.3.0  # Для TF-IDF
+rank-bm25>=0.2.2     # Для BM25
+
 # Визуализация (опционально, для графиков)
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
 # Уже установлены из основных requirements:
-# - scikit-learn (для TF-IDF)
 # - langchain, langchain-openai (для парсинга)
 # - qdrant-client (для поиска)
+# - langchain-voyageai (для dense embeddings)

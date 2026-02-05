@@ -1,0 +1,100 @@
+{
+  "full_name": "Әшекей Нұрмұхамед",
+  "email": "ashekeinureke@gmail.com",
+  "phone": "+7 (701) 1187021",
+  "links": [
+    "https://github.com/NurmukhamedKZ",
+    "https://www.linkedin.com/in/nurmukhamed-ashekey-3031a3369/",
+    "@nureke3445"
+  ],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "Я AI инженер с фокусом на разработку масштабируемых RAG систем и автономных AI агентов которые решают реальные задачи бизнеса.",
+  "total_experience_months": 16,
+  "work_history": [
+    {
+      "role": "AI Engineer",
+      "company": "Slideble (Slideshow generator)",
+      "start_date": "2025-09",
+      "end_date": "Present",
+      "description": "Сократил операционные расходы на генерацию слайд-шоу за счет оптимизации потребления токенов LLM на 30% через внедрение стратегий кэширования и продвинутого промпт-инжиниринга. Ускорил процесс отладки и итерации промптов на 40% и значительно повысил надежность системы инициировав и интегрировав пайплайнo bservability на базе LangSmith. Исключил 100% ошибок рендеринга сцен вызванных некорректными ответами моделей спроектировав архитектуру пайплайна структурированного вывода данных с жестким соблюдением JSON схем. Повысил фактологическую точность генерируемого контента проведя сравнительный анализ поисковых инструментов и интегрировав Tavily API для извлечения внешнего контекста.",
+      "technologies": [
+        "Python",
+        "OpenAI API",
+        "LangChain",
+        "LangGraph",
+        "LangSmith",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "Tavily API",
+        "FastAPI"
+      ]
+    },
+    {
+      "role": "AI Engineer",
+      "company": "JauapAI (Educational RAG Platform)",
+      "start_date": "2024-11",
+      "end_date": "2025-09",
+      "description": "Увеличил показатель удержания пользователей снизив время получения первого токена TTFT на 62% с 40 до 15 секунд через внедрение асинхронной обработки и тюнинг векторного поиска. Решил проблему точности поиска сложной академической терминологии внедрив Hybrid Search на базе Dense и Sparse эмбеддингов что позволило устранить критические галлюцинации модели. Автоматизировал оцифровку сложных учебных материалов с формулами и таблицами разработав ETL пайплайн с использованием VLM воркфлоу и стратегий Semantic Chunking. Обеспечил высокую доступность системы и поддержку конкурентных сессий спроектировав масштабируемый бэкенд на FastAPI и Docker.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "LangChain",
+        "Qdrant (VectorDB)",
+        "Redis",
+        "PostgreSQL",
+        "OpenAI API",
+        "Telegram API",
+        "Hybrid Search (BGE-M3, Gemini-001, Voyage-4)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Казахстанско-Британский технический университет, Алматы",
+      "degree": "Бакалавр",
+      "year": "2025"
+    },
+    {
+      "institution": "Школа Информационных Технологий и Инженерии, Информационные системы",
+      "degree": "Бакалавр",
+      "year": ""
+    }
+  ],
+  "skills": [
+    "Python",
+    "SQL",
+    "PostgreSQL",
+    "Git",
+    "MySQL",
+    "langchain",
+    "NLP",
+    "LLM",
+    "PyTorch",
+    "pandas",
+    "Scikit-learn",
+    "Docker",
+    "FastAPI",
+    "RAG",
+    "ML",
+    "MLflow",
+    "AI agent",
+    "Matplotlib",
+    "Seaborn",
+    "AI",
+    "TensorFlow",
+    "API",
+    "Deep Learning",
+    "AI engineer",
+    "ChatGPT",
+    "PROMT",
+    "Numpy"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — C1 — Продвинутый",
+    "Русский — C2 — В совершенстве"
+  ]
+}

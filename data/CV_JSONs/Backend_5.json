@@ -1,0 +1,90 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [
+    "https://github.com/Marlen-Shifu/"
+  ],
+  "location": [
+    "Алматы",
+    "Астана"
+  ],
+  "summary": "Разработчик на Python/Django. Программирую около 5 лет и успел написать много проектов с нуля и поддержки и доработки. Имел опыт работы с Фронтенд разработчиками и Мобильными разработчиками.",
+  "total_experience_months": 47,
+  "work_history": [
+    {
+      "role": "Backend Developer",
+      "company": "oitech",
+      "start_date": "2023-06",
+      "end_date": "Present",
+      "description": "Backend-разработчик на многих проектах.",
+      "technologies": [
+        "Python",
+        "Django Framework",
+        "Celery",
+        "Redis",
+        "Docker",
+        "Flask",
+        "JavaScript",
+        "Nginx",
+        "Linux",
+        "Node.js",
+        "Aiogram",
+        "Asyncio",
+        "aiohttp"
+      ]
+    },
+    {
+      "role": "Backend Developer",
+      "company": "A&A Technologies",
+      "start_date": "2022-04",
+      "end_date": "2023-09",
+      "description": "Разработка Backend интернет магазина.",
+      "technologies": [
+        "Python",
+        "Django Framework",
+        "Celery",
+        "Redis",
+        "Docker",
+        "Flask",
+        "JavaScript",
+        "Nginx",
+        "Linux",
+        "Node.js",
+        "Aiogram",
+        "Asyncio",
+        "aiohttp"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "SDU University",
+      "degree": "Engineering and Natural Sciences, Information Systems",
+      "year": "2025"
+    },
+    {
+      "institution": "Жамбылский Инновационный Высший Колледж(раньше Казахско-Турецкий колледж)",
+      "degree": "Информационные технологии, Техник",
+      "year": "2022"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Django Framework",
+    "Celery",
+    "Redis",
+    "Docker",
+    "Flask",
+    "JavaScript",
+    "Nginx",
+    "Linux",
+    "Node.js",
+    "Aiogram",
+    "Asyncio",
+    "aiohttp"
+  ],
+  "languages": [
+    "Казахский — Родной"
+  ]
+}

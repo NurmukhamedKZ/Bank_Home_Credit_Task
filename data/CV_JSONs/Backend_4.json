@@ -1,0 +1,70 @@
+{
+  "full_name": "Кандидат",
+  "email": "shestovskihna@gmail.com",
+  "phone": "+77077292701",
+  "links": [
+    "https://www.teleformis.ru/",
+    "@NikolaiShestovskikh"
+  ],
+  "location": [
+    "Актау",
+    "Алматы"
+  ],
+  "summary": "Привет) Я Backend-разработчик на Python. Работал с djangorestframework, Celery, RabbitMQ, PostgreSQL, Docker, Gitlab, Gitlab CI, Sentry. Ищу работу в команде с современным стеком, где можно будет расти и развиваться как специалист. надеюсь, сработаемся)",
+  "total_experience_months": 39,
+  "work_history": [
+    {
+      "role": "Python backend developer",
+      "company": "Телеформ ИС, ООО",
+      "start_date": "2022-12",
+      "end_date": "Present",
+      "description": "Проектировал и разрабатывал отказоустойчивые REST API на Django REST Framework. Реализовал гибкие механизмы импорта и экспорта данных, сократив рутинные операции пользователей. Создал кастомный планировщик фоновых задач с настройкой расписаний через UI без участия разработчиков, что ускорило работу внутренних команд. Поддерживал проект на FastAPI / SQLAlchemy. Покрыл один из проектов unit- и интеграционными тестами, довёл покрытие до 80%. Поддерживал инфраструктуру: Docker-окружения, GitLab CI/CD, мониторинг через Sentry, участвовал в оптимизации процессов доставки. Проводил code review, помогал улучшать архитектуру и стандарты разработки в команде.",
+      "technologies": [
+        "Python 3.11",
+        "Django",
+        "Django REST Framework",
+        "FastAPI",
+        "SQLAlchemy",
+        "PostgreSQL",
+        "Celery",
+        "Docker",
+        "docker-compose",
+        "Sentry",
+        "GitLab",
+        "GitLab CI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Московский государственный технический университет им. Н.Э. Баумана, Москва",
+      "degree": "Бакалавр",
+      "year": "2021"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Django Rest Framework",
+    "Django",
+    "PostgreSQL",
+    "SQL",
+    "Git",
+    "Linux",
+    "REST API",
+    "ООП",
+    "Docker",
+    "HTTP",
+    "asyncio",
+    "FastAPI",
+    "GitLab CI",
+    "Gitlab",
+    "Celery",
+    "RabbitMQ",
+    "Kubernetes",
+    "SQLAlchemy"
+  ],
+  "languages": [
+    "Русский — Родной",
+    "Английский — B1 — Средний"
+  ]
+}

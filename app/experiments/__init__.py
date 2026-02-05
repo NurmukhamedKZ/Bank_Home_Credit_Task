@@ -1,7 +1,7 @@
 """
-Модуль для экспериментов с различными конфигурациями поиска CV
+Модуль экспериментов - тестирование различных конфигураций поиска.
 """
 
-from .experiment_runner import ExperimentRunner, ExperimentConfig
+from app.experiments.experiment_runner import ExperimentConfig, ExperimentRunner
 
-__all__ = ['ExperimentRunner', 'ExperimentConfig']
+__all__ = ["ExperimentConfig", "ExperimentRunner"]

@@ -1,0 +1,87 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "As a dedicated Data Science specialist with good experience in Natural Language Processing (NLP), I bring a strong foundation in data analysis, Python, and SQL. My deep engagement with complex datasets and machine learning has enabled me to deliver actionable insights and significantly contribute to the success of my projects. I am passionate about exploring the nuances of language data and continuously enhance my technical skills through targeted learning and practical application.",
+  "total_experience_months": 59,
+  "work_history": [
+    {
+      "role": "Data Scientist",
+      "company": "Freedom Finance",
+      "start_date": "2023-11",
+      "end_date": "Present",
+      "description": "Development of classification models and recommendation systems using both classical and advanced machine learning methods, increasing prediction accuracy and user engagement. Using large language models to improve project results, paying special attention to customization and efficiency in natural language processing tasks. Exploring new trends in NLP and the application of large-scale models, making sure that the latest innovations and methodologies are used in projects.",
+      "technologies": [
+        "Machine Learning",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "role": "Data science/ML Engineer",
+      "company": "Kaspi Bank, АО",
+      "start_date": "2022-05",
+      "end_date": "2023-11",
+      "description": "Creation and implementation of advanced machine learning models for text classification and clustering, including using large models. Regular updates, bug fixes and adding new features to the chatbot model, increasing its efficiency and functionality. Collecting and processing incoming calls, uploading/uploading data from a database, analyzing large amounts of data in SAS to identify cost savings opportunities for the bank. Hypothesis testing and data analysis, including analysis of the results of A/B testing on calls, to improve business processes. Development and planning of visualization of various business metrics for better understanding and decision-making. The application of advanced natural language processing techniques to improve internal processes and customer experience.",
+      "technologies": [
+        "Machine Learning",
+        "SAS",
+        "A/B Testing",
+        "NLP",
+        "Data Analysis"
+      ]
+    },
+    {
+      "role": "Analyst",
+      "company": "NeoLife",
+      "start_date": "2021-06",
+      "end_date": "2022-05",
+      "description": "Analysis of KPI, salary and motivation indicators. Development of a sales evaluation system for the pharmaceutical market with 'Viostis'. Presentation of quarterly reports with visualization of dashboards. Compilation of a monthly sales monitoring file with a Customer Relationship Management System 'CRM'. Control and Analysis of financial risks. Optimization of processes and structures.",
+      "technologies": []
+    },
+    {
+      "role": "Intern",
+      "company": "Spey Kazakhstan",
+      "start_date": "2021-04",
+      "end_date": "2021-06",
+      "description": "Data collection for analysis. Reporting on the employee attendance control system. Data reconciliation and cleaning.",
+      "technologies": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "International Information Technology University",
+      "degree": "Information Technology, Mathematical and Computer Modelling",
+      "year": "2022"
+    }
+  ],
+  "skills": [
+    "Docker",
+    "Python",
+    "SAS",
+    "Аналитическое мышление",
+    "MS SQL",
+    "Работа с большим объемом информации",
+    "pandas",
+    "MS PowerPoint",
+    "Математическая статистика",
+    "MS Excel",
+    "Работа с базами данных",
+    "Финансовая отчетность",
+    "Power BI",
+    "Анализ данных",
+    "A/B тесты",
+    "Git",
+    "Google Analytics",
+    "Machine Learning",
+    "NLP"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — B2 — Средне-продвинутый",
+    "Русский — C2 — В совершенстве"
+  ]
+}

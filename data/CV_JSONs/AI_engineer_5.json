@@ -1,0 +1,109 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "Machine learning engineer with experience in AI technology for speech recognition, audio processing, and conversational AI applications.",
+  "total_experience_months": 57,
+  "work_history": [
+    {
+      "role": "Machine learning engineer",
+      "company": "Kaspi Bank, АО",
+      "start_date": "2024-04",
+      "end_date": "Present",
+      "description": "Senior ML engineer. Developed AI technology for speech recognition and interpretation of meaning and its components: Artificial speech recognition ASR, text-to-speech conversion, NLP for processing natural language. Trained models for conversational AI applications for telemarketing, collection and HR departments.",
+      "technologies": [
+        "None"
+      ]
+    },
+    {
+      "role": "Machine learning engineer",
+      "company": "Adoriasoft Watermaked.io",
+      "start_date": "2022-01",
+      "end_date": "2024-04",
+      "description": "Trained deep audio model (cnn). Audio, Image, Video watermarking. Preprocessing, postprocessing audio. Research in deep audio processing. Developed CNNs, preprocessing and postprocessing algorithms for complex number.",
+      "technologies": [
+        "python",
+        "PyTorch",
+        "deep learning",
+        "audio processing",
+        "cnn",
+        "complex analysis"
+      ]
+    },
+    {
+      "role": "Ведущий эксперт департамента разработки и развития роботизаций",
+      "company": "Евразийский банк, АО",
+      "start_date": "2021-09",
+      "end_date": "2022-02",
+      "description": "Studied AI technology for speech recognition and interpretation of meaning and its components: Artificial speech recognition ASR, text-to-speech conversion, NLU for natural language understanding and NLP for processing natural language. Built conversational AI applications for telemarketing, collection and HR departments. Analysis of the texts of the 'client-operator' and 'client-bot' dialogs: highlighting the structure and building the logic. Development, design, testing of bots on a specialized platform. Support and refinement of existing bots. Interaction with IT-specialists on the technical capabilities of the bot and work automation. Interaction with the customer of the project on the development of the bot. Reporting on the results of customer calls in MS Excel. Working with data in MSSQL.",
+      "technologies": [
+        "MySQL",
+        "PostgreSQL",
+        "NLP",
+        "NLU",
+        "ASR",
+        "IVR",
+        "Анализ данных",
+        "SQL",
+        "Microsoft Excel",
+        "Visio"
+      ]
+    },
+    {
+      "role": "Сотрудник по договору для построения математического модели для определения мошенничества",
+      "company": "Банк ЦентрКредит, АО",
+      "start_date": "2020-11",
+      "end_date": "2021-01",
+      "description": "Built a mathematical model for fraud detection, worked with PL SQL, SAS miner, power bi.",
+      "technologies": [
+        "PL SQL",
+        "SAS miner",
+        "power bi"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Satbayev University",
+      "degree": "Бакалавр in Machine learning and Data science",
+      "year": "2021"
+    },
+    {
+      "institution": "International Information Technology University",
+      "degree": "Бакалавр in IT, Mathematical and computer modelling",
+      "year": "2019"
+    }
+  ],
+  "skills": [
+    "python",
+    "PyTorch",
+    "deep learning",
+    "audio processing",
+    "cnn",
+    "complex analysis",
+    "Git",
+    "computer vision",
+    "natural language processing",
+    "Mathematical Analysis",
+    "Mathematical Modeling",
+    "Mathematical Statistics",
+    "Data Analysis",
+    "Pandas",
+    "Data Science",
+    "Asyncio",
+    "Aiogram",
+    "Redis",
+    "MS SQL",
+    "Asr",
+    "Tts"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — C1 — Продвинутый",
+    "Русский — C2 — В совершенстве"
+  ]
+}

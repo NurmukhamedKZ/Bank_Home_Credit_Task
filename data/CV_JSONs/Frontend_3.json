@@ -1,0 +1,95 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [
+    "https://github.com/Indira2406"
+  ],
+  "location": [
+    "Алматы, м. Москва"
+  ],
+  "summary": "Frontend-разработчик с опытом работы более 6 лет в разработке и оптимизации веб-приложений, включая создание адаптивных интерфейсов и UI-компонентов.",
+  "total_experience_months": 74,
+  "work_history": [
+    {
+      "role": "Frontend-разработчик",
+      "company": "Интернет-компания PS",
+      "start_date": "2021-02",
+      "end_date": "Present",
+      "description": "Полная ответственность за интерфейсы, включая разработку, поддержку и оптимизацию веб-приложений. Реализация интерактивных, отзывчивых и адаптивных страниц с учетом кроссбраузерной совместимости.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GitHub",
+        "Figma",
+        "Storybook",
+        "React",
+        "TypeScript",
+        "Zustand"
+      ]
+    },
+    {
+      "role": "Верстальщик",
+      "company": "Freelance",
+      "start_date": "2020-01",
+      "end_date": "2021-02",
+      "description": "Работа с веб-языками и графическими редакторами, создание адаптивных версток и email-шаблонов.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GitHub",
+        "Figma",
+        "Photoshop",
+        "Bootstrap",
+        "Sass",
+        "Gulp",
+        "jQuery",
+        "HTML5",
+        "CSS3"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Московский энергетический институт (Национальный исследовательский университет)",
+      "degree": "Бакалавр",
+      "year": "2013"
+    },
+    {
+      "institution": "Алматинский университет энергетики и связи",
+      "degree": "Бакалавр",
+      "year": "2013"
+    }
+  ],
+  "skills": [
+    "CSS",
+    "HTML",
+    "Bootstrap",
+    "Sass",
+    "Адаптивная верстка",
+    "Git",
+    "Gulp",
+    "БЭМ методология",
+    "MS Excel",
+    "JavaScript",
+    "jQuery",
+    "HTML5",
+    "CSS3",
+    "React",
+    "TypeScript",
+    "Storybook",
+    "Zustand",
+    "Gitlab",
+    "Figma",
+    "ANT"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — B2 — Средне-продвинутый",
+    "Русский — C2 — В совершенстве",
+    "Турецкий — B1 — Средний",
+    "Французский — A1 — Начальный"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "full_name": "Candidate",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Almaty"
+  ],
+  "summary": "I’m a QA Engineer with over 2 years of experience in manual web testing. I focus on making sure websites work well and meet user needs by testing their functionality and performance. I have a good understanding of HTML, CSS, SQL, and tools like Git, DevTools, and Postman. Right now, I’m learning automation testing with Selenium, Pytest.",
+  "total_experience_months": 40,
+  "work_history": [
+    {
+      "role": "QA Engineer",
+      "company": "Kaspi Bank, АО",
+      "start_date": "2025-01",
+      "end_date": "Present",
+      "description": "Functional testing, Positive testing, Negative testing, Writing checklists, test cases, bug reports on Jira, Using Devtools, Charles Proxy, Postman.",
+      "technologies": [
+        "Jira",
+        "Devtools",
+        "Charles Proxy",
+        "Postman"
+      ]
+    },
+    {
+      "role": "QA Engineer",
+      "company": "1FIT",
+      "start_date": "2023-06",
+      "end_date": "2024-12",
+      "description": "Testing frontend, backend, mobile, Functional testing, Regression testing, Localization testing, Smoke testing, Writing checklists, test cases, bug reports on Test Rails + Jira, using devtools.",
+      "technologies": [
+        "Test Rails",
+        "Jira",
+        "Devtools"
+      ]
+    },
+    {
+      "role": "QA Engineer",
+      "company": "OKauto",
+      "start_date": "2022-09",
+      "end_date": "2023-03",
+      "description": "Manual functional testing of the application, Manual functional testing of web applications, Manual functional testing of WhatsApp bot, Manual regression testing of WhatsApp bot, Participation in the development of WhatsApp bot, Using Ionic Framework, React, POSTMAN, GitLab.",
+      "technologies": [
+        "Ionic Framework",
+        "React",
+        "Postman",
+        "GitLab",
+        "PWA",
+        "Tailwind"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Suleyman Demirel University, Almaty",
+      "degree": "Master in Engineering, Computer Science",
+      "year": "2024"
+    },
+    {
+      "institution": "Suleyman Demirel University, Almaty",
+      "degree": "Master in Engineering, Computer Technology and Software",
+      "year": "2022"
+    }
+  ],
+  "skills": [
+    "HTML5",
+    "CSS",
+    "Adaptability",
+    "MS SQL",
+    "Git",
+    "Postman",
+    "API",
+    "Pytest",
+    "Selenium",
+    "TestRail",
+    "Check-list",
+    "Manual testing",
+    "Teamplayer"
+  ],
+  "languages": [
+    "Kazakh — Native",
+    "English — B1 — Intermediate",
+    "Russian — C2 — Proficiency",
+    "Turkish — B1 — Intermediate"
+  ]
+}

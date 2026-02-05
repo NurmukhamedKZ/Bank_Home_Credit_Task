@@ -1,0 +1,149 @@
+{
+  "full_name": "Candidate",
+  "email": null,
+  "phone": null,
+  "links": [
+    "https://github.com/asainov1"
+  ],
+  "location": [
+    "Almaty"
+  ],
+  "summary": "Versatile individual with experience collecting, transforming and organizing data for analysis to help make informed decisions. Excellent understanding and proficiency of platforms for effective data analyses, including SQL, spreadsheets, Tableau and R, Python. Strong communication, organizational, and analytical skills. Recently completed the Google Data Analytics Certificate – a rigorous, hands-on program that covers the entire scope of the data analysis process.",
+  "total_experience_months": 72,
+  "work_history": [
+    {
+      "role": "AI Engineer",
+      "company": "Guardin AI",
+      "start_date": "2025-06",
+      "end_date": "Present",
+      "description": "Led development of a RAG-based 'About Us' and HR knowledge agent for UNC Health, using Milvus, Gemini, and PostgreSQL to deliver structured answers from unstructured clinical content. Led the design of an Insurance Eligibility Agent integrating clearinghouse APIs (Ideon, Optum), automating coverage verification, copay extraction, and structured EB benefit mapping. Contributed to the voice-based AI agent (Gemini Live + Telnyx) with real-time call control, voicemail detection, and multilingual support. Helped build FastAPI microservices for eligibility workflows, LLM inference orchestration, logging, and agent conversation tracking. Fine-tuned 10+ LLMs (e.g., Qwen 14B/7B, LLaMA 2-8B, Mixtral 8x7B) for content moderation on multi-class datasets using AWS S3 and Nebius; led junior contributors and optimized cost/performance. Built and deployed LLM inference APIs with FastAPI and Triton Inference Server.",
+      "technologies": [
+        "Milvus",
+        "Gemini",
+        "PostgreSQL",
+        "Ideon",
+        "Optum",
+        "FastAPI",
+        "AWS S3",
+        "Nebius",
+        "Triton Inference Server"
+      ]
+    },
+    {
+      "role": "ML Engineer (Tech Lead) - RecSys",
+      "company": "Halyk Global Markets",
+      "start_date": "2025-06",
+      "end_date": "2025-09",
+      "description": "Led design of a hybrid recommendation engine combining ALS, ANN search, and Transformer-based ranking for a marketplace with 3.5M+ SKUs and 800K+ daily user events. Oversaw migration of core ML pipelines to scalable GPU/ClickHouse infrastructure.",
+      "technologies": [
+        "ALS",
+        "ANN",
+        "Transformer",
+        "ClickHouse"
+      ]
+    },
+    {
+      "role": "Middle Machine Learning Engineer",
+      "company": "Kaspi Bank, АО",
+      "start_date": "2024-02",
+      "end_date": "2025-05",
+      "description": "Delivered production-ready NLP models (BERT) for large-scale product matching (text & photo), leveraging multiprocessing to scale training and inference across millions products. Optimized memory and runtime in matching pipelines by implementing custom Polars data processing, reducing overhead and improving throughput. Automated product attribute extraction & filling using LangChain-based pipelines, integrating LLMs to enrich catalog data and improve search/recommendation quality.",
+      "technologies": [
+        "BERT",
+        "Polars",
+        "LangChain"
+      ]
+    },
+    {
+      "role": "Senior Associate",
+      "company": "PwC Luxembourg",
+      "start_date": "2020-12",
+      "end_date": "2024-03",
+      "description": "Quantitatively valued Private equity funds comparing with peer groups, achieved tight deadlines. Assisted in validation of regression models, predicting risk metric outcomes with high precision. Analyzed financial data, identifying patterns, and drawing insights from complex datasets and visualized with Tableau. Experience in data warehouse solutions, and ETL, and using databases in a business environment with large-scale, complex datasets through Alteryx.",
+      "technologies": [
+        "Tableau",
+        "Alteryx"
+      ]
+    },
+    {
+      "role": "Data Scientist",
+      "company": "London Almaty Insurance Company",
+      "start_date": "2020-06",
+      "end_date": "2020-11",
+      "description": "Completed ad-hoc requests by using PostgreSQL that closed the needs of business users. Improved monitoring system of the company by creating automated dashboards using Qlik Sense. Investigated product metrics (LTV, CAC, CR, RR) and made improvements to the marketing analytics. Helped in finding more insights by Web scraping and organising the data using Python.",
+      "technologies": [
+        "PostgreSQL",
+        "Qlik Sense",
+        "Python"
+      ]
+    },
+    {
+      "role": "Data Scientist | Machine Learning Engineer",
+      "company": "Корпоративный фонд Международный технопарк IT-стартапов «Astana Hub»",
+      "start_date": "2019-06",
+      "end_date": "2019-08",
+      "description": "Used machine learning algorithms to implement project oriented on identification of criminal areas in Kazakhstan with an assistance of General Prosecutor's Office of the Republic of Kazakhstan. Analysed the sentiment of comments on social media using ML algorithms. Used Python libraries: NumPy, MATPLOTLIB, Pandas, Scikit-learn.",
+      "technologies": [
+        "NumPy",
+        "MATPLOTLIB",
+        "Pandas",
+        "Scikit-learn"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "HSLU - ETH Zurich",
+      "degree": "Data Science (RecSys, Graph Neural Networks, LLMOps, Multi Agents systems)",
+      "year": "2026"
+    },
+    {
+      "institution": "Budapest University of Technology and Economics",
+      "degree": "MSc in Finance, Data analytics concentration",
+      "year": "2022"
+    },
+    {
+      "institution": "National Louis University, USA",
+      "degree": "Business analytics",
+      "year": "2020"
+    }
+  ],
+  "skills": [
+    "Machine Learning",
+    "AI",
+    "Data Science",
+    "Python",
+    "SQL",
+    "R",
+    "Tableau",
+    "Deep Learning",
+    "Big Data",
+    "NLP",
+    "BERT",
+    "FastAPI",
+    "PostgreSQL",
+    "AWS S3",
+    "Nebius",
+    "Triton Inference Server",
+    "Polars",
+    "LangChain",
+    "Qlik Sense",
+    "NumPy",
+    "MATPLOTLIB",
+    "Pandas",
+    "Scikit-learn",
+    "ETL",
+    "Data Analysis",
+    "Business Analysis",
+    "Project management",
+    "Regression Analysis",
+    "Mathematical Statistics",
+    "Classification",
+    "Risk metrics"
+  ],
+  "languages": [
+    "Russian — Native",
+    "English — C1 — Advanced",
+    "Polish — A2 — Elementary"
+  ]
+}

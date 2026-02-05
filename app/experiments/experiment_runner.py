@@ -1,6 +1,6 @@
 """
-Пайплайн для экспериментов с разными моделями, промптами и параметрами поиска
-Позволяет сравнивать разные конфигурации и находить оптимальные
+Пайплайн для экспериментов с разными моделями, промптами и параметрами поиска.
+Позволяет сравнивать разные конфигурации и находить оптимальные.
 """
 
 from pathlib import Path
@@ -8,13 +8,9 @@ from typing import Dict, List, Any, Optional
 import json
 import pandas as pd
 from datetime import datetime
-import sys
 
-# Добавляем путь к родительской папке
-sys.path.append(str(Path(__file__).parent.parent))
-
-from service.parse_pdf import CVParser
-from evaluate_search import CVSearchEvaluator
+from app.services.cv_parser import CVParser
+from app.evaluation.evaluator import CVSearchEvaluator
 
 
 class ExperimentConfig:
@@ -93,7 +89,6 @@ class ExperimentRunner:
         self.results_dir = self.experiments_dir / "results"
         self.configs_dir = self.experiments_dir / "configs"
         
-        # Создаем папки
         self.results_dir.mkdir(exist_ok=True, parents=True)
         self.configs_dir.mkdir(exist_ok=True, parents=True)
         
@@ -110,8 +105,8 @@ class ExperimentRunner:
         
         Args:
             config: Конфигурация эксперимента
-            cvs_to_process: Список CV для обработки (если None, используются все)
-            reuse_collection: Использовать существующую коллекцию (не обрабатывать CV заново)
+            cvs_to_process: Список CV для обработки
+            reuse_collection: Использовать существующую коллекцию
             
         Returns:
             Результаты эксперимента
@@ -123,7 +118,6 @@ class ExperimentRunner:
         
         timestamp = datetime.now()
         
-        # Инициализируем parser с конфигурацией
         print("⚙️  Инициализация CVParser...")
         parser = CVParser(
             collection_name=config.collection_name,
@@ -131,7 +125,7 @@ class ExperimentRunner:
             dense_output_dim=config.dense_output_dim
         )
         
-        # Применяем кастомный system prompt если указан
+        # Применяем кастомный system prompt
         if config.system_prompt:
             print("📝 Применение кастомного system prompt...")
             parser.system_prompt = config.system_prompt
@@ -152,15 +146,14 @@ class ExperimentRunner:
             lowercase=True,
             stop_words='english'
         )
-        parser._tfidf_fitted = False
-        parser._tfidf_corpus = []
+        parser._sparse_fitted = False
+        parser._sparse_corpus = []
         
         # Обрабатываем CV если нужно
         if not reuse_collection:
             print("\n📄 Обработка CV...")
             
             if cvs_to_process is None:
-                # Используем все CV из data/CVs
                 cvs_folder = Path("data/CVs")
                 cvs_to_process = list(cvs_folder.glob("*.pdf"))
             
@@ -175,13 +168,12 @@ class ExperimentRunner:
                     except Exception as e:
                         print(f"❌ {e}")
                 
-                # Переобучаем TF-IDF на всем корпусе
-                print("\n🔄 Переобучение TF-IDF на всем корпусе...")
-                parser.refit_tfidf()
+                print(f"\n🔄 Переобучение {parser.sparse_method.upper()}...")
+                parser.refit_sparse()
         else:
             print("ℹ️  Используется существующая коллекция")
         
-        # Оценка качества поиска
+        # Оценка качества
         print("\n📊 Оценка качества поиска...")
         evaluator = CVSearchEvaluator(parser)
         df, results = evaluator.evaluate_all(top_k=10)
@@ -198,10 +190,8 @@ class ExperimentRunner:
             'detailed_results': results
         }
         
-        # Сохраняем в файл
         result_file = self.results_dir / f"{config.name}_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
         
-        # Конвертируем sets в lists для JSON
         serializable_result = self._make_serializable(experiment_result)
         
         with open(result_file, 'w', encoding='utf-8') as f:
@@ -231,16 +221,7 @@ class ExperimentRunner:
         configs: List[ExperimentConfig],
         cvs_to_process: Optional[List[Path]] = None
     ) -> pd.DataFrame:
-        """
-        Запускает несколько экспериментов и сравнивает результаты
-        
-        Args:
-            configs: Список конфигураций для тестирования
-            cvs_to_process: CV для обработки
-            
-        Returns:
-            DataFrame со сравнением метрик
-        """
+        """Запускает несколько экспериментов и сравнивает результаты"""
         print(f"\n{'='*70}")
         print(f"🔬 ЗАПУСК {len(configs)} ЭКСПЕРИМЕНТОВ")
         print(f"{'='*70}\n")
@@ -254,10 +235,9 @@ class ExperimentRunner:
                 result = self.run_experiment(
                     config,
                     cvs_to_process=cvs_to_process,
-                    reuse_collection=(i > 1)  # Первый раз обрабатываем, потом используем
+                    reuse_collection=(i > 1)
                 )
                 
-                # Добавляем в сравнение
                 row = {
                     'experiment': config.name,
                     'description': config.description
@@ -271,10 +251,8 @@ class ExperimentRunner:
                 traceback.print_exc()
                 continue
         
-        # Создаем сравнительную таблицу
         comparison_df = pd.DataFrame(comparison_rows)
         
-        # Сохраняем сравнение
         comparison_file = self.results_dir / f"comparison_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
         comparison_df.to_csv(comparison_file, index=False)
         
@@ -288,9 +266,8 @@ class ExperimentRunner:
         return comparison_df
     
     def create_default_configs(self) -> List[ExperimentConfig]:
-        """Создает набор стандартных конфигураций для экспериментов"""
+        """Создает набор стандартных конфигураций"""
         configs = [
-            # Базовая конфигурация
             ExperimentConfig(
                 name="baseline",
                 description="Базовая конфигурация (Voyage-4-large, TF-IDF unigrams+bigrams)",
@@ -300,64 +277,26 @@ class ExperimentRunner:
                 tfidf_ngram_range=(1, 2),
                 collection_name="CVs_baseline"
             ),
-            
-            # Больше n-грамм
             ExperimentConfig(
                 name="trigrams",
-                description="TF-IDF с tri-grams для лучшего захвата фраз",
+                description="TF-IDF с tri-grams",
                 dense_model="voyage-4-large",
                 dense_output_dim=1024,
                 tfidf_max_features=15000,
                 tfidf_ngram_range=(1, 3),
                 collection_name="CVs_trigrams"
             ),
-            
-            # Меньше фичей (быстрее)
             ExperimentConfig(
                 name="lightweight",
-                description="Облегченная версия - меньше фичей TF-IDF",
+                description="Облегченная версия",
                 dense_model="voyage-4-large",
                 dense_output_dim=1024,
                 tfidf_max_features=5000,
                 tfidf_ngram_range=(1, 2),
                 collection_name="CVs_lightweight"
             ),
-            
-            # Кастомный промпт
-            ExperimentConfig(
-                name="detailed_prompt",
-                description="Детальный промпт с акцентом на технические навыки",
-                dense_model="voyage-4-large",
-                dense_output_dim=1024,
-                tfidf_max_features=10000,
-                tfidf_ngram_range=(1, 2),
-                system_prompt="""
-You are an expert technical recruiter and CV parser specializing in IT positions.
-Your task is to extract structured data from the provided resume text.
-
-CRITICAL FOCUS AREAS:
-1. Technical Skills: Extract ALL programming languages, frameworks, tools, and technologies
-2. Work Experience: Be precise with dates, calculate total months accurately
-3. Projects: Capture specific technologies and achievements
-4. Education: Include degrees, institutions, and graduation years
-
-EXTRACTION RULES:
-- For 'skills', extract both hard skills (technical) and important soft skills
-- For 'work_history', split distinct roles even if same company
-- In 'total_experience_months', sum ALL work durations carefully
-- For technologies, be specific (e.g., "Python 3.10", "FastAPI", not just "Python")
-- Extract version numbers when mentioned
-
-QUALITY STANDARDS:
-- Prefer explicit information over assumptions
-- If field is missing, leave as None or empty list
-- Maintain exact terminology from CV (don't paraphrase technical terms)
-""",
-                collection_name="CVs_detailed_prompt"
-            )
         ]
         
-        # Сохраняем конфигурации
         for config in configs:
             config_file = self.configs_dir / f"{config.name}.json"
             with open(config_file, 'w', encoding='utf-8') as f:
@@ -379,14 +318,12 @@ def main():
     for config in configs:
         print(f"  • {config.name}: {config.description}")
     
-    # Выбираем какие эксперименты запустить
     print("\n" + "="*70)
     print("Выберите эксперименты для запуска:")
     print("  1. Baseline")
     print("  2. Trigrams")
     print("  3. Lightweight")
-    print("  4. Detailed Prompt")
-    print("  5. Все эксперименты")
+    print("  4. Все эксперименты")
     print("="*70)
     
     choice = input("\nВведите номер (или 'q' для выхода): ").strip()
@@ -395,7 +332,7 @@ def main():
         print("Выход.")
         return
     
-    if choice == '5':
+    if choice == '4':
         selected_configs = configs
     else:
         try:
@@ -409,7 +346,6 @@ def main():
             print("Неверный ввод!")
             return
     
-    # Запускаем эксперименты
     comparison_df = runner.run_multiple_experiments(selected_configs)
     
     print("\n✅ Все эксперименты завершены!")

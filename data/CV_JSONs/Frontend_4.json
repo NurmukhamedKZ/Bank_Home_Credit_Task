@@ -1,0 +1,107 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [
+    "https://t.me/DilshatOsmanov"
+  ],
+  "location": [
+    "Алматы, м. Бауыржан Момышулы"
+  ],
+  "summary": "Frontend разработчик с опытом разработки CRM-систем и AI-продуктов, обладающий навыками работы с Vue.js, React и другими современными технологиями.",
+  "total_experience_months": 69,
+  "work_history": [
+    {
+      "role": "Frontend-разработчик",
+      "company": "NurAi & Co",
+      "start_date": "2024-08",
+      "end_date": "Present",
+      "description": "Фронтенд-разработчик в Nurai&Co (система бронирования ЖД и авиабилетов). Разработка CRM-системы для турагентов с использованием Vue 3, Composition API, Vite и Bootstrap.",
+      "technologies": [
+        "Vue 3",
+        "Composition API",
+        "Vite",
+        "Bootstrap"
+      ]
+    },
+    {
+      "role": "Web-разработчик",
+      "company": "Kazakh AI",
+      "start_date": "2025-01",
+      "end_date": "2025-08",
+      "description": "Разрабатывал frontend-часть AI-продуктов Neuroworkers и AI-Wallpapers с использованием Vue 3, Composition API и Vite.",
+      "technologies": [
+        "Vue 3",
+        "Composition API",
+        "Vite"
+      ]
+    },
+    {
+      "role": "Frontend-разработчик",
+      "company": "Damubala.kz",
+      "start_date": "2021-09",
+      "end_date": "2024-07",
+      "description": "Фронтенд-разработчик в Damubala (платформа для записи детей на кружки и секции). Полная разработка фронтенда платформы с нуля до успешного запуска на Vue 3 с использованием TypeScript и Composition API.",
+      "technologies": [
+        "Vue 3",
+        "TypeScript",
+        "Composition API",
+        "GraphQL"
+      ]
+    },
+    {
+      "role": "Frontend-разработчик",
+      "company": "eventum.one",
+      "start_date": "2020-06",
+      "end_date": "2021-08",
+      "description": "Фронтенд-разработчик в Eventum.one (платформа для продажи билетов). Разработка и поддержка фронтенд-части веб-платформы на Razor для .NET.",
+      "technologies": [
+        "Razor",
+        ".NET"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "IITU",
+      "degree": "Высшее образование",
+      "year": "2023"
+    }
+  ],
+  "skills": [
+    "Vue.js",
+    "JavaScript",
+    "Git",
+    "HTML5",
+    "TypeScript",
+    "SQL",
+    "БЭМ",
+    "SOLID",
+    "Docker",
+    "CI/CD",
+    "Gulp",
+    "REST API",
+    "Nginx",
+    "ReactJS",
+    "Vuex",
+    "jQuery",
+    "Bootstrap",
+    "Redux",
+    "Axios",
+    "Docker-compose",
+    "WebSocket",
+    "Pug",
+    "npm",
+    "Gitlab",
+    "ES6",
+    "GraphQL",
+    "Sass",
+    "CSS",
+    "Webpack"
+  ],
+  "languages": [
+    "Русский — Родной",
+    "Английский — B2 — Средне-продвинутый",
+    "Казахский — B1 — Средний"
+  ]
+}

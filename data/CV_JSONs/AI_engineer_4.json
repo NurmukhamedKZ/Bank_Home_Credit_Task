@@ -1,0 +1,163 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "AI ML Engineer / Data Scientist specializing in analytics and programming, with over 6 years of experience in data-driven solutions and team leadership.",
+  "total_experience_months": 76,
+  "work_history": [
+    {
+      "role": "Lead of Data Science",
+      "company": "Центр развития города Алматы, АО",
+      "start_date": "2025-02",
+      "end_date": "Present",
+      "description": "Руководство командой аналитиков в разработке решений на основе данных для инициатив городского планирования.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "vLLM",
+        "Aiogram",
+        "pgvector",
+        "Redis",
+        "PostgreSQL",
+        "PostGIS",
+        "SQLAlchemy",
+        "Pydantic",
+        "Docker",
+        "GitLab CI/CD",
+        "Ollama",
+        "Shapely",
+        "Folium"
+      ]
+    },
+    {
+      "role": "Data Engineer / Data Analyst",
+      "company": "Центр развития города Алматы, АО",
+      "start_date": "2023-09",
+      "end_date": "Present",
+      "description": "Автоматизировал сбор данных с использованием Python и Docker, оптимизируя доступ к критическим городским показателям.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "Ollama",
+        "aiogram",
+        "asyncpg",
+        "SQLAlchemy",
+        "APScheduler",
+        "PyTorch"
+      ]
+    },
+    {
+      "role": "Freelance Developer",
+      "company": "Freelance",
+      "start_date": "2023-01",
+      "end_date": "Present",
+      "description": "Разработал пользовательский чатбот для продажи автозапчастей с использованием ChatGPT API, улучшив вовлечение клиентов и эффективность продаж.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Ollama",
+        "pgvector",
+        "Redis",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "Pydantic",
+        "Alembic",
+        "pdf2image",
+        "Tesseract",
+        "tiktoken",
+        "rapidfuzz"
+      ]
+    },
+    {
+      "role": "AI ML Lead",
+      "company": "Международная школа AQBOBEK",
+      "start_date": "2022-11",
+      "end_date": "2023-08",
+      "description": "Участие в стартапе по распознаванию позы для виртуальной примерки обуви (YOLO).",
+      "technologies": []
+    },
+    {
+      "role": "Инженер по автоматизации",
+      "company": "ТОО Байнур и П",
+      "start_date": "2022-08",
+      "end_date": "2023-08",
+      "description": "Разработка веб сервиса для сбора показателей с IoT датчиков и настройка системы мониторинга Grafana.",
+      "technologies": []
+    },
+    {
+      "role": "Python/Django Backend Developer",
+      "company": "TOO Bauten",
+      "start_date": "2018-08",
+      "end_date": "2020-12",
+      "description": "Backend для системы тех. учёта элементов сети на Django и настройка архитектуры базы данных PostgreSQL.",
+      "technologies": [
+        "Django",
+        "PostgreSQL",
+        "Leaflet",
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "role": "Программист-разработчик",
+      "company": "Suleiman Demirel University Bachelor Students",
+      "start_date": "2018-01",
+      "end_date": "2018-04",
+      "description": "Executed web scraping projects with Python and developed an anti-captcha autoencoder using TensorFlow.",
+      "technologies": [
+        "Python",
+        "TensorFlow"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Международный университет информационных технологий, Алматы",
+      "degree": "Магистр",
+      "year": "2016"
+    },
+    {
+      "institution": "Международный университет информационных технологий, Алматы",
+      "degree": "Магистр",
+      "year": "2014"
+    }
+  ],
+  "skills": [
+    "Python",
+    "SQL",
+    "Аналитика",
+    "PostgreSQL",
+    "Data Science",
+    "Машинное обучение",
+    "Data Analysis",
+    "ETL",
+    "ML",
+    "Docker",
+    "FastAPI",
+    "Django",
+    "Ollama",
+    "LLM",
+    "TensorFlow",
+    "PyTorch",
+    "YOLO",
+    "pgVector",
+    "vLLM",
+    "SQLAlchemy",
+    "Pydantic",
+    "Tesseract",
+    "Redis",
+    "GitLab CI/CD",
+    "LangGraph",
+    "LangChain"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — C1 — Продвинутый",
+    "Русский — C2 — В совершенстве"
+  ]
+}

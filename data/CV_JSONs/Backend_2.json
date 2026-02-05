@@ -1,0 +1,109 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы",
+    "Астана"
+  ],
+  "summary": "Backend-разработчик с опытом разработки на .NET и Go, проектирования микросервисной архитектуры и реализации REST API.",
+  "total_experience_months": 57,
+  "work_history": [
+    {
+      "role": "Backend-разработчик",
+      "company": "Народный банк Казахстана, АО",
+      "start_date": "2024-09",
+      "end_date": "Present",
+      "description": "Разработка backend-приложений на .NET (C#) и Go, проектирование и разработка микросервисной архитектуры, работа с Entity Framework Core, проектирование и реализация REST API, интеграция внешних сервисов, работа с MS SQL Server и PostgreSQL, использование Elasticsearch, применение Redis, работа с Apache Kafka, мониторинг с использованием Grafana, настройка CI/CD с помощью Jenkins.",
+      "technologies": [
+        ".NET (C#)",
+        "Go",
+        "Entity Framework Core",
+        "MS SQL Server",
+        "PostgreSQL",
+        "Elasticsearch",
+        "Redis",
+        "Apache Kafka",
+        "Grafana",
+        "Jenkins"
+      ]
+    },
+    {
+      "role": "Программист ASP.NET",
+      "company": "AO FREEDOM INSURANCE",
+      "start_date": "2023-03",
+      "end_date": "2024-08",
+      "description": "Работа с ASP.NET, EF Core, GIT, JS, ORACLE, DOCKER, POSTGRESQL.",
+      "technologies": [
+        "ASP.NET",
+        "EF Core",
+        "GIT",
+        "JS",
+        "ORACLE",
+        "DOCKER",
+        "POSTGRESQL"
+      ]
+    },
+    {
+      "role": "Программист-разработчик",
+      "company": "Нефтяная страховая компания, АО",
+      "start_date": "2022-08",
+      "end_date": "2023-09",
+      "description": "Улучшил процесс разработки, программировал на C# (ASP.NET Core 4), PHP (Yii2, Laravel), Vue.js. Написал автоматизированную систему страховых случаев.",
+      "technologies": [
+        "C# (ASP.NET Core 4)",
+        "PHP (Yii2, Laravel)",
+        "Vue.js"
+      ]
+    },
+    {
+      "role": "Специалист по IT",
+      "company": "Altyn Zhuldyz group of companies",
+      "start_date": "2021-01",
+      "end_date": "2022-02",
+      "description": "Работал с PHP framework Yii2, создавал интернет-магазин на Yii2, а также сайты на Vue.js, работал с базами данных и AWS, Docker.",
+      "technologies": [
+        "PHP (Yii2)",
+        "Vue.js",
+        "AWS",
+        "Docker"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Международный университет информационных технологий, Алматы",
+      "degree": "Бакалавр информационных систем",
+      "year": "2024"
+    }
+  ],
+  "skills": [
+    ".NET (C#)",
+    "Go",
+    "Entity Framework Core",
+    "MS SQL Server",
+    "PostgreSQL",
+    "Elasticsearch",
+    "Redis",
+    "Apache Kafka",
+    "Grafana",
+    "Jenkins",
+    "ASP.NET",
+    "EF Core",
+    "GIT",
+    "JS",
+    "ORACLE",
+    "DOCKER",
+    "PHP (Yii2)",
+    "Laravel",
+    "Vue.js",
+    "AWS",
+    "Docker"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — B1 — Средний",
+    "Русский — C2 — В совершенстве"
+  ]
+}

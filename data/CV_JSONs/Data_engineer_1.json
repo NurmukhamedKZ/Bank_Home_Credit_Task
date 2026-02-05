@@ -1,0 +1,109 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "Data Engineer with extensive experience in data warehouse development, data quality control, and risk analysis in the financial sector.",
+  "total_experience_months": 91,
+  "work_history": [
+    {
+      "role": "Senior Data Engineer",
+      "company": "Freedom Broker",
+      "start_date": "2024-06",
+      "end_date": "Present",
+      "description": "Development of a data warehouse for analytics and management reporting purposes; Development, implementation and support of automated data storefronts in the data warehouse for the purposes of analytics and management reporting; Data quality control in the data warehouse; Ensuring data integration into the data warehouse; Interaction with other structural divisions of the Company on the development of the data warehouse; Advising users and customers of management reporting and analytics on data warehouse issues; Processing of ad-hoc requests within the framework of the Management functionality; Identifying operational risks in the Company's activities.",
+      "technologies": [
+        "Data Warehouse",
+        "Data Quality Control",
+        "Data Integration"
+      ]
+    },
+    {
+      "role": "Senior Data Engineer",
+      "company": "Kaspi Bank, АО",
+      "start_date": "2021-12",
+      "end_date": "2024-06",
+      "description": "Management of Online Events; Development and Administration of Online Processes; Develop and implement processes for sending push notifications aimed at product evaluation, as well as marketing communications; Establish and manage strategies for effective push notifications to enhance user engagement.",
+      "technologies": [
+        "Push Notifications",
+        "User Engagement"
+      ]
+    },
+    {
+      "role": "Risk Analyst",
+      "company": "Банк ЦентрКредит, АО",
+      "start_date": "2021-05",
+      "end_date": "2021-12",
+      "description": "Implementation, development and improvement of an automatic decision-making system; Automation and optimization of the lending process; Adding new products to the system within the product group of loans; Monitoring the functioning of the lending strategy within the product group of loans.",
+      "technologies": [
+        "Decision-Making Systems",
+        "Lending Process Automation"
+      ]
+    },
+    {
+      "role": "Risk Analyst",
+      "company": "Хоум Кредит Банк, АО",
+      "start_date": "2020-01",
+      "end_date": "2021-05",
+      "description": "Administration, Development, and Enhancement of Automated Decision-Making Systems; Automation and Optimization of the Lending Process; Integration of New Products and Scenarios; Monitoring of Credit Strategy Performance; Development of New Lending Strategies.",
+      "technologies": [
+        "Automated Decision-Making Systems",
+        "Credit Strategy Monitoring"
+      ]
+    },
+    {
+      "role": "Trainer",
+      "company": "Tesla Education",
+      "start_date": "2018-12",
+      "end_date": "2020-01",
+      "description": "Preparation of children for specialized schools; Data entry and processing of results.",
+      "technologies": []
+    },
+    {
+      "role": "Personal Assistant to Chief Accountant",
+      "company": "Asia InterCommunications, ТОО",
+      "start_date": "2018-08",
+      "end_date": "2018-12",
+      "description": "Searching for tenders, creating websites on the Tilda platform, and promoting them (Google AdWords, Yandex Direct).",
+      "technologies": [
+        "Tilda",
+        "Google AdWords",
+        "Yandex Direct"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Международный университет информационных технологий, Алматы",
+      "degree": "Магистр, Финансовая математика",
+      "year": "2022"
+    },
+    {
+      "institution": "Международный университет информационных технологий, Алматы",
+      "degree": "Магистр, Информационные технологии, Математическое и компьютерное моделирование",
+      "year": "2020"
+    }
+  ],
+  "skills": [
+    "Groovy",
+    "Blaze",
+    "ETL",
+    "Data Analysis",
+    "SQL",
+    "DWH",
+    "PostgreSQL",
+    "Kafka",
+    "Git",
+    "Airflow",
+    "Python",
+    "Greenplum"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — C1 — Продвинутый",
+    "Русский — C2 — В совершенстве"
+  ]
+}

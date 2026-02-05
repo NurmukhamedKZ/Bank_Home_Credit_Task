@@ -1,32 +1,76 @@
 """
-Главный модуль приложения для обработки резюме.
+Главный модуль приложения - FastAPI сервер для поиска кандидатов.
+
+Запуск:
+    uvicorn app.main:app --reload --port 8000
+    
+Документация API:
+    http://localhost:8000/docs
 """
 
-from app.service import EmailFetcher
+from contextlib import asynccontextmanager
+from fastapi import FastAPI
+
+from app.api.routes import router, set_cv_parser, clear_cv_parser
+from app.services.cv_parser import CVParser
 
 
-def fetch_resumes_from_email():
-    """Получение резюме из почты и сохранение в data/CVs."""
-    print("Запуск получения резюме из почты...")
-    print("=" * 50)
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Инициализация и очистка ресурсов при запуске/остановке приложения"""
+    print("🚀 Запуск API сервера...")
+    print("📊 Инициализация CVParser...")
     
-    with EmailFetcher() as fetcher:
-        saved_files = fetcher.fetch_resumes(
-            folder="INBOX",           # Папка почты
-            search_criteria="UNSEEN", # Только непрочитанные
-            save_text_body=True,      # Сохранять текстовые резюме
-            mark_as_read=True         # Помечать как прочитанные
-        )
+    # Инициализируем CVParser при старте
+    cv_parser = CVParser(collection_name="CVs")
+    set_cv_parser(cv_parser)
     
-    if saved_files:
-        print("\nСохраненные файлы:")
-        for filepath in saved_files:
-            print(f"  - {filepath}")
+    # Проверяем соединение с Qdrant
+    try:
+        collection_info = cv_parser.qdrant_client.get_collection(cv_parser.collection_name)
+        print(f"✅ Подключено к Qdrant. Документов в базе: {collection_info.points_count}")
+    except Exception as e:
+        print(f"⚠️ Ошибка подключения к Qdrant: {e}")
+    
+    # Проверяем TF-IDF
+    if cv_parser._sparse_fitted:
+        print(f"✅ {cv_parser.sparse_method.upper()} модель загружена")
     else:
-        print("\nНовых резюме не найдено.")
+        print(f"⚠️ {cv_parser.sparse_method.upper()} не обучен - sparse и hybrid поиск недоступны")
     
-    return saved_files
+    print("✅ API готов к работе!")
+    
+    yield
+    
+    # Очистка при остановке
+    print("👋 Остановка API сервера...")
+    clear_cv_parser()
+
+
+app = FastAPI(
+    title="CV Search API",
+    description="""
+    API для поиска релевантных кандидатов по тексту вакансии.
+    
+    ## Возможности
+    
+    * **Семантический поиск** - через Voyage AI embeddings
+    * **Keyword поиск** - через TF-IDF или BM25
+    * **Гибридный поиск** - комбинация обоих методов (рекомендуется)
+    
+    ## Использование
+    
+    1. Отправьте POST запрос на `/search` с текстом вакансии
+    2. Получите список релевантных кандидатов с оценками
+    """,
+    version="1.0.0",
+    lifespan=lifespan
+)
+
+# Подключаем роуты
+app.include_router(router)
 
 
 if __name__ == "__main__":
-    fetch_resumes_from_email()
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

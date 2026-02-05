@@ -1,0 +1,103 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы, м. Алмалы"
+  ],
+  "summary": "Ответственный, пунктуальный, настойчивый. Нравится программировать. Готов развиваться как профессионал, так и как личность. Не боюсь сложных задач.",
+  "total_experience_months": 57,
+  "work_history": [
+    {
+      "role": "Главный менеджер группа разработчиков",
+      "company": "Казпочта, АО",
+      "start_date": "2023-07",
+      "end_date": "Present",
+      "description": "Разработка новых фичей и поддержка post.kz",
+      "technologies": [
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "Git",
+        "Linux",
+        "Jenkins",
+        "Nginx",
+        "JSON API",
+        "Ajax",
+        "MVC",
+        "Java",
+        "async",
+        "Spring Boot",
+        "GraphQl",
+        "Docker",
+        "Hibernate ORM",
+        "mybatis",
+        "SOAP"
+      ]
+    },
+    {
+      "role": "backend разработчик",
+      "company": "Alabs.team",
+      "start_date": "2021-06",
+      "end_date": "2023-06",
+      "description": "Занимался в разработке мобильного приложения Казахтелеком. Также участвовал в оптимизации и доработкой новых фичей в приложении Tele2 и Altel. Переписывал post.kz из монолитна в микросервис. Поддерка и доработки go.post.kz отдел доставки.",
+      "technologies": [
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "Git",
+        "Linux",
+        "Jenkins",
+        "Nginx",
+        "JSON API",
+        "Ajax",
+        "MVC",
+        "Java",
+        "async",
+        "Spring Boot",
+        "GraphQl",
+        "Docker",
+        "Hibernate ORM",
+        "mybatis",
+        "SOAP"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Каспийский общественный университет, Алматы",
+      "degree": "Архитектура, Проектирование зданий",
+      "year": "2015"
+    },
+    {
+      "institution": "Алматинский архитектурно-строительный колледж",
+      "degree": "Архитектура, Техник-проектировщик",
+      "year": "2012"
+    }
+  ],
+  "skills": [
+    "PostgreSQL",
+    "HTML",
+    "CSS",
+    "Git",
+    "Linux",
+    "Jenkins",
+    "Nginx",
+    "JSON API",
+    "Ajax",
+    "MVC",
+    "Java",
+    "async",
+    "Spring Boot",
+    "GraphQl",
+    "Docker",
+    "Hibernate ORM",
+    "mybatis",
+    "SOAP"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Русский — C2 — В совершенстве"
+  ]
+}

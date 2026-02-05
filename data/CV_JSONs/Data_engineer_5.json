@@ -1,0 +1,144 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "Data engineer, Big data engineer specializing in programming and development with 14 years and 8 months of experience.",
+  "total_experience_months": 176,
+  "work_history": [
+    {
+      "role": "Senior Big data engineer",
+      "company": "Dataart",
+      "start_date": "2022-02",
+      "end_date": "Present",
+      "description": "Developed data pipelines using NIFI, orchestrated task execution with Airflow, performed troubleshooting, profiling, and performance tuning, negotiated with Business Stakeholders to clarify task scope, created Spark applications using Scala and Python, utilized SQL for querying and managing data within the data warehouse.",
+      "technologies": [
+        "NIFI",
+        "Airflow",
+        "Spark",
+        "Scala",
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "role": "Big Data Engineer",
+      "company": "Aitu Dala",
+      "start_date": "2021-08",
+      "end_date": "2022-02",
+      "description": "Developed Kafka clients using Scala and Java, created tables and optimized queries in Greenplum, created data pipelines using Apache Airflow and DBT, stored parquet files in GlusterFS using S3 API, worked with GitLab CI/CD.",
+      "technologies": [
+        "Kafka",
+        "Scala",
+        "Java",
+        "Greenplum",
+        "Apache Spark",
+        "Pyspark",
+        "Apache Airflow",
+        "DBT",
+        "GlusterFS",
+        "S3 API",
+        "GitLab CI/CD"
+      ]
+    },
+    {
+      "role": "Старший эксперт по разработке Big data",
+      "company": "Beeline, ТМ",
+      "start_date": "2019-11",
+      "end_date": "2021-08",
+      "description": "Developed and supported programs for Big Data projects, wrote programs for data processing using Spark (pyspark, scala), automated processes in Hive, visualized data using Grafana and Superset, loaded and read data from HDFS, used Spark for ETL processes, created Spark Structured Streaming applications, developed Kafka consumers, deployed open source products on Linux, created data pipelines with Airflow.",
+      "technologies": [
+        "Spark",
+        "pyspark",
+        "scala",
+        "Hive",
+        "Grafana",
+        "Superset",
+        "Hadoop",
+        "ETL",
+        "PostgreSQL",
+        "Oracle",
+        "MariaDB",
+        "Kafka",
+        "Airflow"
+      ]
+    },
+    {
+      "role": "Главный менеджер управления систем анализа данных",
+      "company": "Народный банк Казахстана, АО",
+      "start_date": "2012-06",
+      "end_date": "2019-11",
+      "description": "Parsed websites for data collection using Python libraries (Beautiful Soup, requests, Selenium), developed backend with Flask, called procedures from Oracle and processed data, developed Kafka consumers in Java, supported applications on Red Hat Enterprise, created reports using SAP Bex analyzer and Excel VBA, visualized data with SAP BO Dashboards.",
+      "technologies": [
+        "Python",
+        "Beautiful Soup",
+        "requests",
+        "Selenium",
+        "Flask",
+        "Oracle",
+        "Java",
+        "Kafka",
+        "Linux",
+        "Excel VBA",
+        "SAP BO Dashboards"
+      ]
+    },
+    {
+      "role": "Ведущий специалист управления методологии и отчетности",
+      "company": "Банк ЦентрКредит, АО",
+      "start_date": "2011-07",
+      "end_date": "2012-05",
+      "description": "Created and maintained reports using Excel and VBA.",
+      "technologies": [
+        "Excel",
+        "VBA"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kimep",
+      "degree": "Магистр, master of arts in economics",
+      "year": "2016"
+    },
+    {
+      "institution": "Казахский национальный университет имени аль-Фараби, Алматы",
+      "degree": "Бакалавр, механика-математика/информатика",
+      "year": "2008"
+    }
+  ],
+  "skills": [
+    "MS Excel 2010 VBA",
+    "MS Office",
+    "SQL",
+    "MS Visual Basic",
+    "Java",
+    "Python",
+    "ORACLE",
+    "Git",
+    "Linux",
+    "Scala",
+    "Hadoop",
+    "Docker",
+    "Базы данных",
+    "Аналитическое мышление",
+    "Mariadb",
+    "Hive",
+    "Airflow",
+    "Superset",
+    "Hdfs",
+    "PostgreSQL",
+    "Spark",
+    "gitlab ci cd",
+    "PySpark",
+    "Big Data",
+    "Apache NiFi"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — C1 — Продвинутый"
+  ]
+}

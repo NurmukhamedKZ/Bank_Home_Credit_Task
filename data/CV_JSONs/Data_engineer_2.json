@@ -1,0 +1,110 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "Data Engineer with over 5 years of experience in data science and engineering, specializing in ETL processes, database architecture, and natural language processing.",
+  "total_experience_months": 62,
+  "work_history": [
+    {
+      "role": "Team Lead Data Engineer",
+      "company": "Halyk Market",
+      "start_date": "2025-07",
+      "end_date": "Present",
+      "description": ".",
+      "technologies": []
+    },
+    {
+      "role": "Senior Data Engineer",
+      "company": "DATUM Stat Agency",
+      "start_date": "2022-10",
+      "end_date": "2025-07",
+      "description": "Led a team of 2 developers, designed and deployed ETL pipelines and database architectures using Apache Airflow and ClickHouse on GCP.",
+      "technologies": [
+        "Apache Airflow",
+        "Docker",
+        "Google Cloud Platform",
+        "ClickHouse",
+        "PostgreSQL",
+        "BERT"
+      ]
+    },
+    {
+      "role": "Data Analyst/Data Scientist",
+      "company": "McKenZee STAT Agency",
+      "start_date": "2021-07",
+      "end_date": "2022-07",
+      "description": "Generated analytical reports and maintained ETL processes using Airflow.",
+      "technologies": [
+        "Airflow"
+      ]
+    },
+    {
+      "role": "IT Manager",
+      "company": "Tele2 Kazakhstan",
+      "start_date": "2019-06",
+      "end_date": "2019-11",
+      "description": "Identified errors in trunk groups, prepared monthly reports, and optimized daily reports.",
+      "technologies": [
+        "Oracle PL/SQL"
+      ]
+    },
+    {
+      "role": "Data Engineer",
+      "company": "НАК Казатомпром",
+      "start_date": "2018-11",
+      "end_date": "2018-12",
+      "description": "Implemented training for employees on PostgreSQL and monitored data integrity in automated systems.",
+      "technologies": [
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Международный университет информационных технологий, Алматы",
+      "degree": "PhD Data science",
+      "year": "2025"
+    },
+    {
+      "institution": "Международный университет информационных технологий, Алматы",
+      "degree": "Магистр Data science",
+      "year": "2022"
+    },
+    {
+      "institution": "Назарбаев Университет, Астана",
+      "degree": "Electrical and Computer Engineering",
+      "year": "2019"
+    },
+    {
+      "institution": "University of London (UCL)",
+      "degree": "Foundation, Математика и физика",
+      "year": "2015"
+    }
+  ],
+  "skills": [
+    "SQL",
+    "PostgreSQL",
+    "Oracle PL/SQL",
+    "Python",
+    "Airflow",
+    "Clickhouse",
+    "MySQL",
+    "VBA",
+    "OpenCV",
+    "Google Cloud Development",
+    "Docker",
+    "Django Framework",
+    "Natural Language Processing",
+    "Computer Vision",
+    "Neural Networks"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — C2 — В совершенстве",
+    "Русский — C2 — В совершенстве"
+  ]
+}

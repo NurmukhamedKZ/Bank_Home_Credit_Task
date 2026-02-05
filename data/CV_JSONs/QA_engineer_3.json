@@ -1,0 +1,66 @@
+{
+  "full_name": "Candidate",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Almaty",
+    "Astana"
+  ],
+  "summary": "Стремлюсь развиваться в тестировании мобильных и web-приложений. Интересуюсь качеством продукта, умею работать с баг-трекингом, писать тест-кейсы и разбираться в бизнес-логике.",
+  "total_experience_months": 16,
+  "work_history": [
+    {
+      "role": "Qa engineer",
+      "company": "Гедеон Рихтер, ОАО (Венгрия)",
+      "start_date": "2024-11",
+      "end_date": "Present",
+      "description": "Ручное тестирование (functional, regression, UI/UX, exploratory). Составление чек-листов, тест-кейсов, баг-репортов. Работа с баг-трекингами: Jira. Работа с документацией: TestRail, Confluence. Тестирование API с Postman, Swagger. Основы работы с SQL (базовые SELECT-запросы) и Git.",
+      "technologies": [
+        "Jira",
+        "TestRail",
+        "Confluence",
+        "Postman",
+        "Swagger",
+        "JSON",
+        "REST",
+        "HTTP",
+        "SQL",
+        "Git"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Алматинский университет энергетики и связи",
+      "degree": "Магистр техники и технологии в Информационных технологиях, Информатика и вычислительная техника",
+      "year": "2023"
+    }
+  ],
+  "skills": [
+    "Ручное тестирование",
+    "functional testing",
+    "regression testing",
+    "UI/UX testing",
+    "exploratory testing",
+    "чек-листы",
+    "тест-кейсы",
+    "баг-репорты",
+    "Jira",
+    "TestRail",
+    "Confluence",
+    "Postman",
+    "Swagger",
+    "API testing",
+    "JSON",
+    "REST",
+    "HTTP",
+    "SQL",
+    "Git"
+  ],
+  "languages": [
+    "Kazakh — Native",
+    "English — B1 — Intermediate",
+    "Russian — C2 — Proficiency"
+  ]
+}

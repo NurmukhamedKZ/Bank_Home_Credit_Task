@@ -1,0 +1,312 @@
+[
+  {
+    "vacancy": "QA_engineer_1",
+    "retrieved": [
+      [
+        "Backend_1",
+        0.5588235,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_3",
+        0.5,
+        "Candidate"
+      ],
+      [
+        "Data_engineer_3",
+        0.4761905,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_1",
+        0.3809524,
+        "Candidate"
+      ],
+      [
+        "QA_engineer_5",
+        0.3611111,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "QA_engineer_1",
+      "QA_engineer_3",
+      "QA_engineer_4",
+      "QA_engineer_2",
+      "QA_engineer_5"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.6,
+      "precision@8": 0.625,
+      "precision@10": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.2,
+      "recall@5": 0.6,
+      "recall@8": 1.0,
+      "recall@10": 1.0,
+      "f1@1": 0.0,
+      "f1@3": 0.25,
+      "f1@5": 0.6,
+      "f1@8": 0.7692307692307693,
+      "f1@10": 0.6666666666666666,
+      "map": 0.5961904761904762,
+      "mrr": 0.5,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.2960819109658652,
+      "ndcg@5": 0.4912596920895758,
+      "ndcg@8": 0.725124396546942,
+      "ndcg@10": 0.725124396546942
+    }
+  },
+  {
+    "vacancy": "Frontend_1",
+    "retrieved": [
+      [
+        "Backend_1",
+        0.6,
+        "Кандидат"
+      ],
+      [
+        "Frontend_1",
+        0.5,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_5",
+        0.42424244,
+        "Кандидат"
+      ],
+      [
+        "Frontend_2",
+        0.34285715,
+        "Кандидат"
+      ],
+      [
+        "Frontend_5",
+        0.33333334,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Frontend_5",
+      "Frontend_3",
+      "Frontend_1",
+      "Frontend_2",
+      "Frontend_4"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.6,
+      "precision@8": 0.625,
+      "precision@10": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.2,
+      "recall@5": 0.6,
+      "recall@8": 1.0,
+      "recall@10": 1.0,
+      "f1@1": 0.0,
+      "f1@3": 0.25,
+      "f1@5": 0.6,
+      "f1@8": 0.7692307692307693,
+      "f1@10": 0.6666666666666666,
+      "map": 0.5961904761904762,
+      "mrr": 0.5,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.2960819109658652,
+      "ndcg@5": 0.4912596920895758,
+      "ndcg@8": 0.725124396546942,
+      "ndcg@10": 0.725124396546942
+    }
+  },
+  {
+    "vacancy": "AI_engineer_1",
+    "retrieved": [
+      [
+        "AI_engineer_2",
+        0.625,
+        "Әшекей Нұрмұхамед"
+      ],
+      [
+        "Backend_1",
+        0.5,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_1",
+        0.5,
+        "Candidate"
+      ],
+      [
+        "QA_engineer_5",
+        0.4,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_4",
+        0.38596493,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "AI_engineer_1",
+      "AI_engineer_2",
+      "AI_engineer_5",
+      "AI_engineer_3",
+      "AI_engineer_4"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 1.0,
+      "precision@3": 0.6666666666666666,
+      "precision@5": 0.6,
+      "precision@8": 0.5,
+      "precision@10": 0.4,
+      "recall@1": 0.2,
+      "recall@3": 0.4,
+      "recall@5": 0.6,
+      "recall@8": 0.8,
+      "recall@10": 0.8,
+      "f1@1": 0.33333333333333337,
+      "f1@3": 0.5,
+      "f1@5": 0.6,
+      "f1@8": 0.6153846153846154,
+      "f1@10": 0.5333333333333333,
+      "map": 0.5533333333333333,
+      "mrr": 1.0,
+      "ndcg@1": 1.0,
+      "ndcg@3": 0.7039180890341347,
+      "ndcg@5": 0.639945385422766,
+      "ndcg@8": 0.7469385177900298,
+      "ndcg@10": 0.7469385177900298
+    }
+  },
+  {
+    "vacancy": "Data_engineer_1",
+    "retrieved": [
+      [
+        "Data_engineer_5",
+        0.75,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_4",
+        0.6,
+        "Кандидат"
+      ],
+      [
+        "AI_engineer_1",
+        0.45833334,
+        "Candidate"
+      ],
+      [
+        "Data_engineer_2",
+        0.39215687,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_1",
+        0.36666667,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Data_engineer_2",
+      "Data_engineer_5",
+      "Data_engineer_4",
+      "Data_engineer_1",
+      "Data_engineer_3"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 1.0,
+      "precision@3": 0.6666666666666666,
+      "precision@5": 0.8,
+      "precision@8": 0.625,
+      "precision@10": 0.5,
+      "recall@1": 0.2,
+      "recall@3": 0.4,
+      "recall@5": 0.8,
+      "recall@8": 1.0,
+      "recall@10": 1.0,
+      "f1@1": 0.33333333333333337,
+      "f1@3": 0.5,
+      "f1@5": 0.8000000000000002,
+      "f1@8": 0.7692307692307693,
+      "f1@10": 0.6666666666666666,
+      "map": 0.835,
+      "mrr": 1.0,
+      "ndcg@1": 1.0,
+      "ndcg@3": 0.7653606369886217,
+      "ndcg@5": 0.830419897363192,
+      "ndcg@8": 0.9374130297304558,
+      "ndcg@10": 0.9374130297304558
+    }
+  },
+  {
+    "vacancy": "Backend_1",
+    "retrieved": [
+      [
+        "Backend_1",
+        1.0,
+        "Кандидат"
+      ],
+      [
+        "Backend_2",
+        0.4047619,
+        "Кандидат"
+      ],
+      [
+        "Frontend_2",
+        0.33333334,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_3",
+        0.33333334,
+        "Кандидат"
+      ],
+      [
+        "Backend_5",
+        0.3,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Backend_2",
+      "Backend_4",
+      "Backend_5",
+      "Backend_1",
+      "Backend_3"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 1.0,
+      "precision@3": 0.6666666666666666,
+      "precision@5": 0.6,
+      "precision@8": 0.5,
+      "precision@10": 0.5,
+      "recall@1": 0.2,
+      "recall@3": 0.4,
+      "recall@5": 0.6,
+      "recall@8": 0.8,
+      "recall@10": 1.0,
+      "f1@1": 0.33333333333333337,
+      "f1@3": 0.5,
+      "f1@5": 0.6,
+      "f1@8": 0.6153846153846154,
+      "f1@10": 0.6666666666666666,
+      "map": 0.7342857142857143,
+      "mrr": 1.0,
+      "ndcg@1": 1.0,
+      "ndcg@3": 0.7653606369886217,
+      "ndcg@5": 0.6843515475204855,
+      "ndcg@8": 0.7974049492783576,
+      "ndcg@10": 0.8954442351097147
+    }
+  }
+]

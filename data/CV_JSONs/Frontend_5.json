@@ -1,0 +1,75 @@
+{
+  "full_name": "Кандидат",
+  "email": null,
+  "phone": null,
+  "links": [],
+  "location": [
+    "Алматы"
+  ],
+  "summary": "Frontend-разработчик с 5 летним опытом в разработке и поддержке веб-приложений, специализирующийся на JavaScript, TypeScript и React.",
+  "total_experience_months": 64,
+  "work_history": [
+    {
+      "role": "Frontend-разработчик",
+      "company": "Кселл, АО",
+      "start_date": "2022-10",
+      "end_date": "Present",
+      "description": "Разработка и поддержка сайта SuperApp(kcell/activ). Оптимизировал и улучшил производительность веб приложении. Разработал флоу для электронной цифровой подписи, доставки. Участвовал в команде по разработке E-commerce приложении. Разрабатывал флоу продажи 5G роутеров, поддерживал админку на Angular-е. Реализовал чатбота на фронте, использовал socket.io. Занимался разработкой Замена сим карты, Перенос номера между внутренними брендами, внешними брендами, Регистрация нового номера, Покупка номера. Интегрировал платежные системы и биометрии.",
+      "technologies": [
+        "JavaScript",
+        "TypeScript",
+        "ReactJS",
+        "Angular",
+        "socket.io"
+      ]
+    },
+    {
+      "role": "Frontend developer",
+      "company": "One Technologies",
+      "start_date": "2020-11",
+      "end_date": "2022-10",
+      "description": "Разработка сайта Forte Bank. Разработка вебсайта компании One Tech. Поддержка и разработка веб приложении Forte Business. Энергично участвовал в обсуждениях и решениях новых задач, проблем.",
+      "technologies": [
+        "React",
+        "Typescript",
+        "Javascript",
+        "Nextjs",
+        "MUI",
+        "GraphQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Университет имени Сулеймана Демиреля, Алматы",
+      "degree": "Инженерный, Информационные системы",
+      "year": "2022"
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "ReactJs",
+    "Redux",
+    "NextJs",
+    "Strapi",
+    "GraphQL",
+    "Socket.io",
+    "MUI",
+    "Styled components",
+    "Java",
+    "Python",
+    "Git",
+    "GitHub",
+    "HTML",
+    "CSS",
+    "REST API",
+    "HTML5"
+  ],
+  "languages": [
+    "Казахский — Родной",
+    "Английский — C1 — Продвинутый",
+    "Русский — C2 — В совершенстве",
+    "Турецкий — A2 — Элементарный"
+  ]
+}
