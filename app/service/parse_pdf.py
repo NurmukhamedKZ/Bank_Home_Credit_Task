@@ -4,6 +4,7 @@ from typing import List, Optional, Dict
 import os
 import uuid
 import json
+import pickle
 
 # LlamaParse для парсинга PDF
 from llama_parse import LlamaParse
@@ -176,6 +177,15 @@ CRITICAL RULES:
         # Хранилище документов для обучения TF-IDF
         self._tfidf_corpus = []
         
+        # Путь к сохраненной TF-IDF модели
+        self.tfidf_model_path = project_root / "data" / "models" / f"tfidf_{collection_name}.pkl"
+        self.tfidf_model_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Автоматически загружаем TF-IDF модель если она существует
+        if self.tfidf_model_path.exists():
+            self.load_tfidf_model()
+            print(f"✅ TF-IDF модель загружена из: {self.tfidf_model_path.name}")
+        
         # Qdrant клиент
         self.qdrant_client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API)
         
@@ -322,6 +332,8 @@ CRITICAL RULES:
             self.sparse_model.fit(self._tfidf_corpus)
             self._tfidf_fitted = True
             print(f"   📚 TF-IDF обучен на {len(self._tfidf_corpus)} документах")
+            # Сохраняем модель после первого обучения
+            self.save_tfidf_model()
         else:
             # Добавляем в корпус для будущего переобучения
             self._tfidf_corpus.append(text)
@@ -340,18 +352,98 @@ CRITICAL RULES:
         print(f"✅ Эмбеддинги созданы (TF-IDF: {len(sparse_indices)} ненулевых элементов)")
         return dense_vector, sparse_indices, sparse_values
     
-    def refit_tfidf(self):
+    def refit_tfidf(self, auto_save: bool = True):
         """
         Переобучает TF-IDF на всем накопленном корпусе
         Полезно вызвать после обработки нескольких документов
+        
+        Args:
+            auto_save: Автоматически сохранить модель после обучения
         """
         if len(self._tfidf_corpus) > 0:
             print(f"🔄 Переобучение TF-IDF на {len(self._tfidf_corpus)} документах...")
             self.sparse_model.fit(self._tfidf_corpus)
             self._tfidf_fitted = True
             print("✅ TF-IDF переобучен")
+            
+            # Автоматически сохраняем модель
+            if auto_save:
+                self.save_tfidf_model()
         else:
             print("⚠️  Корпус пуст, нечего обучать")
+    
+    def save_tfidf_model(self):
+        """
+        Сохраняет обученную TF-IDF модель и корпус на диск
+        """
+        if not self._tfidf_fitted:
+            print("⚠️  TF-IDF не обучен, нечего сохранять")
+            return
+        
+        # Сохраняем модель и корпус в один файл
+        model_data = {
+            'sparse_model': self.sparse_model,
+            'corpus': self._tfidf_corpus,
+            'fitted': self._tfidf_fitted,
+            'vocabulary_size': len(self.sparse_model.vocabulary_) if hasattr(self.sparse_model, 'vocabulary_') else 0
+        }
+        
+        with open(self.tfidf_model_path, 'wb') as f:
+            pickle.dump(model_data, f)
+        
+        vocab_size = model_data['vocabulary_size']
+        print(f"💾 TF-IDF модель сохранена: {self.tfidf_model_path.name}")
+        print(f"   📊 Словарь: {vocab_size} слов, Корпус: {len(self._tfidf_corpus)} документов")
+    
+    def load_tfidf_model(self) -> bool:
+        """
+        Загружает сохраненную TF-IDF модель с диска
+        
+        Returns:
+            True если загрузка успешна, False иначе
+        """
+        if not self.tfidf_model_path.exists():
+            return False
+        
+        try:
+            with open(self.tfidf_model_path, 'rb') as f:
+                model_data = pickle.load(f)
+            
+            self.sparse_model = model_data['sparse_model']
+            self._tfidf_corpus = model_data['corpus']
+            self._tfidf_fitted = model_data['fitted']
+            
+            vocab_size = model_data.get('vocabulary_size', 0)
+            print(f"📂 TF-IDF загружен: {vocab_size} слов, {len(self._tfidf_corpus)} документов")
+            
+            return True
+        except Exception as e:
+            print(f"⚠️  Ошибка загрузки TF-IDF модели: {e}")
+            self._tfidf_fitted = False
+            self._tfidf_corpus = []
+            return False
+    
+    def create_sparse_query(self, query_text: str) -> tuple[List[int], List[float]]:
+        """
+        Создает sparse query вектор для поиска (TF-IDF)
+        
+        Args:
+            query_text: Текст запроса (вакансия)
+            
+        Returns:
+            Tuple (sparse_indices, sparse_values)
+        """
+        if not self._tfidf_fitted:
+            raise ValueError("TF-IDF не обучен! Сначала обработайте хотя бы один документ.")
+        
+        # Трансформируем query в TF-IDF вектор
+        query_vector = self.sparse_model.transform([query_text.lower()])
+        query_coo = query_vector.tocoo()
+        
+        sparse_indices = query_coo.col.tolist()
+        sparse_values = query_coo.data.tolist()
+        
+        return sparse_indices, sparse_values
     
     def cv_to_payload(self, cv: CVOutput, full_text: str, source_file: str = None) -> dict:
         """

@@ -1,0 +1,277 @@
+[
+  {
+    "vacancy": "QA_engineer_1",
+    "retrieved": [
+      [
+        "Frontend_3",
+        0.010568069,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_2",
+        0.010202417,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_5",
+        0.008231925,
+        "Кандидат"
+      ],
+      [
+        "Frontend_2",
+        0.007809065,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_3",
+        0.0073586735,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "QA_engineer_2",
+      "QA_engineer_5",
+      "QA_engineer_3",
+      "QA_engineer_4",
+      "QA_engineer_1"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.6666666666666666,
+      "precision@5": 0.4,
+      "precision@8": 0.25,
+      "precision@10": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.4,
+      "recall@5": 0.4,
+      "recall@8": 0.4,
+      "recall@10": 0.4,
+      "f1@1": 0.0,
+      "f1@3": 0.5,
+      "f1@5": 0.4000000000000001,
+      "f1@8": 0.3076923076923077,
+      "f1@10": 0.26666666666666666,
+      "map": 0.2333333333333333,
+      "mrr": 0.5,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.5307212739772434,
+      "ndcg@5": 0.38356636737133565,
+      "ndcg@8": 0.38356636737133565,
+      "ndcg@10": 0.38356636737133565
+    }
+  },
+  {
+    "vacancy": "Frontend_1",
+    "retrieved": [
+      [
+        "AI_engineer_1",
+        0.026756065,
+        "Candidate"
+      ],
+      [
+        "QA_engineer_5",
+        0.014337258,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Frontend_3",
+      "Frontend_5",
+      "Frontend_2",
+      "Frontend_1",
+      "Frontend_4"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.0,
+      "precision@5": 0.0,
+      "precision@8": 0.0,
+      "precision@10": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@8": 0.0,
+      "recall@10": 0.0,
+      "f1@1": 0.0,
+      "f1@3": 0.0,
+      "f1@5": 0.0,
+      "f1@8": 0.0,
+      "f1@10": 0.0,
+      "map": 0.0,
+      "mrr": 0.0,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@8": 0.0,
+      "ndcg@10": 0.0
+    }
+  },
+  {
+    "vacancy": "AI_engineer_1",
+    "retrieved": [
+      [
+        "Data_engineer_3",
+        0.05002782,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_5",
+        0.04887671,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_2",
+        0.02944486,
+        "Кандидат"
+      ],
+      [
+        "Frontend_3",
+        0.01759392,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_4",
+        0.015686613,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "AI_engineer_3",
+      "AI_engineer_2",
+      "AI_engineer_1",
+      "AI_engineer_4",
+      "AI_engineer_5"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.0,
+      "precision@5": 0.0,
+      "precision@8": 0.125,
+      "precision@10": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@8": 0.2,
+      "recall@10": 0.2,
+      "f1@1": 0.0,
+      "f1@3": 0.0,
+      "f1@5": 0.0,
+      "f1@8": 0.15384615384615385,
+      "f1@10": 0.13333333333333333,
+      "map": 0.03333333333333333,
+      "mrr": 0.16666666666666666,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@8": 0.1208113026994942,
+      "ndcg@10": 0.1208113026994942
+    }
+  },
+  {
+    "vacancy": "Data_engineer_1",
+    "retrieved": [
+      [
+        "QA_engineer_5",
+        0.09746826,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_4",
+        0.06175363,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_2",
+        0.047840424,
+        "Кандидат"
+      ],
+      [
+        "Frontend_2",
+        0.034170866,
+        "Кандидат"
+      ],
+      [
+        "QA_engineer_4",
+        0.03161322,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Data_engineer_3",
+      "Data_engineer_4",
+      "Data_engineer_1",
+      "Data_engineer_5",
+      "Data_engineer_2"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.2,
+      "precision@8": 0.25,
+      "precision@10": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.2,
+      "recall@5": 0.2,
+      "recall@8": 0.4,
+      "recall@10": 0.4,
+      "f1@1": 0.0,
+      "f1@3": 0.25,
+      "f1@5": 0.20000000000000004,
+      "f1@8": 0.3076923076923077,
+      "f1@10": 0.26666666666666666,
+      "map": 0.16666666666666666,
+      "mrr": 0.5,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.2960819109658652,
+      "ndcg@5": 0.21398626473452756,
+      "ndcg@8": 0.3347975674340217,
+      "ndcg@10": 0.3347975674340217
+    }
+  },
+  {
+    "vacancy": "Backend_1",
+    "retrieved": [
+      [
+        "QA_engineer_5",
+        0.012833067,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Backend_4",
+      "Backend_2",
+      "Backend_1",
+      "Backend_3",
+      "Backend_5"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.0,
+      "precision@5": 0.0,
+      "precision@8": 0.0,
+      "precision@10": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@8": 0.0,
+      "recall@10": 0.0,
+      "f1@1": 0.0,
+      "f1@3": 0.0,
+      "f1@5": 0.0,
+      "f1@8": 0.0,
+      "f1@10": 0.0,
+      "map": 0.0,
+      "mrr": 0.0,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@8": 0.0,
+      "ndcg@10": 0.0
+    }
+  }
+]

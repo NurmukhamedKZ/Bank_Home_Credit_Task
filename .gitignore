@@ -9,4 +9,13 @@ wheels/
 # Virtual environments
 .venv
 
+# Environment variables
 .env
+
+# TF-IDF models (персональные для каждого корпуса)
+data/models/*.pkl
+
+# Результаты оценки (можно не коммитить)
+app/evaluation_results/
+app/experiments/results/
+app/analysis_reports/

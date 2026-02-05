@@ -11,6 +11,7 @@ from datetime import datetime
 import json
 
 from service.parse_pdf import CVParser
+from qdrant_client import models
 
 
 class SearchMetrics:
@@ -194,39 +195,131 @@ class CVSearchEvaluator:
         self,
         query_text: str,
         top_k: int = 10,
-        use_hybrid: bool = True
+        search_mode: str = "hybrid"
     ) -> List[Tuple[str, float]]:
         """
-        Поиск CV через Qdrant
+        Поиск CV через Qdrant с поддержкой разных режимов
         
         Args:
             query_text: Текст запроса (вакансия)
             top_k: Количество результатов
-            use_hybrid: Использовать hybrid search (dense + sparse)
+            search_mode: Режим поиска - "dense", "sparse", или "hybrid"
             
         Returns:
-            List[(cv_identifier, score)]
+            List[(cv_identifier, score, full_name)]
         """
-        # Создаем dense embedding
-        query_vector = self.parser.dense_model.embed_documents([query_text])[0]
+        from qdrant_client.models import Prefetch, QueryRequest, NamedVector
         
-        # Поиск в Qdrant
-        results = self.parser.qdrant_client.query_points(
-            collection_name=self.parser.collection_name,
-            query=query_vector,
-            using="default",
-            limit=top_k,
-            with_payload=True,
-            with_vectors=False
-        )
+        # Валидация режима
+        if search_mode not in ["dense", "sparse", "hybrid"]:
+            raise ValueError(f"Неверный search_mode: {search_mode}. Используйте: 'dense', 'sparse', или 'hybrid'")
         
-        # Извлекаем идентификаторы (используем source_file для сопоставления с ground truth)
+        # Проверка доступности TF-IDF для sparse и hybrid
+        if search_mode in ["sparse", "hybrid"] and not self.parser._tfidf_fitted:
+            print(f"   ⚠️  TF-IDF не обучен, fallback на dense-only...")
+            search_mode = "dense"
+        
+        # ========== DENSE-ONLY SEARCH ==========
+        if search_mode == "dense":
+            print("   🔍 Dense-only search (Voyage AI)...")
+            
+            dense_query = self.parser.dense_model.embed_documents([query_text])[0]
+            
+            results = self.parser.qdrant_client.query_points(
+                collection_name=self.parser.collection_name,
+                query=dense_query,
+                using="default",
+                limit=top_k,
+                with_payload=True,
+                with_vectors=False
+            )
+        
+        # ========== SPARSE-ONLY SEARCH (TF-IDF) ==========
+        elif search_mode == "sparse":
+            print("   🔍 Sparse-only search (TF-IDF)...")
+            
+            try:
+                # Создаем sparse query
+                sparse_indices, sparse_values = self.parser.create_sparse_query(query_text)
+                
+                # Создаем sparse vector для query
+                sparse_query_vector = models.SparseVector(
+                    indices=sparse_indices,
+                    values=sparse_values
+                )
+                
+                # Поиск только по sparse вектору
+                # Используем query напрямую, не NamedVector!
+                results = self.parser.qdrant_client.query_points(
+                    collection_name=self.parser.collection_name,
+                    query=sparse_query_vector,
+                    using="sparse",
+                    limit=top_k,
+                    with_payload=True,
+                    with_vectors=False
+                )
+            except Exception as e:
+                print(f"   ⚠️  Ошибка sparse search: {e}")
+                import traceback
+                traceback.print_exc()
+                raise
+        
+        # ========== HYBRID SEARCH (Dense + Sparse) ==========
+        elif search_mode == "hybrid":
+            print("   🔍 Hybrid search (Dense + TF-IDF)...")
+            
+            try:
+                # Создаем оба query
+                dense_query = self.parser.dense_model.embed_documents([query_text])[0]
+                sparse_indices, sparse_values = self.parser.create_sparse_query(query_text)
+                
+                # Создаем sparse vector
+                sparse_query_vector = models.SparseVector(
+                    indices=sparse_indices,
+                    values=sparse_values
+                )
+                
+                # Hybrid search через prefetch и RRF fusion
+                results = self.parser.qdrant_client.query_points(
+                    collection_name=self.parser.collection_name,
+                    prefetch=[
+                        # Prefetch по dense вектору
+                        Prefetch(
+                            query=dense_query,
+                            using="default",
+                            limit=top_k * 2  # Берем больше для лучшей комбинации
+                        ),
+                        # Prefetch по sparse вектору
+                        Prefetch(
+                            query=sparse_query_vector,
+                            using="sparse",
+                            limit=top_k * 2
+                        )
+                    ],
+                    # Объединяем результаты через RRF (Reciprocal Rank Fusion)
+                    query=models.FusionQuery(fusion=models.Fusion.RRF),
+                    limit=top_k,
+                    with_payload=True,
+                    with_vectors=False
+                )
+            except Exception as e:
+                print(f"   ⚠️  Ошибка hybrid search, fallback на dense: {e}")
+                # Fallback на dense-only
+                dense_query = self.parser.dense_model.embed_documents([query_text])[0]
+                results = self.parser.qdrant_client.query_points(
+                    collection_name=self.parser.collection_name,
+                    query=dense_query,
+                    using="default",
+                    limit=top_k,
+                    with_payload=True,
+                    with_vectors=False
+                )
+        
+        # Извлекаем идентификаторы
         cv_results = []
         for point in results.points:
-            # Приоритет: source_file (имя файла) для сопоставления, или full_name для отображения
             cv_identifier = point.payload.get('source_file', point.payload.get('full_name', 'Unknown'))
             score = point.score
-            # Сохраняем и ID и имя для отображения
             full_name = point.payload.get('full_name', 'Unknown')
             cv_results.append((cv_identifier, score, full_name))
         
@@ -236,7 +329,7 @@ class CVSearchEvaluator:
         self,
         vacancy_name: str,
         top_k: int = 10,
-        use_hybrid: bool = True
+        search_mode: str = "hybrid"
     ) -> Dict:
         """
         Оценка качества поиска для одной вакансии
@@ -256,7 +349,7 @@ class CVSearchEvaluator:
         relevant_cvs = self.ground_truth[vacancy_name]
         
         # Поиск
-        retrieved_results = self.search_cvs(vacancy_text, top_k, use_hybrid)
+        retrieved_results = self.search_cvs(vacancy_text, top_k, search_mode)
         # retrieved_results теперь содержит (cv_id, score, full_name)
         retrieved_ids = [cv_id for cv_id, _, _ in retrieved_results]
         
@@ -305,23 +398,34 @@ class CVSearchEvaluator:
             'metrics': metrics
         }
     
-    def evaluate_all(self, top_k: int = 10) -> Tuple[pd.DataFrame, List[Dict]]:
+    def evaluate_all(self, top_k: int = 10, search_mode: str = "hybrid") -> Tuple[pd.DataFrame, List[Dict]]:
         """
         Полная оценка всех вакансий
+        
+        Args:
+            top_k: Количество результатов для оценки
+            search_mode: Режим поиска - "dense", "sparse", или "hybrid"
         
         Returns:
             (DataFrame с метриками, список детальных результатов)
         """
         results = []
         
+        mode_names = {
+            "dense": "Dense-only (Voyage AI)",
+            "sparse": "Sparse-only (TF-IDF)",
+            "hybrid": "Hybrid (Dense + TF-IDF)"
+        }
+        mode_display = mode_names.get(search_mode, search_mode)
+        
         print(f"\n{'='*60}")
-        print("🔍 ОЦЕНКА КАЧЕСТВА ПОИСКА")
+        print(f"🔍 ОЦЕНКА КАЧЕСТВА ПОИСКА - {mode_display}")
         print(f"{'='*60}\n")
         
         for vacancy_name in self.vacancies.keys():
             print(f"Обработка: {vacancy_name}...", end=' ')
             try:
-                result = self.evaluate_single_vacancy(vacancy_name, top_k)
+                result = self.evaluate_single_vacancy(vacancy_name, top_k, search_mode)
                 results.append(result)
                 print(f"✅ MAP: {result['metrics']['map']:.3f}")
             except Exception as e:
@@ -465,8 +569,13 @@ class CVSearchEvaluator:
                 print(f"      {i}. {display_name:<40} (score: {score:.4f}) {is_relevant}")
 
 
-def main():
-    """Основная функция для запуска оценки"""
+def main(search_mode: str = "hybrid"):
+    """
+    Основная функция для запуска оценки
+    
+    Args:
+        search_mode: Режим поиска - "dense", "sparse", или "hybrid"
+    """
     from service.parse_pdf import CVParser
     
     print("🚀 Инициализация CVParser...")
@@ -475,8 +584,8 @@ def main():
     print("📊 Создание оценщика...")
     evaluator = CVSearchEvaluator(parser)
     
-    # Полная оценка
-    df, results = evaluator.evaluate_all(top_k=10)
+    # Полная оценка с выбранным режимом
+    df, results = evaluator.evaluate_all(top_k=10, search_mode=search_mode)
     
     # Детальные результаты
     evaluator.print_detailed_results(results)
