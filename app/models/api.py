@@ -44,11 +44,11 @@ class SearchRequest(BaseModel):
         description="Текст вакансии для поиска релевантных кандидатов"
     )
     search_mode: str = Field(
-        default="hybrid",
+        default="dense",
         description="Режим поиска: 'dense' (Voyage AI), 'sparse' (TF-IDF), или 'hybrid' (оба)"
     )
     top_k: int = Field(
-        default=10,
+        default=5,
         ge=1,
         le=50,
         description="Количество кандидатов в результате (1-50)"
@@ -78,3 +78,33 @@ class APIInfoResponse(BaseModel):
     version: str
     description: str
     endpoints: dict
+
+
+class LLMAnalysisResult(BaseModel):
+    """Результат LLM анализа кандидата"""
+    relevance_score: float = Field(description="LLM оценка релевантности (0-1)")
+    overall_assessment: str = Field(description="Общая оценка: excellent/good/moderate/poor")
+    summary: str = Field(description="Краткое резюме о соответствии")
+    strengths: List[str] = Field(description="Сильные стороны кандидата")
+    weaknesses: List[str] = Field(description="Слабые стороны кандидата")
+    key_matches: List[str] = Field(description="Ключевые совпадения с требованиями")
+    missing_requirements: List[str] = Field(description="Отсутствующие требования")
+    recommendation: str = Field(description="Рекомендация: strongly_recommend/recommend/consider/not_recommend")
+    reasoning: str = Field(description="Детальное обоснование")
+
+
+class CandidateWithLLMAnalysis(CandidateResult):
+    """Кандидат с LLM анализом"""
+    llm_analysis: Optional[LLMAnalysisResult] = Field(
+        default=None,
+        description="Результат анализа через LLM (если доступен)"
+    )
+
+
+class SearchWithLLMResponse(BaseModel):
+    """Ответ на запрос поиска с LLM анализом"""
+    query_preview: str = Field(description="Превью текста запроса")
+    search_mode: str = Field(description="Использованный режим поиска")
+    results_count: int = Field(description="Количество найденных кандидатов")
+    llm_analyzed_count: int = Field(description="Количество кандидатов проанализированных через LLM")
+    candidates: List[CandidateWithLLMAnalysis] = Field(description="Список кандидатов с LLM анализом")

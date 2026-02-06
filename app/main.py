@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
     print("📊 Инициализация CVParser...")
     
     # Инициализируем CVParser при старте
-    cv_parser = CVParser(collection_name="CVs")
+    cv_parser = CVParser(collection_name="CVs_BM25")
     set_cv_parser(cv_parser)
     
     # Проверяем соединение с Qdrant

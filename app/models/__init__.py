@@ -10,6 +10,9 @@ from app.models.api import (
     WorkExperienceResponse,
     HealthResponse,
     APIInfoResponse,
+    LLMAnalysisResult,
+    CandidateWithLLMAnalysis,
+    SearchWithLLMResponse,
 )
 
 __all__ = [
@@ -24,4 +27,7 @@ __all__ = [
     "WorkExperienceResponse",
     "HealthResponse",
     "APIInfoResponse",
+    "LLMAnalysisResult",
+    "CandidateWithLLMAnalysis",
+    "SearchWithLLMResponse",
 ]
