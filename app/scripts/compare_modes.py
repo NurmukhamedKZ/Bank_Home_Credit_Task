@@ -17,6 +17,7 @@ def compare_search_modes():
     """Сравнивает все три режима поиска"""
     from app.services.cv_parser import CVParser
     from app.evaluation.evaluator import CVSearchEvaluator
+    from app.core.config import QDRANT_COLLECTION_NAME
     
     print(f"""
 ╔═══════════════════════════════════════════════════════════════╗
@@ -25,7 +26,7 @@ def compare_search_modes():
 ╚═══════════════════════════════════════════════════════════════╝
     """)
     
-    parser = CVParser(collection_name="CVs")
+    parser = CVParser(collection_name=QDRANT_COLLECTION_NAME)
     evaluator = CVSearchEvaluator(parser)
     
     has_sparse = parser._sparse_fitted
@@ -144,7 +145,7 @@ def compare_sparse_methods():
     print("🔤 TF-IDF ТЕСТЫ")
     print("="*70 + "\n")
     
-    parser_tfidf = CVParser(collection_name="CVs", sparse_method="tfidf")
+    parser_tfidf = CVParser(collection_name=QDRANT_COLLECTION_NAME, sparse_method="tfidf")
     
     if not parser_tfidf._sparse_fitted:
         print("⚠️  TF-IDF модель не найдена")
@@ -164,7 +165,7 @@ def compare_sparse_methods():
     print("🎯 BM25 ТЕСТЫ")
     print("="*70 + "\n")
     
-    parser_bm25 = CVParser(collection_name="CVs", sparse_method="bm25")
+    parser_bm25 = CVParser(collection_name=QDRANT_COLLECTION_NAME, sparse_method="bm25")
     
     if not parser_bm25._sparse_fitted:
         print("⚠️  BM25 модель не найдена")

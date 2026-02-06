@@ -160,7 +160,7 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description="Загрузка CV в Qdrant")
-    parser.add_argument("--bm25", action="store_true", help="Использовать BM25 вместо TF-IDF")
+    parser.add_argument("--tfidf", action="store_true", help="Использовать TF-IDF вместо BM25")
     parser.add_argument("--pdf", action="store_true", help="Обрабатывать PDF файлы")
     parser.add_argument("--skip-existing", action="store_true", default=True, help="Пропускать существующие CV")
     parser.add_argument("--no-skip", action="store_true", help="Не пропускать существующие CV")
@@ -168,13 +168,16 @@ def main():
     args = parser.parse_args()
     
     project_root = Path(__file__).parent.parent.parent
-    sparse_method = "bm25" if args.bm25 else "tfidf"
+    sparse_method = "tfidf" if args.tfidf else None  # None = дефолт BM25 из конфига
     skip_existing = not args.no_skip
+    
+    from app.core.config import DEFAULT_SPARSE_METHOD
+    display_method = sparse_method or DEFAULT_SPARSE_METHOD
     
     print(f"""
 ╔═══════════════════════════════════════════════════════════════╗
 ║         ЗАГРУЗКА CV В QDRANT                                  ║
-║  Sparse метод: {sparse_method.upper():<10}                                  ║
+║  Sparse метод: {display_method.upper():<10}                                  ║
 ╚═══════════════════════════════════════════════════════════════╝
     """)
     
@@ -187,9 +190,11 @@ def main():
         parsed_cvs_folder = project_root / "data" / "Parsed_CVs"
         print(f"📁 Папка с TXT: {parsed_cvs_folder}")
         
+        from app.core.config import QDRANT_COLLECTION_NAME
+        
         summary = process_txt_cvs(
             txt_folder=parsed_cvs_folder,
-            collection_name="CVs_BM25",
+            collection_name=QDRANT_COLLECTION_NAME,
             skip_existing=skip_existing,
             sparse_method=sparse_method
         )

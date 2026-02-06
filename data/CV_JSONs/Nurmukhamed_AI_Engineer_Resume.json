@@ -1,0 +1,72 @@
+{
+  "full_name": "Nurmukhamed Ashekey",
+  "email": null,
+  "phone": null,
+  "links": [
+    "github.com/nurmukhamedkz",
+    "linkedin.com/in/nurmukhamed-ashekey-3031a3369"
+  ],
+  "location": [
+    "Almaty, Kazakhstan"
+  ],
+  "summary": "AI Engineer with robust experience in AI applications development, ranging from architecting Retrieval-Augmented Generation (RAG) systems to deploying Computer Vision models in production. Proficient in PyTorch, with a strong focus on building scalable backend services and LLM applications using FastAPI and Docker. Skilled in optimization techniques for LLMs and developing end-to-end machine learning pipelines that solve complex classification and retrieval problems.",
+  "total_experience_months": 0,
+  "work_history": [
+    {
+      "role": "AI Engineer",
+      "company": "Self-Employed",
+      "start_date": "",
+      "end_date": "",
+      "description": "Developed AI applications including RAG systems and Computer Vision models.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "PyTorch",
+        "TensorFlow/Keras",
+        "JavaScript",
+        "Hugging Face",
+        "ONNX"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "KBTU",
+      "degree": "Bachelor of Computer Science",
+      "year": ""
+    }
+  ],
+  "skills": [
+    "Machine Learning",
+    "Pandas",
+    "Numpy",
+    "Scikit-Learn",
+    "Scipy",
+    "seaborn",
+    "matplotlib",
+    "Deep Learning",
+    "PyTorch",
+    "TensorFlow/Keras",
+    "CNNs",
+    "Hugging Face Transformers",
+    "LLMs (Gemini, Llama 3)",
+    "Generative AI",
+    "RAG Architectures",
+    "LangChain",
+    "Vector Databases (Qdrant)",
+    "Embeddings",
+    "Backend & MLOps",
+    "Python",
+    "FastAPI",
+    "Docker",
+    "REST APIs",
+    "Redis",
+    "ONNX Runtime",
+    "Computer Vision",
+    "Grad-CAM",
+    "Image Classification",
+    "OpenCV"
+  ],
+  "languages": []
+}

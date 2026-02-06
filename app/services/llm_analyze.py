@@ -7,20 +7,15 @@ LLM Analyzer - анализ соответствия кандидата вака
 - Выделения сильных и слабых сторон
 """
 
-import os
 from typing import List, Optional
 from pathlib import Path
 
-from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 
 from app.models.cv import CVOutput
-
-load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+from app.core.config import OPENAI_API_KEY
 
 
 # ==================== PYDANTIC МОДЕЛИ ====================
@@ -75,7 +70,7 @@ class LLMAnalyzer:
     Предоставляет детальную оценку с объяснениями.
     """
     
-    def __init__(self, model: str = "gpt-4o", temperature: float = 0.3):
+    def __init__(self, model: str = "gpt-4o-mini", temperature: float = 0.3):
         """
         Args:
             model: Модель OpenAI для анализа
@@ -302,141 +297,3 @@ Provide a comprehensive analysis with relevance score, strengths, weaknesses, an
                 "description": "Кандидат не подходит для этой вакансии",
                 "color": "darkred"
             }
-
-
-# ==================== ТЕСТОВЫЕ ФУНКЦИИ ====================
-
-def test_analyzer_with_sample_data():
-    """Тестирует анализатор на примере"""
-    from app.models.cv import WorkExperience, Education
-    
-    # Создаем тестовый CV
-    sample_cv = CVOutput(
-        full_name="Иван Иванов",
-        email="ivan@example.com",
-        phone="+7 900 123-45-67",
-        location=["Москва, Россия"],
-        summary="Senior Python разработчик с 5+ годами опыта в backend разработке. "
-                "Специализируюсь на FastAPI, Django, PostgreSQL. Опыт работы с Docker, "
-                "Kubernetes, CI/CD. Участвовал в разработке высоконагруженных систем.",
-        total_experience_months=60,
-        work_history=[
-            WorkExperience(
-                role="Senior Python Developer",
-                company="Tech Corp",
-                start_date="2021-03",
-                end_date="Present",
-                description="Разработка микросервисной архитектуры на FastAPI. "
-                           "Оптимизация производительности БД. Внедрение CI/CD.",
-                technologies=["Python", "FastAPI", "PostgreSQL", "Docker", "Redis", "Celery"]
-            ),
-            WorkExperience(
-                role="Python Developer",
-                company="StartupXYZ",
-                start_date="2019-01",
-                end_date="2021-02",
-                description="Backend разработка на Django. REST API, интеграции с внешними сервисами.",
-                technologies=["Python", "Django", "MySQL", "RabbitMQ"]
-            )
-        ],
-        education=[
-            Education(
-                institution="МГУ",
-                degree="Бакалавр, Прикладная математика и информатика",
-                year="2018"
-            )
-        ],
-        skills=[
-            "Python", "FastAPI", "Django", "PostgreSQL", "MySQL", "Docker",
-            "Kubernetes", "Redis", "Celery", "RabbitMQ", "Git", "Linux"
-        ],
-        languages=["Русский (родной)", "Английский (Upper-Intermediate)"]
-    )
-    
-    # Тестовая вакансия
-    vacancy = """
-Senior Python Backend Developer
-
-Требования:
-- Опыт работы с Python от 3 лет
-- Знание FastAPI или Django
-- Опыт работы с PostgreSQL
-- Понимание Docker и контейнеризации
-- Опыт с Redis, Celery
-- Знание английского языка на уровне чтения документации
-
-Обязанности:
-- Разработка и поддержка backend микросервисов
-- Проектирование API
-- Оптимизация производительности
-- Code review, менторинг junior разработчиков
-
-Будет плюсом:
-- Опыт с Kubernetes
-- Знание GraphQL
-- Опыт с ML/AI
-"""
-    
-    print("="*70)
-    print("ТЕСТ LLM ANALYZER")
-    print("="*70)
-    
-    print(f"\n📋 Кандидат: {sample_cv.full_name}")
-    print(f"💼 Опыт: {sample_cv.total_experience_months} мес. ({sample_cv.total_experience_months/12:.1f} лет)")
-    print(f"🔧 Навыки: {', '.join(sample_cv.skills[:5])}...")
-    
-    print(f"\n📄 Вакансия: Senior Python Backend Developer")
-    print("="*70)
-    
-    # Создаем анализатор
-    analyzer = LLMAnalyzer(model="gpt-4o", temperature=0.3)
-    
-    print("\n🤖 Анализ через LLM...")
-    analysis = analyzer.analyze_match(sample_cv, vacancy)
-    
-    # Выводим результаты
-    print("\n" + "="*70)
-    print("РЕЗУЛЬТАТЫ АНАЛИЗА")
-    print("="*70)
-    
-    interpretation = analyzer.get_score_interpretation(analysis.relevance_score)
-    
-    print(f"\n📊 ОЦЕНКА: {analysis.relevance_score:.3f} / 1.0")
-    print(f"   {interpretation['label']}")
-    print(f"   {interpretation['description']}")
-    
-    print(f"\n🎯 Общая оценка: {analysis.overall_assessment.upper()}")
-    print(f"💡 Рекомендация: {analysis.recommendation.upper()}")
-    
-    print(f"\n📝 Резюме:")
-    print(f"   {analysis.summary}")
-    
-    print(f"\n✅ Сильные стороны:")
-    for i, strength in enumerate(analysis.strengths, 1):
-        print(f"   {i}. {strength}")
-    
-    print(f"\n⚠️  Слабые стороны:")
-    for i, weakness in enumerate(analysis.weaknesses, 1):
-        print(f"   {i}. {weakness}")
-    
-    print(f"\n🎯 Ключевые совпадения:")
-    for i, match in enumerate(analysis.key_matches, 1):
-        print(f"   {i}. {match}")
-    
-    print(f"\n❌ Отсутствующие требования:")
-    for i, missing in enumerate(analysis.missing_requirements, 1):
-        print(f"   {i}. {missing}")
-    
-    print(f"\n💭 Обоснование:")
-    print(f"   {analysis.reasoning}")
-    
-    print("\n" + "="*70)
-    print("✅ ТЕСТ ЗАВЕРШЕН")
-    print("="*70)
-    
-    return analysis
-
-
-if __name__ == "__main__":
-    # Запуск теста
-    test_analyzer_with_sample_data()

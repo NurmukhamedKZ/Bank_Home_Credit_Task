@@ -34,8 +34,11 @@ def main():
     else:
         search_mode = "hybrid"
     
-    # Определяем sparse метод
-    sparse_method = "bm25" if args.bm25 else "tfidf"
+    # Определяем sparse метод (BM25 по умолчанию, --tfidf для TF-IDF)
+    if args.tfidf:
+        sparse_method = "tfidf"
+    else:
+        sparse_method = None  # Возьмёт DEFAULT_SPARSE_METHOD из конфига (bm25)
     
     print(f"""
 ╔═══════════════════════════════════════════════════════════════╗
@@ -43,14 +46,15 @@ def main():
 ╚═══════════════════════════════════════════════════════════════╝
 
 ℹ️  Режим: {search_mode.upper()}
-ℹ️  Sparse метод: {sparse_method.upper()}
+ℹ️  Sparse метод: {(sparse_method or 'BM25 (default)').upper()}
     """)
     
     from app.services.cv_parser import CVParser
     from app.evaluation.evaluator import CVSearchEvaluator
+    from app.core.config import QDRANT_COLLECTION_NAME
     
     print("🚀 Инициализация CVParser...")
-    cv_parser = CVParser(collection_name="CVs_BM25", sparse_method=sparse_method)
+    cv_parser = CVParser(collection_name=QDRANT_COLLECTION_NAME, sparse_method=sparse_method)
     
     print("📊 Создание оценщика...")
     evaluator = CVSearchEvaluator(cv_parser)

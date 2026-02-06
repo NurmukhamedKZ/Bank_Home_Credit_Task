@@ -13,6 +13,9 @@ from app.models.api import (
     LLMAnalysisResult,
     CandidateWithLLMAnalysis,
     SearchWithLLMResponse,
+    MLClassifierRequest,
+    CandidateMLResult,
+    MLClassifierResponse,
 )
 
 __all__ = [
@@ -30,4 +33,7 @@ __all__ = [
     "LLMAnalysisResult",
     "CandidateWithLLMAnalysis",
     "SearchWithLLMResponse",
+    "MLClassifierRequest",
+    "CandidateMLResult",
+    "MLClassifierResponse",
 ]

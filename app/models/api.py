@@ -108,3 +108,39 @@ class SearchWithLLMResponse(BaseModel):
     results_count: int = Field(description="Количество найденных кандидатов")
     llm_analyzed_count: int = Field(description="Количество кандидатов проанализированных через LLM")
     candidates: List[CandidateWithLLMAnalysis] = Field(description="Список кандидатов с LLM анализом")
+
+
+class MLClassifierRequest(BaseModel):
+    """Запрос на поиск через ML классификатор"""
+    vacancy_text: str = Field(
+        ...,
+        min_length=10,
+        description="Текст вакансии для поиска релевантных кандидатов"
+    )
+    top_k: int = Field(
+        default=10,
+        ge=1,
+        le=50,
+        description="Количество кандидатов в результате (1-50)"
+    )
+    threshold: float = Field(
+        default=0.5,
+        ge=0.0,
+        le=1.0,
+        description="Порог вероятности для классификации (0.0-1.0)"
+    )
+
+
+class CandidateMLResult(CandidateResult):
+    """Результат с ML классификатором"""
+    ml_probability: float = Field(description="Вероятность релевантности от ML классификатора")
+    ml_prediction: int = Field(description="Бинарное предсказание (0 или 1)")
+
+
+class MLClassifierResponse(BaseModel):
+    """Ответ на запрос поиска через ML классификатор"""
+    query_preview: str = Field(description="Превью текста запроса")
+    results_count: int = Field(description="Количество кандидатов")
+    threshold: float = Field(description="Использованный порог классификации")
+    relevant_count: int = Field(description="Количество кандидатов выше порога")
+    candidates: List[CandidateMLResult] = Field(description="Список кандидатов с ML оценками")

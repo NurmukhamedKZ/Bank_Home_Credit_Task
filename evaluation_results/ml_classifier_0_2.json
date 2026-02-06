@@ -1,0 +1,402 @@
+[
+  {
+    "vacancy": "QA_engineer_1",
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.2,
+      "precision@8": 0.125,
+      "precision@10": 0.1,
+      "recall@1": 0.2,
+      "recall@3": 0.2,
+      "recall@5": 0.2,
+      "recall@8": 0.2,
+      "recall@10": 0.2,
+      "f1@1": 0.33333333333333337,
+      "f1@3": 0.25,
+      "f1@5": 0.20000000000000004,
+      "f1@8": 0.15384615384615385,
+      "f1@10": 0.13333333333333333,
+      "map": 0.34968608813002405,
+      "mrr": 1.0,
+      "ndcg@1": 1.0,
+      "ndcg@3": 0.46927872602275644,
+      "ndcg@5": 0.3391602052736161,
+      "ndcg@8": 0.3391602052736161,
+      "ndcg@10": 0.3391602052736161
+    },
+    "retrieved": [
+      {
+        "cv_id": "QA_engineer_5",
+        "score": 0.5873761419930867,
+        "relevant": true
+      },
+      {
+        "cv_id": "Data_engineer_1",
+        "score": 0.575481715751333,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_4",
+        "score": 0.5558757156778227,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_2",
+        "score": 0.5424203706358486,
+        "relevant": false
+      },
+      {
+        "cv_id": "AI_engineer_3",
+        "score": 0.5402086273292728,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_2",
+        "score": 0.5338507248587078,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_3",
+        "score": 0.5289910168563384,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_5",
+        "score": 0.5255300167975427,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_3",
+        "score": 0.5235340099026865,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_5",
+        "score": 0.5222553191276909,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "vacancy": "Frontend_1",
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.2,
+      "precision@8": 0.375,
+      "precision@10": 0.4,
+      "recall@1": 0.0,
+      "recall@3": 0.2,
+      "recall@5": 0.2,
+      "recall@8": 0.6,
+      "recall@10": 0.8,
+      "f1@1": 0.0,
+      "f1@3": 0.25,
+      "f1@5": 0.20000000000000004,
+      "f1@8": 0.4615384615384615,
+      "f1@10": 0.5333333333333333,
+      "map": 0.347156862745098,
+      "mrr": 0.3333333333333333,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.23463936301137822,
+      "ndcg@5": 0.16958010263680806,
+      "ndcg@8": 0.39738453770356597,
+      "ndcg@10": 0.49542382353492304
+    },
+    "retrieved": [
+      {
+        "cv_id": "QA_engineer_5",
+        "score": 0.6159082832150586,
+        "relevant": false
+      },
+      {
+        "cv_id": "Data_engineer_1",
+        "score": 0.6124893453182859,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_4",
+        "score": 0.6081084467484096,
+        "relevant": true
+      },
+      {
+        "cv_id": "Backend_2",
+        "score": 0.6014609473246361,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_5",
+        "score": 0.5875619001579405,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_3",
+        "score": 0.5838726634940508,
+        "relevant": true
+      },
+      {
+        "cv_id": "Backend_3",
+        "score": 0.5807651552135149,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_2",
+        "score": 0.5803645805754699,
+        "relevant": true
+      },
+      {
+        "cv_id": "AI_engineer_3",
+        "score": 0.5801266216582858,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_5",
+        "score": 0.5723690629607155,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "vacancy": "AI_engineer_1",
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.0,
+      "precision@5": 0.2,
+      "precision@8": 0.125,
+      "precision@10": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.2,
+      "recall@8": 0.2,
+      "recall@10": 0.2,
+      "f1@1": 0.0,
+      "f1@3": 0.0,
+      "f1@5": 0.20000000000000004,
+      "f1@8": 0.15384615384615385,
+      "f1@10": 0.13333333333333333,
+      "map": 0.19688311688311688,
+      "mrr": 0.25,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.14606834984270645,
+      "ndcg@8": 0.14606834984270645,
+      "ndcg@10": 0.14606834984270645
+    },
+    "retrieved": [
+      {
+        "cv_id": "QA_engineer_5",
+        "score": 0.5701470831326227,
+        "relevant": false
+      },
+      {
+        "cv_id": "Data_engineer_1",
+        "score": 0.5514025817880425,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_4",
+        "score": 0.5234051746129108,
+        "relevant": false
+      },
+      {
+        "cv_id": "AI_engineer_3",
+        "score": 0.5124281020474414,
+        "relevant": true
+      },
+      {
+        "cv_id": "Backend_2",
+        "score": 0.5073064205390452,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_2",
+        "score": 0.5021915596702881,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_3",
+        "score": 0.49379394316982794,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_5",
+        "score": 0.48809041126699887,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_5",
+        "score": 0.48773284065160033,
+        "relevant": false
+      },
+      {
+        "cv_id": "Data_engineer_3",
+        "score": 0.48728141084374615,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "vacancy": "Data_engineer_1",
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.3333333333333333,
+      "precision@5": 0.2,
+      "precision@8": 0.25,
+      "precision@10": 0.3,
+      "recall@1": 0.0,
+      "recall@3": 0.2,
+      "recall@5": 0.2,
+      "recall@8": 0.4,
+      "recall@10": 0.6,
+      "f1@1": 0.0,
+      "f1@3": 0.25,
+      "f1@5": 0.20000000000000004,
+      "f1@8": 0.3076923076923077,
+      "f1@10": 0.4,
+      "map": 0.30714285714285716,
+      "mrr": 0.5,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.2960819109658652,
+      "ndcg@5": 0.21398626473452756,
+      "ndcg@8": 0.32097939710179135,
+      "ndcg@10": 0.4190186829331484
+    },
+    "retrieved": [
+      {
+        "cv_id": "QA_engineer_5",
+        "score": 0.5504438040002468,
+        "relevant": false
+      },
+      {
+        "cv_id": "Data_engineer_1",
+        "score": 0.5244870747195658,
+        "relevant": true
+      },
+      {
+        "cv_id": "Frontend_4",
+        "score": 0.49274431567976024,
+        "relevant": false
+      },
+      {
+        "cv_id": "AI_engineer_3",
+        "score": 0.48709028328271686,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_2",
+        "score": 0.4750972464637028,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_2",
+        "score": 0.4729049227898058,
+        "relevant": false
+      },
+      {
+        "cv_id": "AI_engineer_1",
+        "score": 0.4667343180681856,
+        "relevant": false
+      },
+      {
+        "cv_id": "Data_engineer_3",
+        "score": 0.4643306232090231,
+        "relevant": true
+      },
+      {
+        "cv_id": "Frontend_3",
+        "score": 0.46259564115099927,
+        "relevant": false
+      },
+      {
+        "cv_id": "Data_engineer_2",
+        "score": 0.4601860610503663,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "vacancy": "Backend_1",
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 0.0,
+      "precision@3": 0.0,
+      "precision@5": 0.4,
+      "precision@8": 0.375,
+      "precision@10": 0.3,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.4,
+      "recall@8": 0.6,
+      "recall@10": 0.6,
+      "f1@1": 0.0,
+      "f1@3": 0.0,
+      "f1@5": 0.4000000000000001,
+      "f1@8": 0.4615384615384615,
+      "f1@10": 0.4,
+      "map": 0.33389610389610386,
+      "mrr": 0.25,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.27727342735504823,
+      "ndcg@8": 0.39032682911292027,
+      "ndcg@10": 0.39032682911292027
+    },
+    "retrieved": [
+      {
+        "cv_id": "Frontend_4",
+        "score": 0.6327919958539059,
+        "relevant": false
+      },
+      {
+        "cv_id": "Data_engineer_1",
+        "score": 0.631594434339137,
+        "relevant": false
+      },
+      {
+        "cv_id": "QA_engineer_5",
+        "score": 0.6299805004135178,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_2",
+        "score": 0.6263630416427949,
+        "relevant": true
+      },
+      {
+        "cv_id": "Backend_5",
+        "score": 0.6195417957114053,
+        "relevant": true
+      },
+      {
+        "cv_id": "Frontend_3",
+        "score": 0.6140931533032076,
+        "relevant": false
+      },
+      {
+        "cv_id": "Backend_3",
+        "score": 0.61135050413281,
+        "relevant": true
+      },
+      {
+        "cv_id": "Frontend_2",
+        "score": 0.6066545277181673,
+        "relevant": false
+      },
+      {
+        "cv_id": "Frontend_5",
+        "score": 0.6032084774869121,
+        "relevant": false
+      },
+      {
+        "cv_id": "AI_engineer_3",
+        "score": 0.6030037901566562,
+        "relevant": false
+      }
+    ]
+  }
+]

@@ -12,9 +12,8 @@ from datetime import datetime
 import os
 import re
 from typing import Optional, List
-from dotenv import load_dotenv
 
-load_dotenv()
+from app.core.config import EMAIL_ADDRESS, EMAIL_PASSWORD, IMAP_SERVER
 
 
 class EmailFetcher:
@@ -47,9 +46,9 @@ class EmailFetcher:
             imap_port: IMAP порт (по умолчанию 993 для SSL)
             output_dir: Папка для сохранения резюме
         """
-        self.email_address = email_address or os.getenv("EMAIL_ADDRESS")
-        self.email_password = email_password or os.getenv("EMAIL_PASSWORD")
-        self.imap_server = imap_server or os.getenv("IMAP_SERVER", "imap.gmail.com")
+        self.email_address = email_address or EMAIL_ADDRESS
+        self.email_password = email_password or EMAIL_PASSWORD
+        self.imap_server = imap_server or IMAP_SERVER
         self.imap_port = imap_port
         
         # Папка для сохранения резюме

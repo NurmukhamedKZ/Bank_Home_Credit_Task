@@ -3,10 +3,8 @@ CVParser - класс для парсинга резюме из различны
 извлечения структурированных данных через LLM и сохранения в Qdrant.
 """
 
-from dotenv import load_dotenv
 from pathlib import Path
 from typing import List, Optional, Dict
-import os
 import uuid
 import json
 import pickle
@@ -31,14 +29,16 @@ from rank_bm25 import BM25Okapi
 # Pydantic модели
 from app.models.cv import CVOutput
 
-load_dotenv()
-
-# API ключи
-LLAMA_PARSE_API = os.getenv("LLAMA_PARSE_API")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-QDRANT_API = os.getenv("QDRANT_API")
-QDRANT_URL = os.getenv("QDRANT_URL")
-VOYAGE_API = os.getenv("VOYAGE_API")
+# Конфигурация
+from app.core.config import (
+    LLAMA_PARSE_API,
+    OPENAI_API_KEY,
+    QDRANT_API,
+    QDRANT_URL,
+    QDRANT_COLLECTION_NAME,
+    VOYAGE_API,
+    DEFAULT_SPARSE_METHOD,
+)
 
 
 class CVParser:
@@ -49,10 +49,10 @@ class CVParser:
     
     def __init__(
         self,
-        collection_name: str = "CVs",
+        collection_name: str = None,
         dense_model_name: str = "voyage-4-large",
         dense_output_dim: int = 1024,
-        sparse_method: str = "tfidf",
+        sparse_method: str = None,
         raw_cvs_folder: str | Path = None,
         json_cvs_folder: str | Path = None,
         parsed_cvs_folder: str | Path = None
@@ -69,8 +69,8 @@ class CVParser:
             json_cvs_folder: Папка для сохранения JSON файлов (default: data/CV_JSONs)
             parsed_cvs_folder: Папка для parsed текстов (default: data/Parsed_CVs)
         """
-        self.collection_name = collection_name
-        self.sparse_method = sparse_method.lower()
+        self.collection_name = collection_name or QDRANT_COLLECTION_NAME
+        self.sparse_method = (sparse_method or DEFAULT_SPARSE_METHOD).lower()
         
         if self.sparse_method not in ["tfidf", "bm25"]:
             raise ValueError(f"sparse_method должен быть 'tfidf' или 'bm25', получено: {sparse_method}")

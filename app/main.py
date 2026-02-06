@@ -13,6 +13,7 @@ from fastapi import FastAPI
 
 from app.api.routes import router, set_cv_parser, clear_cv_parser
 from app.services.cv_parser import CVParser
+from app.core.config import QDRANT_COLLECTION_NAME
 
 
 @asynccontextmanager
@@ -22,7 +23,7 @@ async def lifespan(app: FastAPI):
     print("📊 Инициализация CVParser...")
     
     # Инициализируем CVParser при старте
-    cv_parser = CVParser(collection_name="CVs_BM25")
+    cv_parser = CVParser(collection_name=QDRANT_COLLECTION_NAME)
     set_cv_parser(cv_parser)
     
     # Проверяем соединение с Qdrant
