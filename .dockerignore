@@ -1,0 +1,49 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv
+venv
+ENV
+
+# IDE
+.vscode
+.idea
+.cursor
+*.swp
+*.swo
+
+# Testing
+.pytest_cache
+.coverage
+htmlcov
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Project specific
+research/
+evaluation_results/
+*.log
+
+# Secrets (should use env file)
+.env.local
+.env.*.local
+
+# Large files that should be mounted as volumes
+data/Raw_CVs/*
+data/Parsed_CVs/*
+data/CV_JSONs/*
+data/CVs/*
+metrics/*
+
+# Keep directory structure
+!data/.gitkeep
+!metrics/.gitkeep

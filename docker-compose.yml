@@ -1,0 +1,65 @@
+services:
+  # FastAPI Backend
+  api:
+    build: .
+    container_name: cv-search-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./metrics:/app/metrics
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Streamlit Frontend - Поиск кандидатов
+  frontend:
+    build: .
+    container_name: cv-search-frontend
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - API_URL=http://api:8000
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - api
+    command: streamlit run app/ui/frontend.py --server.port 8501 --server.address 0.0.0.0
+    restart: unless-stopped
+
+  # Streamlit Dashboard - Метрики
+  dashboard:
+    build: .
+    container_name: cv-search-dashboard
+    ports:
+      - "8502:8502"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./metrics:/app/metrics
+    depends_on:
+      - api
+    command: streamlit run app/ui/dashboard.py --server.port 8502 --server.address 0.0.0.0
+    restart: unless-stopped
+
+  # Email Fetcher - Мониторинг почты
+  email-fetcher:
+    build: .
+    container_name: cv-email-fetcher
+    env_file:
+      - .env
+    environment:
+      - EMAIL_CHECK_INTERVAL=60
+    volumes:
+      - ./data:/app/data
+    command: python scripts/run_email_watcher.py
+    restart: unless-stopped

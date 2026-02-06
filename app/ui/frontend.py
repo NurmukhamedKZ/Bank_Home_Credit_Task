@@ -16,9 +16,10 @@ Streamlit фронтенд для поиска кандидатов по вак�
 import streamlit as st
 import requests
 from typing import Optional
+import os
 
-# Конфигурация
-API_URL = "http://localhost:8000"
+# Конфигурация - читаем из переменных окружения для Docker
+API_URL = os.environ.get("API_URL", "http://localhost:8000")
 
 # Настройка страницы
 st.set_page_config(
