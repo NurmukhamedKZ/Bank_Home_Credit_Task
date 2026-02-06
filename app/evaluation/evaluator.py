@@ -7,6 +7,7 @@ from typing import List, Dict, Set, Tuple
 import pandas as pd
 from datetime import datetime
 import json
+import time
 
 from qdrant_client import models
 from qdrant_client.models import Prefetch
@@ -115,7 +116,7 @@ class CVSearchEvaluator:
         query_text: str,
         top_k: int = 10,
         search_mode: str = "hybrid"
-    ) -> List[Tuple[str, float, str]]:
+    ) -> Tuple[List[Tuple[str, float, str]], float]:
         """
         Поиск CV через Qdrant с поддержкой разных режимов
         
@@ -125,8 +126,11 @@ class CVSearchEvaluator:
             search_mode: Режим поиска - "dense", "sparse", или "hybrid"
             
         Returns:
-            List[(cv_identifier, score, full_name)]
+            Tuple[List[(cv_identifier, score, full_name)], latency_seconds]
         """
+        # Начинаем отсчёт времени
+        start_time = time.time()
+        
         # Валидация режима
         if search_mode not in ["dense", "sparse", "hybrid"]:
             raise ValueError(f"Неверный search_mode: {search_mode}")
@@ -209,7 +213,10 @@ class CVSearchEvaluator:
             full_name = point.payload.get('full_name', 'Unknown')
             cv_results.append((cv_identifier, score, full_name))
         
-        return cv_results
+        # Вычисляем latency в секундах
+        latency = time.time() - start_time
+        
+        return cv_results, latency
     
     def evaluate_single_vacancy(
         self,
@@ -224,8 +231,8 @@ class CVSearchEvaluator:
         vacancy_text = self.vacancies[vacancy_name]
         relevant_cvs = self.ground_truth[vacancy_name]
         
-        # Поиск
-        retrieved_results = self.search_cvs(vacancy_text, top_k, search_mode)
+        # Поиск с замером времени
+        retrieved_results, latency = self.search_cvs(vacancy_text, top_k, search_mode)
         retrieved_ids = [cv_id for cv_id, _, _ in retrieved_results]
         
         # Вычисляем метрики
@@ -270,7 +277,8 @@ class CVSearchEvaluator:
             'retrieved': retrieved_results[:5],
             'relevant': relevant_cvs,
             'relevant_count': len(relevant_cvs),
-            'metrics': metrics
+            'metrics': metrics,
+            'latency_seconds': latency
         }
     
     def evaluate_all(self, top_k: int = 10, search_mode: str = "hybrid") -> Tuple[pd.DataFrame, List[Dict]]:
@@ -301,7 +309,11 @@ class CVSearchEvaluator:
         # Конвертируем в DataFrame
         rows = []
         for r in results:
-            row = {'vacancy': r['vacancy'], 'relevant_count': r['relevant_count']}
+            row = {
+                'vacancy': r['vacancy'], 
+                'relevant_count': r['relevant_count'],
+                'latency_seconds': r.get('latency_seconds', None)
+            }
             row.update(r['metrics'])
             rows.append(row)
         
@@ -394,6 +406,11 @@ class CVSearchEvaluator:
         for result in results:
             print(f"\n🎯 Вакансия: {result['vacancy']}")
             print(f"   Релевантных CV: {result['relevant_count']}")
+            
+            # Показываем latency если есть
+            if 'latency_seconds' in result and result['latency_seconds'] is not None:
+                print(f"   ⚡ Latency: {result['latency_seconds'] * 1000:.2f} ms")
+            
             print(f"   MAP: {result['metrics']['map']:.3f}")
             print(f"   MRR: {result['metrics']['mrr']:.3f}")
             print(f"   Precision@5: {result['metrics'].get('precision@5', 0):.3f}")

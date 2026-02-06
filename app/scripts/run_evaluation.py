@@ -72,6 +72,20 @@ def main():
     confusion = evaluator.generate_confusion_matrix(results)
     print(confusion.to_string())
     
+    # Статистика latency
+    latencies = [r.get('latency_seconds') for r in results if r.get('latency_seconds') is not None]
+    if latencies:
+        print(f"\n{'='*60}")
+        print("⚡ СТАТИСТИКА LATENCY")
+        print(f"{'='*60}\n")
+        avg_latency = sum(latencies) / len(latencies)
+        min_latency = min(latencies)
+        max_latency = max(latencies)
+        print(f"   Среднее время поиска: {avg_latency * 1000:.2f} ms")
+        print(f"   Минимальное время:    {min_latency * 1000:.2f} ms")
+        print(f"   Максимальное время:   {max_latency * 1000:.2f} ms")
+        print(f"   Всего запросов:       {len(latencies)}")
+    
     # Сохраняем результаты
     print(f"\n{'='*60}")
     evaluator.save_results(df, results)

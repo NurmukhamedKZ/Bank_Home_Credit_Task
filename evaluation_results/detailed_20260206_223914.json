@@ -29,11 +29,11 @@
       ]
     ],
     "relevant": [
-      "QA_engineer_3",
-      "QA_engineer_1",
       "QA_engineer_4",
+      "QA_engineer_3",
+      "QA_engineer_2",
       "QA_engineer_5",
-      "QA_engineer_2"
+      "QA_engineer_1"
     ],
     "relevant_count": 5,
     "metrics": {
@@ -60,7 +60,7 @@
       "ndcg@8": 1.0,
       "ndcg@10": 1.0
     },
-    "latency_seconds": 0.9873671531677246
+    "latency_seconds": 0.9711170196533203
   },
   {
     "vacancy": "Frontend_1",
@@ -92,10 +92,10 @@
       ]
     ],
     "relevant": [
-      "Frontend_4",
-      "Frontend_3",
-      "Frontend_1",
       "Frontend_5",
+      "Frontend_4",
+      "Frontend_1",
+      "Frontend_3",
       "Frontend_2"
     ],
     "relevant_count": 5,
@@ -123,16 +123,11 @@
       "ndcg@8": 1.0,
       "ndcg@10": 1.0
     },
-    "latency_seconds": 0.5725710391998291
+    "latency_seconds": 0.49157094955444336
   },
   {
     "vacancy": "AI_engineer_1",
     "retrieved": [
-      [
-        "AI_engineer_2",
-        0.8465975,
-        "Әшекей Нұрмұхамед"
-      ],
       [
         "AI_engineer_4",
         0.7955376,
@@ -152,41 +147,46 @@
         "Data_engineer_4",
         0.7818329,
         "Кандидат"
+      ],
+      [
+        "AI_engineer_5",
+        0.7804795,
+        "Кандидат"
       ]
     ],
     "relevant": [
-      "AI_engineer_4",
-      "AI_engineer_2",
       "AI_engineer_3",
+      "AI_engineer_1",
+      "AI_engineer_4",
       "AI_engineer_5",
-      "AI_engineer_1"
+      "AI_engineer_2"
     ],
     "relevant_count": 5,
     "metrics": {
       "precision@1": 1.0,
       "precision@3": 0.6666666666666666,
       "precision@5": 0.6,
-      "precision@8": 0.625,
-      "precision@10": 0.5,
+      "precision@8": 0.5,
+      "precision@10": 0.4,
       "recall@1": 0.2,
       "recall@3": 0.4,
       "recall@5": 0.6,
-      "recall@8": 1.0,
-      "recall@10": 1.0,
+      "recall@8": 0.8,
+      "recall@10": 0.8,
       "f1@1": 0.33333333333333337,
       "f1@3": 0.5,
       "f1@5": 0.6,
-      "f1@8": 0.7692307692307693,
-      "f1@10": 0.6666666666666666,
-      "map": 0.9416666666666667,
+      "f1@8": 0.6153846153846154,
+      "f1@10": 0.5333333333333333,
+      "map": 0.5676190476190476,
       "mrr": 1.0,
       "ndcg@1": 1.0,
-      "ndcg@3": 0.7653606369886217,
-      "ndcg@5": 0.6992148198508501,
-      "ndcg@8": 0.9270192549176082,
-      "ndcg@10": 1.0291166500405198
+      "ndcg@3": 0.7039180890341347,
+      "ndcg@5": 0.639945385422766,
+      "ndcg@8": 0.7529987871806381,
+      "ndcg@10": 0.7529987871806381
     },
-    "latency_seconds": 0.6096169948577881
+    "latency_seconds": 0.6190500259399414
   },
   {
     "vacancy": "Data_engineer_1",
@@ -218,11 +218,11 @@
       ]
     ],
     "relevant": [
-      "Data_engineer_1",
-      "Data_engineer_4",
+      "Data_engineer_5",
       "Data_engineer_2",
-      "Data_engineer_3",
-      "Data_engineer_5"
+      "Data_engineer_4",
+      "Data_engineer_1",
+      "Data_engineer_3"
     ],
     "relevant_count": 5,
     "metrics": {
@@ -249,7 +249,7 @@
       "ndcg@8": 1.0,
       "ndcg@10": 1.0
     },
-    "latency_seconds": 0.5900559425354004
+    "latency_seconds": 0.600456953048706
   },
   {
     "vacancy": "Backend_1",
@@ -281,11 +281,11 @@
       ]
     ],
     "relevant": [
-      "Backend_2",
       "Backend_5",
-      "Backend_3",
       "Backend_4",
-      "Backend_1"
+      "Backend_1",
+      "Backend_3",
+      "Backend_2"
     ],
     "relevant_count": 5,
     "metrics": {
@@ -312,6 +312,6 @@
       "ndcg@8": 1.0,
       "ndcg@10": 1.0
     },
-    "latency_seconds": 0.4947969913482666
+    "latency_seconds": 0.5685479640960693
   }
 ]

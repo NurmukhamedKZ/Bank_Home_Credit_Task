@@ -58,7 +58,8 @@ def json_to_dataframe(data: list) -> pd.DataFrame:
     for item in data:
         row = {
             'vacancy': item.get('vacancy', ''),
-            'relevant_count': item.get('relevant_count', 0)
+            'relevant_count': item.get('relevant_count', 0),
+            'latency_seconds': item.get('latency_seconds', None)
         }
         metrics = item.get('metrics', {})
         row.update(metrics)
@@ -269,14 +270,22 @@ def main():
         df = json_to_dataframe(data['raw_data'])
         method_type = get_method_type(method_name)
         
-        summary_data.append({
+        summary_row = {
             'Метод': f"{method_type} {method_name}",
             'MAP': df['map'].mean() if 'map' in df.columns else 0,
             'MRR': df['mrr'].mean() if 'mrr' in df.columns else 0,
             'Precision@5': df['precision@5'].mean() if 'precision@5' in df.columns else 0,
             'Recall@5': df['recall@5'].mean() if 'recall@5' in df.columns else 0,
             'NDCG@5': df['ndcg@5'].mean() if 'ndcg@5' in df.columns else 0,
-        })
+        }
+        
+        # Добавляем latency если есть
+        if 'latency_seconds' in df.columns:
+            avg_latency = df['latency_seconds'].mean()
+            if pd.notna(avg_latency):
+                summary_row['Avg Latency (ms)'] = avg_latency * 1000
+        
+        summary_data.append(summary_row)
     
     summary_df = pd.DataFrame(summary_data)
     
@@ -297,6 +306,12 @@ def main():
             
             if 'recall@5' in df.columns:
                 st.metric("Recall@5", f"{df['recall@5'].mean():.3f}")
+            
+            # Показываем latency если есть
+            if 'latency_seconds' in df.columns:
+                avg_latency = df['latency_seconds'].mean()
+                if pd.notna(avg_latency):
+                    st.metric("⚡ Avg Latency", f"{avg_latency * 1000:.1f} ms")
     
     st.divider()
     
@@ -353,7 +368,10 @@ def main():
     
     display_df = df.copy()
     for col in display_df.columns:
-        if col not in ['vacancy', 'relevant_count']:
+        if col == 'latency_seconds':
+            # Конвертируем latency в миллисекунды для лучшей читаемости
+            display_df[col] = display_df[col].apply(lambda x: f"{x * 1000:.2f} ms" if pd.notna(x) else "-")
+        elif col not in ['vacancy', 'relevant_count']:
             display_df[col] = display_df[col].apply(lambda x: f"{x:.4f}" if pd.notna(x) else "-")
     
     st.dataframe(display_df, use_container_width=True, hide_index=True)
