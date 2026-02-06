@@ -22,6 +22,7 @@ from qdrant_client import QdrantClient, models
 
 # Эмбеддинги
 from langchain_voyageai import VoyageAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 from rank_bm25 import BM25Okapi
@@ -38,6 +39,7 @@ from app.core.config import (
     QDRANT_COLLECTION_NAME,
     VOYAGE_API,
     DEFAULT_SPARSE_METHOD,
+    GOOGLE_API_KEY,
 )
 
 
@@ -51,7 +53,7 @@ class CVParser:
         self,
         collection_name: str = None,
         dense_model_name: str = "voyage-4-large",
-        dense_output_dim: int = 1024,
+        dense_output_dim: int = 3072,
         sparse_method: str = None,
         raw_cvs_folder: str | Path = None,
         json_cvs_folder: str | Path = None,
@@ -130,10 +132,16 @@ CRITICAL RULES:
         self.chain = self.prompt | self.structured_llm
         
         # Модели для эмбеддингов
-        self.dense_model = VoyageAIEmbeddings(
-            voyage_api_key=VOYAGE_API,
-            model=dense_model_name,
-            output_dimension=dense_output_dim
+        # self.dense_model = VoyageAIEmbeddings(
+        #     voyage_api_key=VOYAGE_API,
+        #     model=dense_model_name,
+        #     output_dimension=dense_output_dim
+        # )
+        
+        self.dense_model = GoogleGenerativeAIEmbeddings(
+            model="models/gemini-embedding-001",
+            google_api_key=GOOGLE_API_KEY,
+            task_type="RETRIEVAL_DOCUMENT"
         )
         
         # Sparse embeddings: TF-IDF или BM25

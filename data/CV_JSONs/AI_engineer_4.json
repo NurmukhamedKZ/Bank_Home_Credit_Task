@@ -14,7 +14,7 @@
       "company": "Центр развития города Алматы, АО",
       "start_date": "2025-02",
       "end_date": "Present",
-      "description": "Руководство командой аналитиков в разработке решений на основе данных для инициатив городского планирования.",
+      "description": "Led a team of analysts in developing data-driven solutions for urban planning initiatives, including a population forecasting project and a microservice system for NL2SQL.",
       "technologies": [
         "Python",
         "FastAPI",
@@ -39,7 +39,7 @@
       "company": "Центр развития города Алматы, АО",
       "start_date": "2023-09",
       "end_date": "Present",
-      "description": "Автоматизировал сбор данных с использованием Python и Docker, оптимизируя доступ к критическим городским показателям.",
+      "description": "Automated data collection and developed Power BI dashboards for urban metrics, and created a multi-stage LLM pipeline for urban data inquiries.",
       "technologies": [
         "Python",
         "FastAPI",
@@ -57,7 +57,7 @@
       "company": "Freelance",
       "start_date": "2023-01",
       "end_date": "Present",
-      "description": "Разработал пользовательский чатбот для продажи автозапчастей с использованием ChatGPT API, улучшив вовлечение клиентов и эффективность продаж.",
+      "description": "Developed a custom chatbot for auto parts sales and an industrial-level RAG system with intelligent document search pipeline.",
       "technologies": [
         "Python",
         "FastAPI",
@@ -79,15 +79,15 @@
       "company": "Международная школа AQBOBEK",
       "start_date": "2022-11",
       "end_date": "2023-08",
-      "description": "Участие в стартапе по распознаванию позы для виртуальной примерки обуви (YOLO).",
+      "description": "Participated in a startup for pose recognition for virtual shoe fitting using YOLO.",
       "technologies": []
     },
     {
-      "role": "Инженер по автоматизации",
+      "role": "Engineer по автоматизации",
       "company": "ТОО Байнур и П",
       "start_date": "2022-08",
       "end_date": "2023-08",
-      "description": "Разработка веб сервиса для сбора показателей с IoT датчиков и настройка системы мониторинга Grafana.",
+      "description": "Developed a web service for collecting metrics from IoT sensors and set up Grafana monitoring system.",
       "technologies": []
     },
     {
@@ -95,7 +95,7 @@
       "company": "TOO Bauten",
       "start_date": "2018-08",
       "end_date": "2020-12",
-      "description": "Backend для системы тех. учёта элементов сети на Django и настройка архитектуры базы данных PostgreSQL.",
+      "description": "Developed backend for technical accounting system using Django and set up PostgreSQL database architecture.",
       "technologies": [
         "Django",
         "PostgreSQL",

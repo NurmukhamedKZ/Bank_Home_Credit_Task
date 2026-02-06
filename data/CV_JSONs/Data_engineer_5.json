@@ -6,11 +6,11 @@
   "location": [
     "Алматы"
   ],
-  "summary": "Data engineer, Big data engineer specializing in programming and development with 14 years and 8 months of experience.",
+  "summary": "Data engineer, Big data engineer specializing in programming and development.",
   "total_experience_months": 176,
   "work_history": [
     {
-      "role": "Senior Big data engineer",
+      "role": "Senior Big Data Engineer",
       "company": "Dataart",
       "start_date": "2022-02",
       "end_date": "Present",
@@ -29,9 +29,8 @@
       "company": "Aitu Dala",
       "start_date": "2021-08",
       "end_date": "2022-02",
-      "description": "Developed Kafka clients using Scala and Java, created tables and optimized queries in Greenplum, created data pipelines using Apache Airflow and DBT, stored parquet files in GlusterFS using S3 API, worked with GitLab CI/CD.",
+      "description": "Разработка Kafka клиентов с использованием Scala и Java, создание таблиц и оптимизация запросов в Greenplum, создание витрин на Apache Spark (Scala, Pyspark), создание data pipelines с использованием Apache Airflow, DBT, сохранение parquet файлов в GlusterFS с использованием S3 API, работа с gitlab ci cd.",
       "technologies": [
-        "Kafka",
         "Scala",
         "Java",
         "Greenplum",
@@ -41,15 +40,15 @@
         "DBT",
         "GlusterFS",
         "S3 API",
-        "GitLab CI/CD"
+        "gitlab ci cd"
       ]
     },
     {
-      "role": "Старший эксперт по разработке Big data",
+      "role": "Старший эксперт по разработке Big Data",
       "company": "Beeline, ТМ",
       "start_date": "2019-11",
       "end_date": "2021-08",
-      "description": "Developed and supported programs for Big Data projects, wrote programs for data processing using Spark (pyspark, scala), automated processes in Hive, visualized data using Grafana and Superset, loaded and read data from HDFS, used Spark for ETL processes, created Spark Structured Streaming applications, developed Kafka consumers, deployed open source products on Linux, created data pipelines with Airflow.",
+      "description": "Разработка и сопровождение программ для дальнейшего внедрения в Big Data проекты, написание программ для обработки данных (pyspark, scala), автоматизация процессов в базе данных Hive, создание таблиц, партиций, визуализация данных с помощью Grafana и Superset, загрузка и чтение данных из hdfs, использование spark для обработки и загрузки данных в БД (PostgeSQL, Oracle, MariaDB) из HDFS, создание Spark Structured Streaming приложения для анализа онлайн потоков, разработка kafka consumer, разворачивание open source продуктов на Linux, создание data pipeline с Airflow.",
       "technologies": [
         "Spark",
         "pyspark",
@@ -58,7 +57,6 @@
         "Grafana",
         "Superset",
         "Hadoop",
-        "ETL",
         "PostgreSQL",
         "Oracle",
         "MariaDB",
@@ -71,14 +69,14 @@
       "company": "Народный банк Казахстана, АО",
       "start_date": "2012-06",
       "end_date": "2019-11",
-      "description": "Parsed websites for data collection using Python libraries (Beautiful Soup, requests, Selenium), developed backend with Flask, called procedures from Oracle and processed data, developed Kafka consumers in Java, supported applications on Red Hat Enterprise, created reports using SAP Bex analyzer and Excel VBA, visualized data with SAP BO Dashboards.",
+      "description": "Парсинг сайтов для сбора данных с использованием Beautiful Soup, requests, Selenium; разработка backend на Flask, вызов процедур из Oracle и обработка данных с помощью cx_Oracle; разработка Kafka Consumers на Java; поддержка приложений на Red Hat Enterprise; создание отчетов с помощью SAP Bex analyzer и Excel VBA; визуализация данных с помощью SAP BO Dashboards.",
       "technologies": [
         "Python",
         "Beautiful Soup",
         "requests",
         "Selenium",
         "Flask",
-        "Oracle",
+        "cx_Oracle",
         "Java",
         "Kafka",
         "Linux",
@@ -91,7 +89,7 @@
       "company": "Банк ЦентрКредит, АО",
       "start_date": "2011-07",
       "end_date": "2012-05",
-      "description": "Created and maintained reports using Excel and VBA.",
+      "description": "Создание отчетов и их сопровождение с помощью Excel и VBA.",
       "technologies": [
         "Excel",
         "VBA"

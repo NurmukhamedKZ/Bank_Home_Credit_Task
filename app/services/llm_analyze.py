@@ -89,55 +89,79 @@ class LLMAnalyzer:
         self.structured_llm = self.llm.with_structured_output(MatchAnalysis)
         
         # System prompt для анализа
-        self.system_prompt = """You are an expert technical recruiter and talent analyst with deep knowledge of IT roles.
+#         self.system_prompt = """You are an expert technical recruiter and talent analyst with deep knowledge of IT roles.
 
-Your task is to analyze how well a candidate matches a job vacancy, providing:
-1. A relevance score (0.0 to 1.0)
-2. Detailed explanation of strengths and weaknesses
-3. Key matching points and missing requirements
-4. A clear recommendation
+# Your task is to analyze how well a candidate matches a job vacancy, providing:
+# 1. A relevance score (0.0 to 1.0)
+# 2. Detailed explanation of strengths and weaknesses
+# 3. Key matching points and missing requirements
+# 4. A clear recommendation
 
-EVALUATION CRITERIA:
-- Technical skills match (40%): Required vs actual skills, experience with specific technologies
-- Experience level (25%): Years of experience, seniority, role complexity
-- Domain fit (20%): Industry experience, project types, team size
-- Soft skills & culture (15%): Communication, leadership, teamwork indicators
+# EVALUATION CRITERIA:
+# - Technical skills match (40%): Required vs actual skills, experience with specific technologies
+# - Experience level (25%): Years of experience, seniority, role complexity
+# - Domain fit (20%): Industry experience, project types, team size
+# - Soft skills & culture (15%): Communication, leadership, teamwork indicators
 
-SCORING GUIDELINES:
-- 0.9-1.0: Exceptional match, exceeds requirements
-- 0.75-0.89: Strong match, meets most requirements with some extras
-- 0.6-0.74: Good match, meets core requirements
-- 0.4-0.59: Moderate match, missing some key requirements
-- 0.2-0.39: Weak match, significant gaps
-- 0.0-0.19: Poor match, fundamentally misaligned
+# SCORING GUIDELINES:
+# - 0.9-1.0: Exceptional match, exceeds requirements
+# - 0.75-0.89: Strong match, meets most requirements with some extras
+# - 0.6-0.74: Good match, meets core requirements
+# - 0.4-0.59: Moderate match, missing some key requirements
+# - 0.2-0.39: Weak match, significant gaps
+# - 0.0-0.19: Poor match, fundamentally misaligned
 
-Be objective, specific, and constructive. Focus on facts from the CV and job requirements."""
+# Be objective, specific, and constructive. Focus on facts from the CV and job requirements."""
+
+        self.system_prompt = """Вы — опытный технический рекрутер и аналитик талантов с глубокими знаниями в сфере IT-профессий.
+
+Ваша задача — проанализировать, насколько хорошо кандидат соответствует вакансии, предоставив:
+1. Оценку соответствия (от 0,0 до 1,0)
+2. Подробное описание сильных и слабых сторон
+3. Ключевые моменты соответствия и недостающие требования
+4. Четкую рекомендацию
+
+КРИТЕРИИ ОЦЕНКИ:
+- Соответствие техническим навыкам (40%): Требуемые навыки по сравнению с фактическими, опыт работы с конкретными технологиями
+- Уровень опыта (25%): Годы опыта, должность, сложность роли
+- Соответствие предметной области (20%): Опыт работы в отрасли, типы проектов, размер команды
+- Мягкие навыки и культура (15%): Коммуникативные навыки, лидерство, показатели командной работы
+
+РУКОВОДСТВО ПО ОЦЕНКЕ:
+- 0,9-1,0: Исключительное соответствие, превосходит требования
+- 0,75-0,89: Сильное соответствие, соответствует большинству требований с некоторыми дополнительными
+- 0,6-0,74: Хорошее соответствие, соответствует основным требованиям
+- 0,4-0,59: Умеренное соответствие, отсутствуют некоторые ключевые требования
+- 0,2-0,39: Слабое соответствие, существенные несоответствия
+- 0,0-0,19: Плохое соответствие, фундаментальное несоответствие
+
+Будьте объективны, конкретны и конструктивны. Сосредоточьтесь на фактах из резюме и требованиях к вакансии."""
         
         # Создаем prompt template
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", self.system_prompt),
-            ("user", """Analyze the match between this candidate and job vacancy.
+            ("user", """Анализируйте соответствие кандидата вакансии.
 
-JOB VACANCY:
+Вакансия:
 {vacancy_text}
 
-CANDIDATE CV:
-Full Name: {full_name}
-Total Experience: {experience_months} months ({experience_years} years)
+Резюме:
+Имя: {full_name}
+Общий опыт: {experience_months} месяцев ({experience_years} лет)
 
-Summary: {summary}
+Краткий опыт работы: {summary}
 
-Skills: {skills}
+Навыки: {skills}
 
-Work History:
+История работы:
 {work_history}
 
-Education:
+Образование:
 {education}
 
-Languages: {languages}
+Языки: {languages}
 
-Provide a comprehensive analysis with relevance score, strengths, weaknesses, and recommendation.""")
+Предоставьте подробный анализ с оценкой соответствия, сильными и слабыми сторонами, ключевыми моментами соответствия и недостающими требованиями.""")
         ])
         
         # Создаем цепочку

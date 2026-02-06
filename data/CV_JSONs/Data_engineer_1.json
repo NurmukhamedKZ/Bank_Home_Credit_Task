@@ -16,9 +16,13 @@
       "end_date": "Present",
       "description": "Development of a data warehouse for analytics and management reporting purposes; Development, implementation and support of automated data storefronts in the data warehouse for the purposes of analytics and management reporting; Data quality control in the data warehouse; Ensuring data integration into the data warehouse; Interaction with other structural divisions of the Company on the development of the data warehouse; Advising users and customers of management reporting and analytics on data warehouse issues; Processing of ad-hoc requests within the framework of the Management functionality; Identifying operational risks in the Company's activities.",
       "technologies": [
-        "Data Warehouse",
-        "Data Quality Control",
-        "Data Integration"
+        "SQL",
+        "DWH",
+        "Data Analysis",
+        "PostgreSQL",
+        "Kafka",
+        "Airflow",
+        "Python"
       ]
     },
     {
@@ -26,10 +30,11 @@
       "company": "Kaspi Bank, АО",
       "start_date": "2021-12",
       "end_date": "2024-06",
-      "description": "Management of Online Events; Development and Administration of Online Processes; Develop and implement processes for sending push notifications aimed at product evaluation, as well as marketing communications; Establish and manage strategies for effective push notifications to enhance user engagement.",
+      "description": "Management of Online Events; Development and Administration of Online Processes: Develop and implement processes for sending push notifications aimed at product evaluation, as well as marketing communications; Push Notification Strategy: Establish and manage strategies for effective push notifications to enhance user engagement and gather valuable feedback on products.",
       "technologies": [
-        "Push Notifications",
-        "User Engagement"
+        "SQL",
+        "Data Analysis",
+        "Python"
       ]
     },
     {
@@ -37,10 +42,10 @@
       "company": "Банк ЦентрКредит, АО",
       "start_date": "2021-05",
       "end_date": "2021-12",
-      "description": "Implementation, development and improvement of an automatic decision-making system; Automation and optimization of the lending process; Adding new products to the system within the product group of loans; Monitoring the functioning of the lending strategy within the product group of loans.",
+      "description": "Implementation, development and improvement of an automatic decision-making system; Automation and optimization of the lending process; Adding new products to the system within the product group of loans; Monitoring the functioning of the lending strategy within the product group of loans; Development of new lending strategies within the product group of loans; Monitoring the system of interaction of various IT applications involved in the loan application review process.",
       "technologies": [
-        "Decision-Making Systems",
-        "Lending Process Automation"
+        "SQL",
+        "Data Analysis"
       ]
     },
     {
@@ -48,10 +53,10 @@
       "company": "Хоум Кредит Банк, АО",
       "start_date": "2020-01",
       "end_date": "2021-05",
-      "description": "Administration, Development, and Enhancement of Automated Decision-Making Systems; Automation and Optimization of the Lending Process; Integration of New Products and Scenarios; Monitoring of Credit Strategy Performance; Development of New Lending Strategies.",
+      "description": "Administration, Development, and Enhancement of Automated Decision-Making Systems; Automation and Optimization of the Lending Process; Integration of New Products and Scenarios; Monitoring of Credit Strategy Performance; Development of New Lending Strategies; Oversight of IT Application Integration.",
       "technologies": [
-        "Automated Decision-Making Systems",
-        "Credit Strategy Monitoring"
+        "SQL",
+        "Data Analysis"
       ]
     },
     {
@@ -67,11 +72,18 @@
       "company": "Asia InterCommunications, ТОО",
       "start_date": "2018-08",
       "end_date": "2018-12",
-      "description": "Searching for tenders, creating websites on the Tilda platform, and promoting them (Google AdWords, Yandex Direct).",
+      "description": "Responsibilities included searching for tenders, creating websites on the Tilda platform, and promoting them (Google AdWords, Yandex Direct). Achievements: 3 working websites (on the Tilda platform).",
+      "technologies": []
+    },
+    {
+      "role": "Risk Analyst",
+      "company": "Банк ЦентрКредит, АО",
+      "start_date": "2021-05",
+      "end_date": "2021-12",
+      "description": "Implementation, development and improvement of an automatic decision-making system; Automation and optimization of the lending process; Adding new products to the system within the product group of loans; Monitoring the functioning of the lending strategy within the product group of loans; Development of new lending strategies within the product group of loans; Monitoring the system of interaction of various IT applications involved in the loan application review process.",
       "technologies": [
-        "Tilda",
-        "Google AdWords",
-        "Yandex Direct"
+        "SQL",
+        "Data Analysis"
       ]
     }
   ],

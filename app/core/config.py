@@ -25,3 +25,6 @@ VOYAGE_API = os.getenv("VOYAGE_API")
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 IMAP_SERVER = os.getenv("IMAP_SERVER", "imap.gmail.com")
+
+# ==================== GOOGLE ====================
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")

@@ -15,7 +15,7 @@
       "company": "Гедеон Рихтер, ОАО (Венгрия)",
       "start_date": "2024-11",
       "end_date": "Present",
-      "description": "Ручное тестирование (functional, regression, UI/UX, exploratory). Составление чек-листов, тест-кейсов, баг-репортов. Работа с баг-трекингами: Jira. Работа с документацией: TestRail, Confluence. Тестирование API с Postman, Swagger. Основы работы с SQL (базовые SELECT-запросы) и Git.",
+      "description": "Ручное тестирование (functional, regression, UI/UX, exploratory), составление чек-листов, тест-кейсов, баг-репортов, работа с баг-трекингами: Jira, работа с документацией: TestRail, Confluence, тестирование API с Postman, Swagger, работа с JSON, REST, HTTP, базовые SELECT-запросы в SQL, основы Git.",
       "technologies": [
         "Jira",
         "TestRail",
@@ -51,7 +51,6 @@
     "Confluence",
     "Postman",
     "Swagger",
-    "API testing",
     "JSON",
     "REST",
     "HTTP",

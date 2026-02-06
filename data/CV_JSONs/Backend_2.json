@@ -7,7 +7,7 @@
     "Алматы",
     "Астана"
   ],
-  "summary": "Backend-разработчик с опытом разработки на .NET и Go, проектирования микросервисной архитектуры и реализации REST API.",
+  "summary": "Активно ищет работу",
   "total_experience_months": 57,
   "work_history": [
     {
@@ -15,7 +15,7 @@
       "company": "Народный банк Казахстана, АО",
       "start_date": "2024-09",
       "end_date": "Present",
-      "description": "Разработка backend-приложений на .NET (C#) и Go, проектирование и разработка микросервисной архитектуры, работа с Entity Framework Core, проектирование и реализация REST API, интеграция внешних сервисов, работа с MS SQL Server и PostgreSQL, использование Elasticsearch, применение Redis, работа с Apache Kafka, мониторинг с использованием Grafana, настройка CI/CD с помощью Jenkins.",
+      "description": "Разработка backend-приложений на .NET (C#) и Go, проектирование и разработка микросервисной архитектуры, работа с Entity Framework Core, проектирование и реализация REST API, работа с MS SQL Server и PostgreSQL, использование Elasticsearch, применение Redis, работа с Apache Kafka, мониторинг с использованием Grafana, настройка CI/CD с помощью Jenkins.",
       "technologies": [
         ".NET (C#)",
         "Go",
@@ -34,10 +34,9 @@
       "company": "AO FREEDOM INSURANCE",
       "start_date": "2023-03",
       "end_date": "2024-08",
-      "description": "Работа с ASP.NET, EF Core, GIT, JS, ORACLE, DOCKER, POSTGRESQL.",
+      "description": "Работа с EF CORE, GIT, JS, ORACLE, DOCKER, POSTGRESQL.",
       "technologies": [
-        "ASP.NET",
-        "EF Core",
+        "EF CORE",
         "GIT",
         "JS",
         "ORACLE",
@@ -50,10 +49,11 @@
       "company": "Нефтяная страховая компания, АО",
       "start_date": "2022-08",
       "end_date": "2023-09",
-      "description": "Улучшил процесс разработки, программировал на C# (ASP.NET Core 4), PHP (Yii2, Laravel), Vue.js. Написал автоматизированную систему страховых случаев.",
+      "description": "Улучил процесс разработки, программировал на C# (ASP.NET Core 4), PHP (Yii2, Laravel), Vue.js. Написал автоматизированную систему страховых случаев.",
       "technologies": [
         "C# (ASP.NET Core 4)",
-        "PHP (Yii2, Laravel)",
+        "PHP (Yii2)",
+        "PHP (Laravel)",
         "Vue.js"
       ]
     },
@@ -62,7 +62,7 @@
       "company": "Altyn Zhuldyz group of companies",
       "start_date": "2021-01",
       "end_date": "2022-02",
-      "description": "Работал с PHP framework Yii2, создавал интернет-магазин на Yii2, а также сайты на Vue.js, работал с базами данных и AWS, Docker.",
+      "description": "Работал с PHP framework Yii2, создавал интернет-магазин на Yii2, а также сайты на Vue.js. Работал с базами данных и AWS, Docker.",
       "technologies": [
         "PHP (Yii2)",
         "Vue.js",
@@ -89,17 +89,15 @@
     "Apache Kafka",
     "Grafana",
     "Jenkins",
-    "ASP.NET",
-    "EF Core",
+    "EF CORE",
     "GIT",
     "JS",
     "ORACLE",
     "DOCKER",
     "PHP (Yii2)",
-    "Laravel",
+    "PHP (Laravel)",
     "Vue.js",
-    "AWS",
-    "Docker"
+    "AWS"
   ],
   "languages": [
     "Казахский — Родной",

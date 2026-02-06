@@ -68,7 +68,8 @@
         "Apache Airflow",
         "Liquibase",
         "GitLab CI",
-        "Druid"
+        "Druid",
+        "YouTrack"
       ]
     }
   ],

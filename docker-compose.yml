@@ -10,7 +10,7 @@ services:
     volumes:
       - ./data:/app/data
       - ./metrics:/app/metrics
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    command: uv run uvicorn app.main:app --host 0.0.0.0 --port 8000
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
       interval: 30s
@@ -32,7 +32,7 @@ services:
       - ./data:/app/data
     depends_on:
       - api
-    command: streamlit run app/ui/frontend.py --server.port 8501 --server.address 0.0.0.0
+    command: uv run streamlit run app/ui/frontend.py --server.port 8501 --server.address 0.0.0.0
     restart: unless-stopped
 
   # Streamlit Dashboard - Метрики
@@ -48,7 +48,7 @@ services:
       - ./metrics:/app/metrics
     depends_on:
       - api
-    command: streamlit run app/ui/dashboard.py --server.port 8502 --server.address 0.0.0.0
+    command: uv run streamlit run app/ui/dashboard.py --server.port 8502 --server.address 0.0.0.0
     restart: unless-stopped
 
   # Email Fetcher - Мониторинг почты
@@ -61,5 +61,5 @@ services:
       - EMAIL_CHECK_INTERVAL=60
     volumes:
       - ./data:/app/data
-    command: python scripts/run_email_watcher.py
+    command: uv run python scripts/run_email_watcher.py
     restart: unless-stopped

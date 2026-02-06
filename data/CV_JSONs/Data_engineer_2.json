@@ -6,7 +6,7 @@
   "location": [
     "Алматы"
   ],
-  "summary": "Data Engineer with over 5 years of experience in data science and engineering, specializing in ETL processes, database architecture, and natural language processing.",
+  "summary": "Data Engineer with 5 years and 2 months of experience, specializing in Data Science. Currently seeking full-time opportunities with a focus on project work.",
   "total_experience_months": 62,
   "work_history": [
     {
@@ -22,7 +22,7 @@
       "company": "DATUM Stat Agency",
       "start_date": "2022-10",
       "end_date": "2025-07",
-      "description": "Led a team of 2 developers, designed and deployed ETL pipelines and database architectures using Apache Airflow and ClickHouse on GCP.",
+      "description": "Led a team of 2 developers for 6-8 months, overseeing both backend and frontend development for the company website. Designed, built, and deployed an ETL pipeline using Apache Airflow on Docker, fully deployed to Google Cloud Platform (GCP). Designed and created a complete database architecture using ClickHouse and PostgreSQL. Applied natural language processing (NLP) using the BERT neural network model.",
       "technologies": [
         "Apache Airflow",
         "Docker",
@@ -37,7 +37,7 @@
       "company": "McKenZee STAT Agency",
       "start_date": "2021-07",
       "end_date": "2022-07",
-      "description": "Generated analytical reports and maintained ETL processes using Airflow.",
+      "description": "Generating analytical reports for FMCG companies. Maintaining ETL processes using Airflow.",
       "technologies": [
         "Airflow"
       ]
@@ -47,7 +47,7 @@
       "company": "Tele2 Kazakhstan",
       "start_date": "2019-06",
       "end_date": "2019-11",
-      "description": "Identified errors in trunk groups, prepared monthly reports, and optimized daily reports.",
+      "description": "Identification of errors in trunk groups for the correct routing of traffic; Preparation of a monthly report to reduce the costs of companies; Preparing a list of roaming partners based on work on CN / DN; Optimization of daily reports; Finalizing the file to automatically add providers to test the quality of calls to SIGOS; Optimization and analysis of the daily report on income and expenses in the context of CP; Development of Macros; Making reliable requests on Oracle PL/SQL.",
       "technologies": [
         "Oracle PL/SQL"
       ]
@@ -57,7 +57,7 @@
       "company": "НАК Казатомпром",
       "start_date": "2018-11",
       "end_date": "2018-12",
-      "description": "Implemented training for employees on PostgreSQL and monitored data integrity in automated systems.",
+      "description": "Mastering the software offered by the department of information. Implementation of the systematic training of employees of the organization techniques and skills at PostgreSQL. Monitoring the integrity, reliability and integrity of data circulation in the automated information system.",
       "technologies": [
         "PostgreSQL"
       ]
@@ -88,7 +88,7 @@
   "skills": [
     "SQL",
     "PostgreSQL",
-    "Oracle PL/SQL",
+    "Oracle Pl/SQL",
     "Python",
     "Airflow",
     "Clickhouse",
