@@ -15,6 +15,7 @@ dependencies = [
     "matplotlib>=3.10.8",
     "plotly>=6.0.0",
     "pydantic>=2.12.5",
+    "python-docx>=1.2.0",
     "python-dotenv>=1.2.1",
     "qdrant-client>=1.16.2",
     "rank-bm25>=0.2.2",

@@ -235,7 +235,43 @@ CRITICAL RULES:
         Returns:
             Текст резюме
         """
-        raise NotImplementedError("DOCX парсинг будет добавлен позже")
+        try:
+            from docx import Document
+        except ImportError:
+            raise ImportError(
+                "Библиотека python-docx не установлена. "
+                "Установите её: pip install python-docx"
+            )
+        
+        file_path = Path(file_path)
+        
+        if not file_path.exists():
+            raise FileNotFoundError(f"Файл не найден: {file_path}")
+        
+        print(f"📄 Парсинг DOCX: {file_path.name}")
+        
+        doc = Document(str(file_path))
+        full_text = []
+        
+        # Извлекаем текст из параграфов
+        for paragraph in doc.paragraphs:
+            if paragraph.text.strip():
+                full_text.append(paragraph.text)
+        
+        # Извлекаем текст из таблиц
+        for table in doc.tables:
+            for row in table.rows:
+                row_text = []
+                for cell in row.cells:
+                    if cell.text.strip():
+                        row_text.append(cell.text.strip())
+                if row_text:
+                    full_text.append(" | ".join(row_text))
+        
+        result = "\n\n".join(full_text)
+        
+        print(f"✅ DOCX успешно распарсен ({len(doc.paragraphs)} параграфов, {len(doc.tables)} таблиц)")
+        return result
     
     def parse_file(self, file_path: str | Path) -> str:
         """
