@@ -4,12 +4,12 @@
     "retrieved": [
       [
         "QA_engineer_3",
-        0.8052578,
+        0.80899787,
         "Candidate"
       ],
       [
         "QA_engineer_1",
-        0.75897706,
+        0.7568095,
         "Candidate"
       ],
       [
@@ -24,16 +24,16 @@
       ],
       [
         "QA_engineer_4",
-        0.7256051,
+        0.72270787,
         "Кандидат"
       ]
     ],
     "relevant": [
       "QA_engineer_5",
-      "QA_engineer_3",
-      "QA_engineer_4",
+      "QA_engineer_2",
       "QA_engineer_1",
-      "QA_engineer_2"
+      "QA_engineer_4",
+      "QA_engineer_3"
     ],
     "relevant_count": 5,
     "metrics": {
@@ -59,7 +59,8 @@
       "ndcg@5": 1.0,
       "ndcg@8": 1.0,
       "ndcg@10": 1.0
-    }
+    },
+    "latency_seconds": 1.9630348682403564
   },
   {
     "vacancy": "Frontend_1",
@@ -71,31 +72,31 @@
       ],
       [
         "Frontend_5",
-        0.70796984,
-        "Кандидат"
-      ],
-      [
-        "Frontend_2",
-        0.70596486,
+        0.6884127,
         "Кандидат"
       ],
       [
         "Frontend_3",
-        0.69284153,
+        0.6828228,
+        "Кандидат"
+      ],
+      [
+        "Frontend_2",
+        0.68000007,
         "Кандидат"
       ],
       [
         "Frontend_4",
-        0.67327493,
+        0.6719995,
         "Кандидат"
       ]
     ],
     "relevant": [
-      "Frontend_1",
-      "Frontend_3",
-      "Frontend_5",
+      "Frontend_2",
       "Frontend_4",
-      "Frontend_2"
+      "Frontend_1",
+      "Frontend_5",
+      "Frontend_3"
     ],
     "relevant_count": 5,
     "metrics": {
@@ -121,7 +122,8 @@
       "ndcg@5": 1.0,
       "ndcg@8": 1.0,
       "ndcg@10": 1.0
-    }
+    },
+    "latency_seconds": 0.5891880989074707
   },
   {
     "vacancy": "AI_engineer_1",
@@ -133,93 +135,31 @@
       ],
       [
         "AI_engineer_4",
-        0.6658249,
+        0.66406566,
         "Кандидат"
       ],
       [
         "AI_engineer_1",
-        0.6591036,
+        0.66063863,
         "Candidate"
-      ],
-      [
-        "QA_engineer_4",
-        0.60590374,
-        "Кандидат"
       ],
       [
         "Backend_4",
         0.6050815,
         "Кандидат"
+      ],
+      [
+        "AI_engineer_3",
+        0.6039958,
+        "Кандидат"
       ]
     ],
     "relevant": [
-      "AI_engineer_1",
-      "AI_engineer_4",
-      "AI_engineer_2",
       "AI_engineer_3",
-      "AI_engineer_5"
-    ],
-    "relevant_count": 5,
-    "metrics": {
-      "precision@1": 1.0,
-      "precision@3": 1.0,
-      "precision@5": 0.6,
-      "precision@8": 0.5,
-      "precision@10": 0.5,
-      "recall@1": 0.2,
-      "recall@3": 0.6,
-      "recall@5": 0.6,
-      "recall@8": 0.8,
-      "recall@10": 1.0,
-      "f1@1": 0.33333333333333337,
-      "f1@3": 0.7499999999999999,
-      "f1@5": 0.6,
-      "f1@8": 0.6153846153846154,
-      "f1@10": 0.6666666666666666,
-      "map": 0.8444444444444444,
-      "mrr": 1.0,
-      "ndcg@1": 1.0,
-      "ndcg@3": 1.0,
-      "ndcg@5": 0.7227265726449519,
-      "ndcg@8": 0.843537875344446,
-      "ndcg@10": 0.9456352704673577
-    }
-  },
-  {
-    "vacancy": "Data_engineer_1",
-    "retrieved": [
-      [
-        "Data_engineer_4",
-        0.7992295,
-        "Кандидат"
-      ],
-      [
-        "Data_engineer_2",
-        0.778216,
-        "Кандидат"
-      ],
-      [
-        "Data_engineer_5",
-        0.7283912,
-        "Кандидат"
-      ],
-      [
-        "Data_engineer_1",
-        0.69854116,
-        "Кандидат"
-      ],
-      [
-        "AI_engineer_4",
-        0.6496582,
-        "Кандидат"
-      ]
-    ],
-    "relevant": [
-      "Data_engineer_3",
-      "Data_engineer_4",
-      "Data_engineer_2",
-      "Data_engineer_5",
-      "Data_engineer_1"
+      "AI_engineer_2",
+      "AI_engineer_5",
+      "AI_engineer_1",
+      "AI_engineer_4"
     ],
     "relevant_count": 5,
     "metrics": {
@@ -238,14 +178,78 @@
       "f1@5": 0.8000000000000002,
       "f1@8": 0.7692307692307693,
       "f1@10": 0.6666666666666666,
-      "map": 0.9428571428571428,
+      "map": 0.885,
       "mrr": 1.0,
       "ndcg@1": 1.0,
       "ndcg@3": 1.0,
-      "ndcg@5": 0.8687949224876582,
-      "ndcg@8": 0.9818483242455303,
-      "ndcg@10": 0.9818483242455303
-    }
+      "ndcg@5": 0.8539316501572937,
+      "ndcg@8": 0.9609247825245575,
+      "ndcg@10": 0.9609247825245575
+    },
+    "latency_seconds": 0.5751028060913086
+  },
+  {
+    "vacancy": "Data_engineer_1",
+    "retrieved": [
+      [
+        "Data_engineer_4",
+        0.8025105,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_2",
+        0.778216,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_5",
+        0.72774786,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_1",
+        0.70090306,
+        "Кандидат"
+      ],
+      [
+        "Data_engineer_3",
+        0.6728865,
+        "Кандидат"
+      ]
+    ],
+    "relevant": [
+      "Data_engineer_1",
+      "Data_engineer_5",
+      "Data_engineer_2",
+      "Data_engineer_4",
+      "Data_engineer_3"
+    ],
+    "relevant_count": 5,
+    "metrics": {
+      "precision@1": 1.0,
+      "precision@3": 1.0,
+      "precision@5": 1.0,
+      "precision@8": 0.625,
+      "precision@10": 0.5,
+      "recall@1": 0.2,
+      "recall@3": 0.6,
+      "recall@5": 1.0,
+      "recall@8": 1.0,
+      "recall@10": 1.0,
+      "f1@1": 0.33333333333333337,
+      "f1@3": 0.7499999999999999,
+      "f1@5": 1.0,
+      "f1@8": 0.7692307692307693,
+      "f1@10": 0.6666666666666666,
+      "map": 1.0,
+      "mrr": 1.0,
+      "ndcg@1": 1.0,
+      "ndcg@3": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@8": 1.0,
+      "ndcg@10": 1.0
+    },
+    "latency_seconds": 0.5740320682525635
   },
   {
     "vacancy": "Backend_1",
@@ -257,7 +261,7 @@
       ],
       [
         "Backend_2",
-        0.70519316,
+        0.699912,
         "Кандидат"
       ],
       [
@@ -277,11 +281,11 @@
       ]
     ],
     "relevant": [
-      "Backend_3",
-      "Backend_5",
-      "Backend_2",
       "Backend_1",
-      "Backend_4"
+      "Backend_3",
+      "Backend_4",
+      "Backend_5",
+      "Backend_2"
     ],
     "relevant_count": 5,
     "metrics": {
@@ -307,6 +311,7 @@
       "ndcg@5": 1.0,
       "ndcg@8": 1.0,
       "ndcg@10": 1.0
-    }
+    },
+    "latency_seconds": 0.4765031337738037
   }
 ]

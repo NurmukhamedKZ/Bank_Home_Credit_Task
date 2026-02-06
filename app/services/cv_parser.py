@@ -53,7 +53,7 @@ class CVParser:
         self,
         collection_name: str = None,
         dense_model_name: str = "voyage-4-large",
-        dense_output_dim: int = 3072,
+        dense_output_dim: int = 1024,
         sparse_method: str = None,
         raw_cvs_folder: str | Path = None,
         json_cvs_folder: str | Path = None,
@@ -131,18 +131,18 @@ CRITICAL RULES:
         # Цепочка для парсинга
         self.chain = self.prompt | self.structured_llm
         
-        # Модели для эмбеддингов
-        # self.dense_model = VoyageAIEmbeddings(
-        #     voyage_api_key=VOYAGE_API,
-        #     model=dense_model_name,
-        #     output_dimension=dense_output_dim
-        # )
-        
-        self.dense_model = GoogleGenerativeAIEmbeddings(
-            model="models/gemini-embedding-001",
-            google_api_key=GOOGLE_API_KEY,
-            task_type="RETRIEVAL_DOCUMENT"
-        )
+        if self.collection_name == "CVs_google":
+            self.dense_model = GoogleGenerativeAIEmbeddings(
+                model="models/gemini-embedding-001",
+                google_api_key=GOOGLE_API_KEY,
+                task_type="RETRIEVAL_DOCUMENT"
+            )
+        else:
+            self.dense_model = VoyageAIEmbeddings(
+                voyage_api_key=VOYAGE_API,
+                model=dense_model_name,
+                output_dimension=dense_output_dim
+            )
         
         # Sparse embeddings: TF-IDF или BM25
         if self.sparse_method == "tfidf":

@@ -211,7 +211,7 @@ def create_heatmap_by_method(data: list, method_name: str) -> go.Figure:
         colorscale='RdYlGn',
         zmin=0,
         zmax=1,
-        text=[[f"{val:.2f}" for val in row] for row in heatmap_data],
+        text=[[f"{val:.2f}" if val is not None else "-" for val in row] for row in heatmap_data],
         texttemplate="%{text}",
         textfont={"size": 9},
         hovertemplate="Вакансия: %{y}<br>Метрика: %{x}<br>Значение: %{z:.3f}<extra></extra>"
